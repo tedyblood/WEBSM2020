@@ -1,12 +1,11 @@
 import React, { Component, Fragment } from "react";
 import { Parallax } from "react-parallax";
 import CounterOne from "../elements/counters/CounterOne";
-import Testimonial from "../elements/Testimonial";
 import BlogContent from "../elements/blog/BlogContent";
 import BrandTwo from "../elements/BrandTwo";
 import ServiceList from "../elements/service/ServiceList";
 import ParrafoList from "../elements/Parrafos/ParrafoOne";
-import Instagram from "../elements/service/instagram";
+import Post from "../elements/post";
 
 const SlideList = [
   {
@@ -248,6 +247,21 @@ class Paralax extends Component {
               <div className="row">
                 <div className="col-lg-12">
                   <BrandTwo />
+                </div>
+              </div>
+            </div>
+          </div>
+        </Parallax>
+        <Parallax
+          className="rn-brand-area brand-separation ptb--120"
+          // bgImage={image15}
+          strength={1000}
+        >
+          <div className="brand-wrapper">
+            <div className="container">
+              <div className="row">
+                <div className="col-lg-12">
+                  <Post />
                 </div>
               </div>
             </div>
