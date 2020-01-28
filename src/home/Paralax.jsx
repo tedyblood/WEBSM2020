@@ -195,41 +195,13 @@ class Paralax extends Component {
               <div className="row">
                 <div className="col-lg-12">
                   <div className="section-title service-style--2 text-center mb--30 mb_sm--0">
-                    <h2>Latest News</h2>
-                    <p>
-                      There are many variations of passages of Lorem Ipsum
-                      available, but the majority have suffered alteration.
-                    </p>
+                    <h2>Noticias</h2>
+                    <p>Espacio para compartir conocimientos.</p>
                   </div>
                 </div>
               </div>
               <div className="row">
-                {PostList.map((value, i) => (
-                  <div className="col-lg-4 col-md-6 col-sm-6 col-12" key={i}>
-                    <div className="blog blog-style--1 mb--0 mt--40">
-                      <div className="thumbnail">
-                        <a href="/blog-details">
-                          <img
-                            className="w-100"
-                            src={`/assets/images/blog/blog-${value.images}.jpg`}
-                            alt="Blog Images"
-                          />
-                        </a>
-                      </div>
-                      <div className="content">
-                        <p className="blogtype">{value.category}</p>
-                        <h4 className="title">
-                          <a href="/blog-details">{value.title}</a>
-                        </h4>
-                        <div className="blog-btn">
-                          <a className="rn-btn text-white" href="/blog-details">
-                            Read More
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                ))}
+                <Post item="6" />
               </div>
             </div>
           </div>
@@ -260,9 +232,7 @@ class Paralax extends Component {
           <div className="brand-wrapper">
             <div className="container">
               <div className="row">
-                <div className="col-lg-12">
-                  <Post />
-                </div>
+                <div className="col-lg-12">{/* <Post /> */}</div>
               </div>
             </div>
           </div>

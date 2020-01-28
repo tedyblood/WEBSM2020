@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 // return fetch(`https://socialmedia-panama.com/wp-json/wp/v2/posts`)
 
 export default class post extends Component {
+  column = this.props;
   constructor(props) {
     super(props);
     this.state = {
@@ -15,11 +16,15 @@ export default class post extends Component {
   }
 
   componentDidMount() {
-    axios.get("https://techcrunch.com/wp-json/wp/v2/posts").then(posts => {
-      this.setState({
-        posts: posts.data
+    axios
+      .get(
+        `https://socialmedia-panama.com/wp-json/wp/v2/posts?per_page=${this.column.item}`
+      )
+      .then(posts => {
+        this.setState({
+          posts: posts.data
+        });
       });
-    });
   }
 
   createMarkup(html) {
@@ -27,23 +32,50 @@ export default class post extends Component {
   }
 
   render() {
+    console.log(this.state.posts[1].jetpack_featured_media_url);
     return (
-      <div>
-        {this.state.posts.map(post => (
-          <Link to={`/${post.slug}`} key={post.id}>
-            <div className="card" key={post.id}>
-              <div className="card-content">
-                <h3>{post.title.rendered}</h3>
-                <div
-                  dangerouslySetInnerHTML={this.createMarkup(
-                    post.excerpt.rendered
-                  )}
-                />
+      <React.Fragment>
+        <div className="row">
+          {this.state.posts.map((value, i) => (
+            <div className="col-lg-4 col-md-6 col-sm-6 col-12" key={value.id}>
+              <div className="blog blog-style--3 mb--0 mt--40">
+                <div className="thumbnail">
+                  <a href="/blog-details">
+                    <img
+                      className="w-100"
+                      // src={`/assets/images/blog/blog-${value.images}.jpg`}
+                      src={`/assets/images/blog/blog-03.jpg`}
+                      alt="Blog Images"
+                    />
+                  </a>
+                  <div className="content">
+                    <p className="blogtype">{value.category}</p>
+                    <h4 className="title">
+                      <a href="/blog-details">{value.title.rendered}</a>
+                    </h4>
+                  </div>
+                </div>
               </div>
             </div>
-          </Link>
-        ))}
-      </div>
+          ))}
+        </div>
+      </React.Fragment>
+      // <div>
+      //   {this.state.posts.map(post => (
+      //     <Link to={`/${post.slug}`} key={post.id}>
+      //       <div className="card" key={post.id}>
+      //         <div className="card-content">
+      //           <h3>{post.title.rendered}</h3>
+      //           <div
+      //             dangerouslySetInnerHTML={this.createMarkup(
+      //               post.excerpt.rendered
+      //             )}
+      //           />
+      //         </div>
+      //       </div>
+      //     </Link>
+      //   ))}
+      // </div>
     );
   }
 }
