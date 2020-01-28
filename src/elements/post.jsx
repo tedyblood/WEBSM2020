@@ -16,6 +16,7 @@ export default class post extends Component {
   }
 
   componentDidMount() {
+    this.serverRequest = 
     axios
       .get(
         `https://socialmedia-panama.com/wp-json/wp/v2/posts?per_page=${this.column.item}`
@@ -26,13 +27,17 @@ export default class post extends Component {
         });
       });
   }
+  componentWillUnmount(){
+
+  }
 
   createMarkup(html) {
     return { __html: html };
   }
 
   render() {
-    console.log(this.state.posts[1].jetpack_featured_media_url);
+   
+    console.log(this.state.posts[0]);
     return (
       <React.Fragment>
         <div className="row">
@@ -43,12 +48,13 @@ export default class post extends Component {
                   <a href="/blog-details">
                     <img
                       className="w-100"
-                      // src={`/assets/images/blog/blog-${value.images}.jpg`}
-                      src={`/assets/images/blog/blog-03.jpg`}
+                      src={value.jetpack_featured_media_url}
+                      //src={`/assets/images/blog/blog-03.jpg`}
                       alt="Blog Images"
                     />
                   </a>
                   <div className="content">
+          
                     <p className="blogtype">{value.category}</p>
                     <h4 className="title">
                       <a href="/blog-details">{value.title.rendered}</a>

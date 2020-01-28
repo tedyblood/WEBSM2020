@@ -201,7 +201,7 @@ class Paralax extends Component {
                 </div>
               </div>
               <div className="row">
-                <Post item="6" />
+                <Post item="12" />
               </div>
             </div>
           </div>
