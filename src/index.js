@@ -81,6 +81,11 @@ class Root extends Component {
               path={`${process.env.PUBLIC_URL}/counters`}
               component={Counters}
             />
+            <Route
+              exact
+              path={`${process.env.PUBLIC_URL}/blog-details/:id/:postId`}
+              component={BlogDetails}
+            />
           </Layout>
         </Switch>
       </BrowserRouter>
