@@ -7,6 +7,9 @@ import ServiceList from "../elements/service/ServiceList";
 import ParrafoList from "../elements/Parrafos/ParrafoOne";
 import Post from "../elements/post";
 
+import Moment from "react-moment";
+import "moment/locale/es";
+
 const SlideList = [
   {
     textPosition: "text-center",
@@ -17,19 +20,19 @@ const SlideList = [
     buttonLink: "/contact"
   }
 ];
-const sliderImage = "/assets/images/bg/paralax/959V0854.JPG";
+const sliderImage = "/assets/images/bg/paralax/bg-image-2.jpg";
 
-const image1 = "/assets/images/bg/paralax/959V0854.JPG";
+const image1 = "/assets/images/bg/paralax/bg-image-22.jpg";
 
-const image2 = "/assets/images/bg/paralax/959V0854.JPG";
+const image2 = "/assets/images/bg/paralax/bg-image-23.jpg";
 
-const image3 = "/assets/images/bg/paralax/959V0854.JPG";
+const image3 = "/assets/images/bg/paralax/bg-image-24.jpg";
 
-const image6 = "/assets/images/bg/paralax/959V0854.JPG";
+const image6 = "/assets/images/bg/paralax/bg-image-25.jpg";
 
 const image7 = "/assets/images/bg/paralax/959V0854.JPG";
 
-const image8 = "/assets/images/bg/paralax/959V0854.JPG";
+const image8 = "/assets/images/bg/paralax/bg-image-24.jpg";
 
 const PortfolioList = [
   {
@@ -58,7 +61,7 @@ class Paralax extends Component {
         {/* Start Slider Area   */}
         <div className="slider-wrapper">
           {/* Start Single Slide */}
-          <Parallax bgImage={sliderImage} strength={700}>
+          <Parallax bgImage={sliderImage} strength={1}>
             {SlideList.map((value, index) => (
               <div
                 className="slide slide-style-2 slider-paralax d-flex align-items-center justify-content-center"
@@ -116,8 +119,9 @@ class Paralax extends Component {
                   <div className="section-title service-style--2 text-center mb--30 mb_sm--0">
                     <h2>Nuestros Servicios</h2>
                     <p>
-                      There are many variations of passages of Lorem Ipsum
-                      available, but the majority have suffered alteration.
+                      Estamos aquí para generar nuevas posibilidades a tu
+                      negocio. La imaginación es el principal recurso que
+                      tendrás a tu disposición.
                     </p>
                   </div>
                 </div>
@@ -131,25 +135,32 @@ class Paralax extends Component {
         </Parallax>
         {/* End Service Area  */}
         {/* /** Inicio de Parrafo */}
-        <Parallax
-          className="rn-paralax-service"
-          bgImage={image1}
-          strength={1000}
-        >
+        <Parallax className="rn-paralax-service" bgImage={image2} strength={1}>
           <div className="service-area ptb--120">
             <div className="container">
               <div className="row align-items-center">
                 <div className="col-lg-12">
                   <div className="section-title service-style--2 text-center mb--30 mb_sm--0">
                     <h2>¿Por qué Nosotros?</h2>
-                    <p>
-                      There are many variations of passages of Lorem Ipsum
-                      available, but the majority have suffered alteration.
+                    <p className="text-center">
+                      Hace: &nbsp;
+                      <b>
+                        <Moment fromNow dd ago>
+                          2010-05-01T12:59-0500
+                        </Moment>
+                      </b>
+                      &nbsp; existimos como Agencia de Marketing Digital en
+                      Panamá.
+                      <br></br>Podemos ofrecerte acceso a nuevas audiencias y
+                      herramientas web novedosas de forma ágil, creativa,
+                      comprometida y productiva.
                     </p>
                   </div>
                 </div>
               </div>
-              <ParrafoList item="4" column="col-lg-6 col-md-6 col-sm-6 col-6" />
+              <div className="row">
+                <ParrafoList item="4" column="container-fluid" />
+              </div>
             </div>
           </div>
         </Parallax>
@@ -196,12 +207,15 @@ class Paralax extends Component {
                 <div className="col-lg-12">
                   <div className="section-title service-style--2 text-center mb--30 mb_sm--0">
                     <h2>Noticias</h2>
-                    <p>Espacio para compartir conocimientos.</p>
+                    <p>
+                      Experiencias que reflejan el ADN de nuestra agencia de
+                      Marketing Digital en Panamá.
+                    </p>
                   </div>
                 </div>
               </div>
               <div className="row">
-                <Post item="12" />
+                <Post item="3" />
               </div>
             </div>
           </div>
@@ -211,7 +225,7 @@ class Paralax extends Component {
         {/* Start Brand Area */}
         <Parallax
           className="rn-brand-area brand-separation ptb--120"
-          bgImage={image3}
+          bgImage={image7}
           strength={1000}
         >
           <div className="brand-wrapper">
@@ -220,19 +234,6 @@ class Paralax extends Component {
                 <div className="col-lg-12">
                   <BrandTwo />
                 </div>
-              </div>
-            </div>
-          </div>
-        </Parallax>
-        <Parallax
-          className="rn-brand-area brand-separation ptb--120"
-          // bgImage={image15}
-          strength={1000}
-        >
-          <div className="brand-wrapper">
-            <div className="container">
-              <div className="row">
-                <div className="col-lg-12">{/* <Post /> */}</div>
               </div>
             </div>
           </div>

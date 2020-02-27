@@ -43,12 +43,9 @@ export default class post extends Component {
         `https://socialmedia-panama.com/wp-json/wp/v2/posts?per_page=${this.column.item}`
       )
       .then(posts => {
-        this.setState(
-          {
-            posts: posts.data
-          },
-          console.log(posts.data)
-        );
+        this.setState({
+          posts: posts.data
+        });
       });
   }
   componentWillUnmount() {}
@@ -78,8 +75,13 @@ export default class post extends Component {
                   </Link>
                   <div className="content">
                     <p className="blogtype">{value.category}</p>
-                    <h4 className="title">
-                      <a href="/blog-details">{value.title.rendered}</a>
+                    <h4 className="title text-white text-justify">
+                      <Link
+                        to={`/blog-details/${value.slug}/${value.id}`}
+                        onClick={this.handleChange(value.id)}
+                      >
+                        {value.title.rendered}
+                      </Link>
                     </h4>
                   </div>
                 </div>

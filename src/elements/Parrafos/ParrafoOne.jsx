@@ -24,23 +24,24 @@ export default class ParrafoOne extends Component {
     const { column } = this.props;
     return (
       <React.Fragment>
-        <div className="d-flex flex-row">
-          <div className="row flex-column">
-            {Data.map((val, i) => (
-              <div className={`${column}`} key={i}>
-                <div className="ParrafoCSS ml-lg-12 vh-25">
-                  <div className="content">
-                    <p>{val.description}</p>
-                  </div>
-                </div>
+        {/* <div className="row"> */}
+        <div className="col-lg-6 col-sm-4">
+          {Data.map((val, i) => (
+            <div className={`${column}`} key={i}>
+              <div className="text-justify text-white text-justify mb-5">
+                <p>{val.description}</p>
               </div>
-            ))}
-          </div>
-          <div>
-            <h5 className="titulo_Insta">Alguno de nuestros trabajos</h5>
-            <Instagram />
-          </div>
+            </div>
+          ))}
         </div>
+
+        <div className="col-lg-6 col-sm-4">
+          <h5 className="titulo_Insta">
+            Algunas de las cuentas bajo nuestra responsabilidad
+          </h5>
+          <Instagram />
+        </div>
+        {/* </div> */}
       </React.Fragment>
     );
   }

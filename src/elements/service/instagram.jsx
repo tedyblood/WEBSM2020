@@ -4,7 +4,7 @@ import Carousel from "react-bootstrap/Carousel";
 
 const list = [
   {
-    fuente: "https://www.instagram.com/p/B7pJj5Dhwjs/"
+    fuente: "https://www.instagram.com/p/B81GdWBhcjv/"
   },
   {
     fuente: "https://www.instagram.com/p/B7w2ptTht76/"
@@ -16,7 +16,13 @@ const list = [
     fuente: "https://www.instagram.com/p/B5F2-eOAuHj/"
   },
   {
-    fuente: "https://www.instagram.com/p/B7qcQlsnNzs/"
+    fuente: "https://www.instagram.com/p/B9B24hxICuK/"
+  },
+  {
+    fuente: "https://www.instagram.com/p/B7_AWfvBd5q/"
+  },
+  {
+    fuente: "https://www.instagram.com/p/B7_AWfvBd5q/"
   }
 ];
 export default class instagram extends React.Component {

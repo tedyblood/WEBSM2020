@@ -3,18 +3,25 @@ import PageHelmet from "../component/common/Helmet";
 import ModalVideo from "react-modal-video";
 import { FiClock, FiUser, FiMessageCircle, FiHeart } from "react-icons/fi";
 import { Link } from "react-router-dom";
+import Moment from "react-moment";
+import Paralax from "../home/Paralax";
+import { Redirect, Router } from "react-router";
 
 class BlogDetails extends Component {
   state = {};
   componentDidMount() {
-    //   this.state.id = this.props.match.params;
-    //   this.state.idPost = "post-ID-" + this.props.match.params.postId;
-    // this.state.postLS = this.GetData();
     this.setState({
       id: this.props.match.params,
       idPost: "post-ID-" + this.props.match.params.postId,
       postLS: this.GetData()
     });
+    if (
+      this.postLS === null ||
+      this.postLS === undefined ||
+      this.postLS === ""
+    ) {
+      console.log(this.state.postLS);
+    }
   }
   componentDidUpdate() {
     // I'd like my variable to be accessible here
@@ -39,9 +46,7 @@ class BlogDetails extends Component {
   }
 
   render() {
-    if (this.state.postLS) {
-      console.log(this.state.postLS);
-    }
+    console.log(this.state);
     return (
       <React.Fragment>
         <PageHelmet pageTitle="Blog Details" />
@@ -63,19 +68,9 @@ class BlogDetails extends Component {
                   <ul className="blog-meta d-flex justify-content-center align-items-center">
                     <li>
                       <FiClock />
-                      May 18, 2020
-                    </li>
-                    <li>
-                      <FiUser />
-                      NipaBali
-                    </li>
-                    <li>
-                      <FiMessageCircle />
-                      15 Comments
-                    </li>
-                    <li>
-                      <FiHeart />
-                      Like
+                      <Moment format="DD/MM/YYYY">
+                        {this.state.postLS && this.state.postLS.date}
+                      </Moment>
                     </li>
                   </ul>
                 </div>
@@ -101,7 +96,10 @@ class BlogDetails extends Component {
                     ></p>
                     <div className="thumbnail">
                       <img
-                        src="/assets/images/blog/bl-big-01.jpg"
+                        src={
+                          this.state.postLS &&
+                          this.state.postLS.jetpack_featured_media_url
+                        }
                         alt="Blog Images"
                       />
                     </div>

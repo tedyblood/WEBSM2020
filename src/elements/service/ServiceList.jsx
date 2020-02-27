@@ -6,55 +6,55 @@ const ServiceList = [
     icon: <FiCast />,
     title: "Diseño de Sitios Web",
     description:
-      "I throw myself down among the tall grass by the stream as I lie close to the earth."
+      "Construimos sitios web optimizados y seguros para que desarrolles e-Commerce."
   },
   {
     icon: <FiLayers />,
     title: "Manejo de Redes Sociales",
     description:
-      "I throw myself down among the tall grass by the stream as I lie close to the earth."
+      "Notarás un aumento de actividad orgánica y real en tus canales sociales."
   },
   {
     icon: <FiUsers />,
-    title: "Posicionamiento en Buscadores",
+    title: "SEO",
     description:
-      "I throw myself down among the tall grass by the stream as I lie close to the earth."
+      "Aumenta tu visibilidad y atrae más usuarios con nuestros servicios de posicionamiento SEO."
   },
   {
     icon: <FiMonitor />,
     title: "Mantenimiento de Sitios Wordpress",
     description:
-      "I throw myself down among the tall grass by the stream as I lie close to the earth."
+      "Toda instalación de WordPress necesita mantenimiento, y no de cualquier manera."
   },
   {
     icon: <FiUsers />,
     title: "Publicidad pagada en Google y Facebook.",
     description:
-      "I throw myself down among the tall grass by the stream as I lie close to the earth."
+      "Servicio de Compra de Medios en Buscadores; Adwords, Bing, Yahoo JP y Yandex. "
   },
   {
     icon: <FiMonitor />,
     title: "Consultorías y auditorías de marcas.",
     description:
-      "I throw myself down among the tall grass by the stream as I lie close to the earth."
+      "Analizamos mes a mes los resultados para poder mejorar, plantear nuevas ideas."
   },
   {
     icon: <FiMonitor />,
     title: "Recorridos Virtuales 360",
     description:
-      "I throw myself down among the tall grass by the stream as I lie close to the earth."
+      "Muestra de forma efectiva tus instalaciones y productos con un nuevo impacto visual."
   },
   {
     icon: <FiMonitor />,
     title: "Servicio OJS",
     description:
-      "I throw myself down among the tall grass by the stream as I lie close to the earth."
+      "Instalación y configuración y mantenimiento de Open Journal System."
   },
   {
     icon: <FiMonitor />,
     title: "WIFI Social",
     description:
-      "I throw myself down among the tall grass by the stream as I lie close to the earth."
+      "Ofrece internet a tu clientes a cambio de una encuesta o una acción social."
   }
 ];
 
