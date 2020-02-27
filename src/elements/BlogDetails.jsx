@@ -15,26 +15,41 @@ class BlogDetails extends Component {
       idPost: "post-ID-" + this.props.match.params.postId,
       postLS: this.GetData()
     });
-    if (
-      this.postLS === null ||
-      this.postLS === undefined ||
-      this.postLS === ""
-    ) {
-      console.log(this.state.postLS);
-    }
+    this.verificaLocalData();
+        
+    
   }
   componentDidUpdate() {
-    // I'd like my variable to be accessible here
-  }
+    // I'd like my variable to be accessible here    
+    
 
+  }
+  
   constructor() {
     super();
     this.state = {
-      isOpen: false
+      isOpen: false,
+      reload: false
+      
     };
     this.openModal = this.openModal.bind(this);
   }
-
+  async verificaLocalData(){
+    await setTimeout(() => {
+        if ( 
+            this.state.postLS === null 
+          ) {
+            this.state.reload = true;            
+            console.log(this.state);            
+            return <Redirect to='/' />       
+            
+          } else {            
+            console.log(this.state);
+            this.state.reload = false;
+          }
+    }, 2000);      
+    
+  }
   GetData() {
     return JSON.parse(
       localStorage.getItem("post-ID-" + this.props.match.params.postId)
@@ -46,12 +61,16 @@ class BlogDetails extends Component {
   }
 
   render() {
-    console.log(this.state);
+    
+   
     return (
+        
       <React.Fragment>
         <PageHelmet pageTitle="Blog Details" />
 
         {/* Start Breadcrump Area */}
+        
+        
         <div
           className="rn-page-title-area pt--120 pb--190 bg_image bg_image--7"
           data-black-overlay="7"
@@ -62,6 +81,7 @@ class BlogDetails extends Component {
                 <div className="blog-single-page-title text-center pt--100">
                   <h2 className="title theme-gradient">
                     {/* The Home of the Future <br /> Could Bebes */}
+                    {this.state.reload && <Redirect to="/"/>}
                     {this.state.postLS && this.state.postLS.title.rendered}
                   </h2>
 
