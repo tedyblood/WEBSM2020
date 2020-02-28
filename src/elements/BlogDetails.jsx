@@ -16,39 +16,29 @@ class BlogDetails extends Component {
       postLS: this.GetData()
     });
     this.verificaLocalData();
-        
-    
   }
   componentDidUpdate() {
-    // I'd like my variable to be accessible here    
-    
-
+    // I'd like my variable to be accessible here
   }
-  
+
   constructor() {
     super();
     this.state = {
-      isOpen: false,
-      reload: false
-      
+      isOpen: false
     };
     this.openModal = this.openModal.bind(this);
   }
-  async verificaLocalData(){
+  async verificaLocalData() {
     await setTimeout(() => {
-        if ( 
-            this.state.postLS === null 
-          ) {
-            this.state.reload = true;            
-            console.log(this.state);            
-            return <Redirect to='/' />       
-            
-          } else {            
-            console.log(this.state);
-            this.state.reload = false;
-          }
-    }, 2000);      
-    
+      if (this.state.postLS === null) {
+        this.state.reload = true;
+        console.log();
+        this.props.history.push("/");
+      } else {
+        console.log("Store Lleno");
+        this.state.reload = false;
+      }
+    }, 200);
   }
   GetData() {
     return JSON.parse(
@@ -61,16 +51,12 @@ class BlogDetails extends Component {
   }
 
   render() {
-    
-   
     return (
-        
       <React.Fragment>
         <PageHelmet pageTitle="Blog Details" />
 
         {/* Start Breadcrump Area */}
-        
-        
+
         <div
           className="rn-page-title-area pt--120 pb--190 bg_image bg_image--7"
           data-black-overlay="7"
@@ -81,7 +67,7 @@ class BlogDetails extends Component {
                 <div className="blog-single-page-title text-center pt--100">
                   <h2 className="title theme-gradient">
                     {/* The Home of the Future <br /> Could Bebes */}
-                    {this.state.reload && <Redirect to="/"/>}
+
                     {this.state.postLS && this.state.postLS.title.rendered}
                   </h2>
 
