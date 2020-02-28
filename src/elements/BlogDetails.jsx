@@ -10,6 +10,8 @@ import { Redirect, Router } from "react-router";
 class BlogDetails extends Component {
   state = {};
   componentDidMount() {
+    window.scrollTo(0, 0);
+
     this.setState({
       id: this.props.match.params,
       idPost: "post-ID-" + this.props.match.params.postId,
@@ -32,14 +34,13 @@ class BlogDetails extends Component {
     await setTimeout(() => {
       if (this.state.postLS === null) {
         this.state.reload = true;
-        console.log();
         this.props.history.push("/");
       } else {
-        console.log("Store Lleno");
         this.state.reload = false;
       }
-    }, 200);
+    }, 2);
   }
+
   GetData() {
     return JSON.parse(
       localStorage.getItem("post-ID-" + this.props.match.params.postId)
@@ -67,7 +68,7 @@ class BlogDetails extends Component {
                 <div className="blog-single-page-title text-center pt--100">
                   <h2 className="title theme-gradient">
                     {/* The Home of the Future <br /> Could Bebes */}
-
+                    {this.state.reload && "ERROR"}
                     {this.state.postLS && this.state.postLS.title.rendered}
                   </h2>
 

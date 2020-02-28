@@ -20,6 +20,7 @@ import Portfolio from "./elements/Portfolio";
 import PortfolioDetails from "./elements/PortfolioDetails";
 import Blog from "./elements/Blog";
 import BlogDetails from "./elements/BlogDetails";
+import ServiceDetails_WD from "./elements/ServiceDetails_WD";
 import Counters from "./elements/Counters";
 
 import { BrowserRouter, Switch, Route } from "react-router-dom";
@@ -45,6 +46,11 @@ class Root extends Component {
               exact
               path={`${process.env.PUBLIC_URL}/service-details`}
               component={ServiceDetails}
+            />
+            <Route
+              exact
+              path={`${process.env.PUBLIC_URL}/web-design-panama`}
+              component={ServiceDetails_WD}
             />
             <Route
               exact

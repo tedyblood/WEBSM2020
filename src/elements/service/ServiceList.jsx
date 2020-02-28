@@ -1,12 +1,14 @@
 import React, { Component } from "react";
 import { FiCast, FiLayers, FiUsers, FiMonitor } from "react-icons/fi";
+import { Link } from "react-router-dom";
 
 const ServiceList = [
   {
     icon: <FiCast />,
     title: "Diseño de Sitios Web",
     description:
-      "Construimos sitios web optimizados y seguros para que desarrolles e-Commerce."
+      "Construimos sitios web optimizados y seguros para que desarrolles e-Commerce.",
+    componente: "web-design-panama"
   },
   {
     icon: <FiLayers />,
@@ -68,7 +70,7 @@ class ServiceThree extends Component {
         <div className="row">
           {ServiceContent.map((val, i) => (
             <div className={`${column}`} key={i}>
-              <a href="/service-details">
+              <Link to="/web-design-panama">
                 <div className="service service__style--2">
                   <div className="icon">{val.icon}</div>
                   <div className="content">
@@ -76,7 +78,7 @@ class ServiceThree extends Component {
                     <p>{val.description}</p>
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
           ))}
         </div>

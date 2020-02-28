@@ -1,10 +1,12 @@
 import React from "react";
 
-import LOGO from "../logoSVG/logo-220x63.png";
+import LOGO from "../../../public/assets/images/logo/logo_blanco.png";
 
 class LogoSVG extends React.Component {
   render() {
-    return <img src={LOGO} alt="" srcset="" />;
+    return (
+      <img src={LOGO} alt="Logo Social Media" className="w-100" srcset="" />
+    );
   }
 }
 

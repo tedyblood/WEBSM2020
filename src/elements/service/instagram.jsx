@@ -29,28 +29,26 @@ export default class instagram extends React.Component {
   render() {
     const { column } = this.props;
     return (
-      <div>
-        <React.Fragment>
-          <Carousel fade="true" interval="2500">
-            {list.map((val, i) => (
-              <Carousel.Item>
-                <InstagramEmbed
-                  url={val.fuente}
-                  maxWidth={320}
-                  hideCaption={true}
-                  containerTagName="URL"
-                  protocol=""
-                  injectScript
-                  onLoading={() => {}}
-                  onSuccess={() => {}}
-                  onAfterRender={() => {}}
-                  onFailure={() => {}}
-                />
-              </Carousel.Item>
-            ))}
-          </Carousel>
-        </React.Fragment>
-      </div>
+      <React.Fragment>
+        <Carousel className="margin-widget-insta" fade="true" interval="2500">
+          {list.map((val, i) => (
+            <Carousel.Item>
+              <InstagramEmbed
+                url={val.fuente}
+                maxWidth={320}
+                hideCaption={true}
+                containerTagName="URL"
+                protocol=""
+                injectScript
+                onLoading={() => {}}
+                onSuccess={() => {}}
+                onAfterRender={() => {}}
+                onFailure={() => {}}
+              />
+            </Carousel.Item>
+          ))}
+        </Carousel>
+      </React.Fragment>
     );
   }
 }

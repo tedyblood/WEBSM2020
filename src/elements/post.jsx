@@ -3,9 +3,6 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 import ls from "local-storage";
 
-// const DataUrl = "https://socialmedia-panama.com/wp-json/wp/v2/posts";
-// return fetch(`https://socialmedia-panama.com/wp-json/wp/v2/posts`)
-
 export default class post extends Component {
   column = this.props;
   constructor(props) {

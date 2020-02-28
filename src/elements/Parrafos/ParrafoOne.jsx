@@ -25,7 +25,7 @@ export default class ParrafoOne extends Component {
     return (
       <React.Fragment>
         {/* <div className="row"> */}
-        <div className="col-lg-6 col-sm-4">
+        <div className="col-sm-12 col-lg-6">
           {Data.map((val, i) => (
             <div className={`${column}`} key={i}>
               <div className="text-justify text-white text-justify mb-5">
@@ -35,7 +35,7 @@ export default class ParrafoOne extends Component {
           ))}
         </div>
 
-        <div className="col-lg-6 col-sm-4">
+        <div className="col-sm-6 ">
           <h5 className="titulo_Insta">
             Algunas de las cuentas bajo nuestra responsabilidad
           </h5>
