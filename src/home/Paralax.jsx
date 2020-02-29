@@ -226,10 +226,21 @@ class Paralax extends Component {
         <Parallax
           className="rn-brand-area brand-separation ptb--120"
           bgImage={image7}
-          strength={1000}
+          strength={500}
         >
           <div className="brand-wrapper">
             <div className="container">
+              <div className="row">
+                <div className="col-lg-12">
+                  <div className="section-title service-style--3 text-center mb--30 mb_sm--0">
+                    <h2>Clientes</h2>
+                    <p>
+                      Estas son algunas de las marcas con las que colaboramos en
+                      diferentes proyectos.
+                    </p>
+                  </div>
+                </div>
+              </div>
               <div className="row">
                 <div className="col-lg-12">
                   <BrandTwo />

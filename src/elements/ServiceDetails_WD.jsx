@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import PageHelmet from "../component/common/Helmet";
 import ModalVideo from "react-modal-video";
+import GirAnimada from "../component/animation/AnimationG";
+import { AnimationSlider } from "../component/animation/AnimationSlider";
+import { Portafolio } from "../component/animation/PortafolioPag";
 
 class ServiceDetails extends Component {
   componentDidMount() {
@@ -23,10 +26,9 @@ class ServiceDetails extends Component {
         {/* Start Pagehelmet  */}
         <PageHelmet pageTitle="Service Details" />
         {/* End Pagehelmet  */}
-
         {/* Start Breadcrump Area */}
         <div
-          className="rn-page-title-area pt--120 pb--190 bg_image bg_image--5"
+          className="rn-page-title-area pt--120 pb--190 bg_image bg_image--2"
           data-black-overlay="5"
         >
           <div className="container">
@@ -45,9 +47,9 @@ class ServiceDetails extends Component {
           </div>
         </div>
         {/* End Breadcrump Area */}
-
         {/* Start Page Wrapper */}
         <div className="rn-service-details ptb--120 bg_color--1">
+          <GirAnimada></GirAnimada>
           <div className="container">
             <div className="row">
               <div className="col-lg-12">
@@ -149,12 +151,53 @@ class ServiceDetails extends Component {
                       </div>
                     </div>
                     {/* End Single Area */}
+                    {/* Start Single Area */}
+                    <div className="row sercice-details-content pb--80 align-items-center">
+                      <div className="col-lg-6 col-12">
+                        <AnimationSlider></AnimationSlider>
+                      </div>
+                      <div className="col-lg-6 col-12">
+                        <div className="details mt_md--30 mt_sm--30">
+                          <p>
+                            En un medio tan competitivo se tiene 3 segundos para
+                            impresionar al visitante, y esto lo sabemos.
+                          </p>
+                          <p>
+                            Nuestros diseños web están pensados en siempre
+                            ayudar a nuestros clientes a vender su producto o
+                            servicio, ofreciendo una imagen profesional de su
+                            negocio con un sitio web de alto impacto.
+                          </p>
+                          <h3 className="title">Tipo de Diseño web:</h3>
+                          <ul className="liststyle">
+                            <li>Sitios Web Auto-Administrables.</li>
+                            <li>Páginas web optimizadas para Buscadores.</li>
+                            <li>Cotizadores en línea.</li>
+                            <li>Sitios Web con Woocommerce.</li>
+                            <li>
+                              Páginas Web Rápidas, con código limpio y con mucha
+                              documentación.
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    {/* End Single Area */}
+                    {/* Start Single Area */}
+                    <div className="row sercice-details-content pb--80 align-items-center">
+                      <div className="col-lg-12 col-12">
+                        <h2>Trabajos</h2>
+                        <Portafolio />
+                      </div>
+                    </div>
+                    {/* End Single Area */}
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+
         {/* End Page Wrapper */}
       </React.Fragment>
     );
