@@ -8,6 +8,9 @@ import "./index.scss";
 // Common Layout
 import Layout from "./component/common/App";
 
+// Bootstrap
+import "bootstrap/dist/css/bootstrap.min.css";
+
 // Home layout
 import Paralax from "./home/Paralax";
 

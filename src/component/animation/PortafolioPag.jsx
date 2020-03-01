@@ -1,16 +1,121 @@
 import React, { Component } from "react";
-import Lightbox from "react-image-lightbox";
-import "react-image-lightbox/style.css"; // This only needs to be imported once in your app
+import SimpleReactLightbox from "simple-react-lightbox"; // Import Simple React Lightbox
+import { SRLWrapper } from "simple-react-lightbox"; // Import SRLWrapper
 
 import "./portafolio.scss";
 import { Link } from "react-router-dom";
 
-const ColUnoImages = [
-  "https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-kyoto.jpeg",
-  "https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-kyoto.jpeg",
-  "https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-kyoto.jpeg",
-  "https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-kyoto.jpeg"
-];
+let ColUnoImages = {
+  0: {
+    id: 0,
+    url: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-kyoto.jpeg",
+    name: "Culpa do magna excepteur anim nostrud",
+    url_live: "https://www.google.com"
+  },
+  1: {
+    id: 1,
+    url: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-kyoto.jpeg",
+    name: "Nombre",
+    url_live: "https://www.google.com"
+  },
+  2: {
+    id: 2,
+    url: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-kyoto.jpeg",
+    name: "Nombre",
+    url_live: "https://www.google.com"
+  },
+  3: {
+    id: 3,
+    url: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-kyoto.jpeg",
+    name: "Nombre",
+    url_live: "https://www.google.com"
+  }
+};
+let ColDosImages = {
+  0: {
+    id: 0,
+    url: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-kyoto.jpeg",
+    name: "Nombre",
+    url_live: "https://www.google.com"
+  },
+  1: {
+    id: 1,
+    url: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-kyoto.jpeg",
+    name: "Nombre",
+    url_live: "https://www.google.com"
+  },
+  2: {
+    id: 2,
+    url: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-kyoto.jpeg",
+    name: "Nombre",
+    url_live: "https://www.google.com"
+  },
+  3: {
+    id: 3,
+    url: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-kyoto.jpeg",
+    name: "Nombre",
+    url_live: "https://www.google.com"
+  }
+};
+let ColTresImages = {
+  0: {
+    id: 0,
+    url: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-kyoto.jpeg",
+    name: "Nombre",
+    url_live: "https://www.google.com"
+  },
+  1: {
+    id: 1,
+    url: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-kyoto.jpeg",
+    name: "Nombre",
+    url_live: "https://www.google.com"
+  },
+  2: {
+    id: 2,
+    url: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-kyoto.jpeg",
+    name: "Nombre",
+    url_live: "https://www.google.com"
+  },
+  3: {
+    id: 3,
+    url: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-kyoto.jpeg",
+    name: "Nombre",
+    url_live: "https://www.google.com"
+  }
+};
+let ColCuatroImages = {
+  0: {
+    id: 0,
+    url: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-kyoto.jpeg",
+    name: "Nombre",
+    url_live: "https://www.google.com"
+  },
+  1: {
+    id: 1,
+    url: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-kyoto.jpeg",
+    name: "Nombre",
+    url_live: "https://www.google.com"
+  },
+  2: {
+    id: 2,
+    url: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-kyoto.jpeg",
+    name: "Nombre",
+    url_live: "https://www.google.com"
+  },
+  3: {
+    id: 3,
+    url: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-kyoto.jpeg",
+    name: "Nombre",
+    url_live: "https://www.google.com"
+  }
+};
+
+//Consulta un Objeto para hacer el recorrido en el DOM
+function mapObject(object, callback) {
+  return Object.keys(object).map(function(key) {
+    return callback(key, object[key]);
+  });
+}
 
 export class Portafolio extends Component {
   constructor(props) {
@@ -21,124 +126,103 @@ export class Portafolio extends Component {
       isOpen: false
     };
   }
-  render() {
-    const { photoIndex, isOpen } = this.state;
 
+  render() {
     return (
       <React.Fragment>
-        <div className="gallery">
-          <div className="gallery__strip__wrapper">
-            <div className="gallery__strip one">
-              {ColUnoImages.map(task => (
-                <div className="photo">
-                  <div className="photo__image">
-                    <Link
-                      onClick={() =>
-                        this.setState({
-                          isOpen: true,
-                          photoIndex: this.contador
-                        })
-                      }
-                    >
-                      <img src={task} />
-                    </Link>
-                  </div>
-                  <div className="photo__name">Kyoto</div>
-                </div>
-              ))}
-            </div>
-          </div>
-          <div className="gallery__strip__wrapper">
-            <div className="gallery__strip two">
-              <div className="photo">
-                <div className="photo__image">
-                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-italy.jpeg" />
-                </div>
-                <div className="photo__name">Italy</div>
-              </div>
-              <div className="photo">
-                <div className="photo__image">
-                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-osaka.jpeg" />
-                </div>
-                <div className="photo__name">Osaka</div>
-              </div>
-              <div className="photo">
-                <div className="photo__image">
-                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-bali.jpeg" />
-                </div>
-                <div className="photo__name">Bali</div>
-              </div>
-              <div className="photo">
-                <div className="photo__image">
-                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-paris2.jpg" />
-                </div>
-                <div className="photo__name">Paris</div>
+        <SimpleReactLightbox>
+          <div className="gallery">
+            <div className="gallery__strip__wrapper">
+              <div className="gallery__strip one">
+                {/* Imagen contenedor */}
+                {/* Este función recorre el Objeto y permite dibujar con todo los datos */}
+                {mapObject(ColUnoImages, function(key, value) {
+                  return (
+                    <div className="photo">
+                      {/* Imagen */}
+                      <div className="photo__image">
+                        <SRLWrapper>
+                          <img src={value.url} />
+                        </SRLWrapper>
+                      </div>
+                      {/* Fin Imagen */}
+                      <div className="photo__name">{value.name}</div>
+                    </div>
+                  );
+                })}
+
+                {/* Fin de función consultiva */}
+                {/* Imagen contenedor */}
               </div>
             </div>
-          </div>
-          <div className="gallery__strip__wrapper">
-            <div className="gallery__strip three">
-              <div className="photo">
-                <div className="photo__image">
-                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-cusco.jpeg" />
-                </div>
-                <div className="photo__name">Cusco</div>
-              </div>
-              <div className="photo">
-                <div className="photo__image">
-                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-rome.jpeg" />
-                </div>
-                <div className="photo__name">Rome</div>
-              </div>
-              <div className="photo">
-                <div className="photo__image">
-                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-paris.jpeg" />
-                </div>
-                <div className="photo__name">Paris</div>
-              </div>
-              <div className="photo">
-                <div className="photo__image">
-                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-bali2.jpeg" />
-                </div>
-                <div className="photo__name">Bali</div>
+            <div className="gallery__strip__wrapper">
+              <div className="gallery__strip two">
+                {/* Imagen contenedor */}
+                {/* Este función recorre el Objeto y permite dibujar con todo los datos */}
+                {mapObject(ColDosImages, function(key, value) {
+                  return (
+                    <div className="photo">
+                      {/* Imagen */}
+                      <div className="photo__image">
+                        <SRLWrapper>
+                          <img src={value.url} />
+                        </SRLWrapper>
+                      </div>
+                      {/* Fin Imagen */}
+                      <div className="photo__name">{value.name}</div>
+                    </div>
+                  );
+                })}
+                {/* Fin de función consultiva */}
+                {/* Imagen contenedor */}
               </div>
             </div>
-          </div>
-          <div className="gallery__strip__wrapper">
-            <div className="gallery__strip four">
-              <div className="photo">
-                <div className="photo__image">
-                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-milan.jpeg" />
-                </div>
-                <div className="photo__name">Milan</div>
+            <div className="gallery__strip__wrapper">
+              <div className="gallery__strip three">
+                {/* Imagen contenedor */}
+                {/* Este función recorre el Objeto y permite dibujar con todo los datos */}
+                {mapObject(ColTresImages, function(key, value) {
+                  return (
+                    <div className="photo">
+                      {/* Imagen */}
+                      <div className="photo__image">
+                        <SRLWrapper>
+                          <img src={value.url} />
+                        </SRLWrapper>
+                      </div>
+                      {/* Fin Imagen */}
+                      <div className="photo__name">{value.name}</div>
+                    </div>
+                  );
+                })}
+                {/* Fin de función consultiva */}
+                {/* Imagen contenedor */}
               </div>
-              <div className="photo">
-                <div className="photo__image">
-                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-budapest.jpg" />
-                </div>
-                <div className="photo__name">Budapest</div>
-              </div>
-              <div className="photo">
-                <div className="photo__image">
-                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-vienna.jpg" />
-                </div>
-                <div className="photo__name">Vienna</div>
-              </div>
-              <div className="photo">
-                <div className="photo__image">
-                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-mexico.jpg" />
-                </div>
-                <div className="photo__name">Mexico</div>
+            </div>
+            <div className="gallery__strip__wrapper">
+              <div className="gallery__strip four">
+                {/* Imagen contenedor */}
+                {/* Este función recorre el Objeto y permite dibujar con todo los datos */}
+                {mapObject(ColCuatroImages, function(key, value) {
+                  return (
+                    <div className="photo">
+                      {/* Imagen */}
+                      <div className="photo__image">
+                        <SRLWrapper>
+                          <img src={value.url} />
+                        </SRLWrapper>
+                      </div>
+                      {/* Fin Imagen */}
+                      <div className="photo__name">{value.name}</div>
+                    </div>
+                  );
+                })}
+                {/* Fin de función consultiva */}
+                {/* Imagen contenedor */}
               </div>
             </div>
           </div>
-        </div>
-        {isOpen && (
-          <Lightbox
-            mainSrc={ColUnoImages[photoIndex]}
-            onCloseRequest={() => this.setState({ isOpen: false })}
-          />
-        )}
+        </SimpleReactLightbox>
       </React.Fragment>
     );
   }
