@@ -6,9 +6,24 @@
  *
  * Copyright (c) 2016 Daniel Eden
  */
+.ReactModal__Content {
+  z-index: 999;
+}
+.ReactModal__Overlay {
+  opacity: 0;
+  transition: opacity 2000ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open {
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close {
+  opacity: 0;
+}
 button.Boton {
   position: relative;
-  z-index: 99;
+  z-index: 1;
   width: 60%;
   background-color: white;
 }

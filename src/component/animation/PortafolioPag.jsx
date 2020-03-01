@@ -10,7 +10,7 @@ let ColUnoImages = {
   0: {
     id: 0,
     url: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-kyoto.jpeg",
-    name: "Culpa do magna excepteur anim nostrud",
+    name: "Nombre Uno",
     detail:
       "Voluptate dolore nisi anim anim dolore occaecat pariatur sit id esse non incididunt.",
     url_live: "https://www.google.com"
@@ -18,19 +18,19 @@ let ColUnoImages = {
   1: {
     id: 1,
     url: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-kyoto.jpeg",
-    name: "Nombre",
+    name: "Nombre Dos",
     url_live: "https://www.google.com"
   },
   2: {
     id: 2,
     url: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-kyoto.jpeg",
-    name: "Nombre",
+    name: "Nombre Tres",
     url_live: "https://www.google.com"
   },
   3: {
     id: 3,
     url: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-kyoto.jpeg",
-    name: "Nombre",
+    name: "Nombre Cuatro",
     url_live: "https://www.google.com"
   }
 };
@@ -144,9 +144,9 @@ export class Portafolio extends Component {
                     <div className="photo">
                       {/* Imagen */}
                       <div className="photo__image">
-                        <SRLWrapper>
-                          <img src={value.url} />
-                        </SRLWrapper>
+                        {/* <SRLWrapper> */}
+                        <img src={value.url} />
+                        {/* </SRLWrapper> */}
                       </div>
                       {/* Fin Imagen */}
                       <div className="photo__name">{value.name}</div>
