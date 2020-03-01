@@ -6,6 +6,12 @@
  *
  * Copyright (c) 2016 Daniel Eden
  */
+button.Boton {
+  position: relative;
+  z-index: 99;
+  width: 60%;
+  background-color: white;
+}
 .ParrafoCSS {
   color: white;
   margin: 20px 0px;

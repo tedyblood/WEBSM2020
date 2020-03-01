@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import SimpleReactLightbox from "simple-react-lightbox"; // Import Simple React Lightbox
 import { SRLWrapper } from "simple-react-lightbox"; // Import SRLWrapper
+import ModalE from "../common/ModalE";
 
 import "./portafolio.scss";
 import { Link } from "react-router-dom";
@@ -10,6 +11,8 @@ let ColUnoImages = {
     id: 0,
     url: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-kyoto.jpeg",
     name: "Culpa do magna excepteur anim nostrud",
+    detail:
+      "Voluptate dolore nisi anim anim dolore occaecat pariatur sit id esse non incididunt.",
     url_live: "https://www.google.com"
   },
   1: {
@@ -147,6 +150,11 @@ export class Portafolio extends Component {
                       </div>
                       {/* Fin Imagen */}
                       <div className="photo__name">{value.name}</div>
+                      <ModalE
+                        url={value.url}
+                        name={value.name}
+                        detail={value.detail}
+                      />
                     </div>
                   );
                 })}
@@ -170,6 +178,7 @@ export class Portafolio extends Component {
                       </div>
                       {/* Fin Imagen */}
                       <div className="photo__name">{value.name}</div>
+                      <ModalE />
                     </div>
                   );
                 })}
@@ -192,6 +201,7 @@ export class Portafolio extends Component {
                       </div>
                       {/* Fin Imagen */}
                       <div className="photo__name">{value.name}</div>
+                      <ModalE />
                     </div>
                   );
                 })}
@@ -214,6 +224,7 @@ export class Portafolio extends Component {
                       </div>
                       {/* Fin Imagen */}
                       <div className="photo__name">{value.name}</div>
+                      <ModalE />
                     </div>
                   );
                 })}
