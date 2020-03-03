@@ -164,5 +164,7 @@
     "presets": [
       "react-app"
     ]
-  }
+  },
+    "homepage": "https://tedyblood.github.io/WEBSM2020/"
+
 }
