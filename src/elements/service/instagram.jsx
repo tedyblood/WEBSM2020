@@ -23,6 +23,9 @@ const list = [
   },
   {
     fuente: "https://www.instagram.com/p/B7_AWfvBd5q/"
+  },
+  {
+    fuente: "https://www.instagram.com/p/B9Mgr7hhEv0/"
   }
 ];
 export default class instagram extends React.Component {
@@ -37,13 +40,19 @@ export default class instagram extends React.Component {
                 url={val.fuente}
                 maxWidth={320}
                 hideCaption={true}
-                containerTagName="URL"
+                containerTagName="div"
                 protocol=""
                 injectScript
-                onLoading={() => {}}
-                onSuccess={() => {}}
+                onLoading={() => {
+                  console.log("Cargando Imagenes de Instagram");
+                }}
+                onSuccess={() => {
+                  console.log("Todosl los Post esta Cargados");
+                }}
                 onAfterRender={() => {}}
-                onFailure={() => {}}
+                onFailure={() => {
+                  console.log("Error en carga Imagenes de Instagram");
+                }}
               />
             </Carousel.Item>
           ))}

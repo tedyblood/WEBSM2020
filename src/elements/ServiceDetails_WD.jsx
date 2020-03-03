@@ -5,6 +5,8 @@ import GirAnimada from "../component/animation/AnimationG";
 import { AnimationSlider } from "../component/animation/AnimationSlider";
 import { Portafolio } from "../component/animation/PortafolioPag";
 
+import ModalContact from "../component/common/ModalContact";
+
 class ServiceDetails extends Component {
   componentDidMount() {
     window.scrollTo(0, 0);
@@ -188,6 +190,11 @@ class ServiceDetails extends Component {
                       <div className="col-lg-12 col-12">
                         <h2>Trabajos</h2>
                         <Portafolio />
+                      </div>
+                    </div>
+                    <div className="row sercice-details-content pb--80 align-items-center">
+                      <div className="col-lg-12 col-12">
+                        <ModalContact />
                       </div>
                     </div>
                     {/* End Single Area */}
