@@ -4,10 +4,11 @@ import ModalVideo from "react-modal-video";
 import GirAnimada from "../component/animation/AnimationG";
 import { AnimationSlider } from "../component/animation/AnimationSlider";
 import { Portafolio } from "../component/animation/PortafolioPag";
+import Instagram from "../elements/service/instagramTwo";
 
-// imp  ort ModalContact from "../component/common/ModalContact";
+import ModalContact from "../component/common/ModalContact";
 
-class ServiceDetails extends Component {
+class ServiceDetailsSM extends Component {
   componentDidMount() {
     window.scrollTo(0, 0);
   }
@@ -37,11 +38,12 @@ class ServiceDetails extends Component {
             <div className="row">
               <div className="col-lg-12">
                 <div className="rn-page-title text-center pt--100">
-                  <h1 className="title theme-gradient">DISEÑO DE SITIO WEB</h1>
+                  <h2 className="title theme-gradient">
+                    Gestion de Redes Sociales
+                  </h2>
                   <p>
-                    Tenemos de todos los sabores: <br></br>A medida, Con
-                    Plantilla, con React, Angular, Wordpress, HTML Básico,{" "}
-                    <br></br>Lo que necesites.
+                    Alta experiencia en manejo de redes sociales para potenciar
+                    tu negocio en el mundo digital
                   </p>
                 </div>
               </div>
@@ -75,24 +77,36 @@ class ServiceDetails extends Component {
                       <div className="col-lg-6 col-12">
                         <div className="details mt_md--30 mt_sm--30">
                           <p>
-                            En un medio tan competitivo se tiene 3 segundos para
-                            impresionar al visitante, y esto lo sabemos.
+                            Ofrecemos Servicios profesionales con experiencia en
+                            manejo de redes sociales para potenciar tu negocio
+                            en el mundo digital.
                           </p>
                           <p>
-                            Nuestros diseños web están pensados en siempre
-                            ayudar a nuestros clientes a vender su producto o
-                            servicio, ofreciendo una imagen profesional de su
-                            negocio con un sitio web de alto impacto.
+                            Nuestra agencia de comunicación digital estudiará y
+                            aprenderá la filosofía y los valores de su empresa,
+                            integrándose como un departamento de marketing anexo
+                            a su organigrama y garantizando así la transmisión
+                            al exterior de una imagen y unos valores adecuados.
                           </p>
-                          <h3 className="title">Tipo de Diseño web:</h3>
+                          <h3 className="title mt-5">
+                            ¿Qué hacemos por tu marca?
+                          </h3>
                           <ul className="liststyle">
-                            <li>Sitios Web Auto-Administrables.</li>
-                            <li>Páginas web optimizadas para Buscadores.</li>
-                            <li>Cotizadores en línea.</li>
-                            <li>Sitios Web con Woocommerce.</li>
                             <li>
-                              Páginas Web Rápidas, con código limpio y con mucha
-                              documentación.
+                              Informe inicial de presencia online de la marca,
+                              en Internet y medios sociales.
+                            </li>
+                            <li>Páginas web optimizadas para Buscadores.</li>
+                            <li>
+                              Creación de perfiles y cuentas en redes sociales.
+                            </li>
+                            <li>
+                              Distribución de los contenidos a través de los
+                              canales digitales.
+                            </li>
+                            <li>
+                              Monitorización continua y recogida del feedback
+                              del cliente para envío a la organización.
                             </li>
                           </ul>
                         </div>
@@ -104,30 +118,26 @@ class ServiceDetails extends Component {
                     <div className="row sercice-details-content align-items-center">
                       <div className="col-lg-6 col-12 order-2 order-lg-1">
                         <div className="details mt_md--30 mt_sm--30">
-                          <p>
-                            Podemos ofrecere una solución completa en el aspecto
-                            tecnico creativo de tu requerimiento web.
-                          </p>
-                          <p>
-                            Personalizamos framework maduros como Wordpress y
-                            también trabajamos con Frameworks Basados en
-                            JavaScript.
-                          </p>
                           <h3 className="title">
-                            Servicios de desarrollo de progressive web apps
+                            Reducción de costes en publicidad
                           </h3>
-                          <ul className="liststyle">
-                            <li>
-                              Sitios Web hecho en React. Esta página esta
-                              construida en React.
-                            </li>
-                            <li>
-                              Hibridos entre React y Wordpress. Como este sitio.
-                            </li>
-
-                            <li>Sitios Web Hechos en Gatsby</li>
-                            <li>Sitios Web Hechos con Angular </li>
-                          </ul>
+                          <p>
+                            En social media desarrollamos un plan para que los
+                            Community Managerpuedan compartir detalles
+                            esenciales de tu negocio para que tus clientes te
+                            encuentren y contacten más fácilmente.
+                          </p>
+                        </div>
+                        <div className="details mt_md--30 mt_sm--30 mt-5">
+                          <h3 className="title">
+                            Reducción de costes en publicidad
+                          </h3>
+                          <p>
+                            En social media desarrollamos un plan para que los
+                            Community Managerpuedan compartir detalles
+                            esenciales de tu negocio para que tus clientes te
+                            encuentren y contacten más fácilmente.
+                          </p>
                         </div>
                       </div>
                       <div className="col-lg-6 col-12 order-1 order-lg-2">
@@ -159,28 +169,49 @@ class ServiceDetails extends Component {
                         <AnimationSlider></AnimationSlider>
                       </div>
                       <div className="col-lg-6 col-12">
-                        <div className="details mt_md--30 mt_sm--30">
+                        <div className="details mt_md--30 mt_sm--30 mt-5">
+                          <h3 className="title">
+                            Servicio de Community Manager
+                          </h3>
                           <p>
-                            En un medio tan competitivo se tiene 3 segundos para
-                            impresionar al visitante, y esto lo sabemos.
+                            <ul>
+                              <li>
+                                Nuestro servicio de community manager se ocupará
+                                de estas tareas complementarias.
+                              </li>
+                              <li>
+                                Realizamos un Branding de la Marca antes de
+                                iniciar cualquier trabajo.
+                              </li>
+                              <li>
+                                Contamos con diseñadores para personalizar las
+                                cuentas y las publicaciones.
+                              </li>
+                              <li>
+                                Creamos y distribuimos contenido importante de
+                                su empresa en cualquier medio digital.
+                              </li>
+                              <li>
+                                Creamos experiencia de marca. Hacemos que su
+                                target obtenga información sobre su marca, sobre
+                                los valores que la identifican y de esta manera,
+                                generar sentimientos positivos por la marca.
+                              </li>
+                              <li>
+                                Realizamos recorridos por los establecimientos
+                                en la ciudad de Panamá para la selección de la
+                                mercancía y la toma de fotos.
+                              </li>
+                              <li>
+                                Tenemos cámaras, equipo, luces, caja de luz,
+                                fondos y personal capacitado para tomar fotos y
+                                vídeos de sus productos, en tu local o evento, a
+                                cualquiera hora, o día del año y lo podrás
+                                utilizar en tus redes sociales o cualquier otro
+                                medio.
+                              </li>
+                            </ul>
                           </p>
-                          <p>
-                            Nuestros diseños web están pensados en siempre
-                            ayudar a nuestros clientes a vender su producto o
-                            servicio, ofreciendo una imagen profesional de su
-                            negocio con un sitio web de alto impacto.
-                          </p>
-                          <h3 className="title">Tipo de Diseño web:</h3>
-                          <ul className="liststyle">
-                            <li>Sitios Web Auto-Administrables.</li>
-                            <li>Páginas web optimizadas para Buscadores.</li>
-                            <li>Cotizadores en línea.</li>
-                            <li>Sitios Web con Woocommerce.</li>
-                            <li>
-                              Páginas Web Rápidas, con código limpio y con mucha
-                              documentación.
-                            </li>
-                          </ul>
                         </div>
                       </div>
                     </div>
@@ -189,12 +220,13 @@ class ServiceDetails extends Component {
                     <div className="row sercice-details-content pb--80 align-items-center">
                       <div className="col-lg-12 col-12">
                         <h2>Trabajos</h2>
-                        <Portafolio />
+                        Algunas de las cuentas bajo nuestra responsabilidad
+                        <Instagram />
                       </div>
                     </div>
                     <div className="row sercice-details-content pb--80 align-items-center">
                       <div className="col-lg-12 col-12">
-                        {/* <ModalContact /> */}
+                        {/* <ModalContact />  */}
                       </div>
                     </div>
                     {/* End Single Area */}
@@ -210,4 +242,4 @@ class ServiceDetails extends Component {
     );
   }
 }
-export default ServiceDetails;
+export default ServiceDetailsSM;

@@ -6,12 +6,16 @@
  *
  * Copyright (c) 2016 Daniel Eden
  */
+.ReactModalPortal {
+  z-index: 999;
+  position: absolute;
+}
 .ReactModal__Content {
   z-index: 999;
 }
 .ReactModal__Overlay {
   opacity: 0;
-  transition: opacity 2000ms ease-in-out;
+  transition: opacity 1000ms ease-in-out;
 }
 
 .ReactModal__Overlay--after-open {

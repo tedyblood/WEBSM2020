@@ -6,6 +6,7 @@ import BrandTwo from "../elements/BrandTwo";
 import ServiceList from "../elements/service/ServiceList";
 import ParrafoList from "../elements/Parrafos/ParrafoOne";
 import Post from "../elements/post";
+import ModalContact from "../component/common/ModalContact";
 
 import Moment from "react-moment";
 import "moment/locale/es";
@@ -145,7 +146,7 @@ class Paralax extends Component {
                     <p className="text-center">
                       Hace: &nbsp;
                       <b>
-                        <Moment fromNow dd ago>
+                        <Moment fromNow ago>
                           2010-05-01T12:59-0500
                         </Moment>
                       </b>
@@ -189,6 +190,7 @@ class Paralax extends Component {
                 </div>
               </div>
               <CounterOne />
+              <ModalContact />
             </div>
           </div>
         </Parallax>

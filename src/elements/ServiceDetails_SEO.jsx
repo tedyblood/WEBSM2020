@@ -5,9 +5,9 @@ import GirAnimada from "../component/animation/AnimationG";
 import { AnimationSlider } from "../component/animation/AnimationSlider";
 import { Portafolio } from "../component/animation/PortafolioPag";
 
-// imp  ort ModalContact from "../component/common/ModalContact";
+import ModalContact from "../component/common/ModalContact";
 
-class ServiceDetails extends Component {
+class ServiceDetailsSM extends Component {
   componentDidMount() {
     window.scrollTo(0, 0);
   }
@@ -37,11 +37,12 @@ class ServiceDetails extends Component {
             <div className="row">
               <div className="col-lg-12">
                 <div className="rn-page-title text-center pt--100">
-                  <h1 className="title theme-gradient">DISEÑO DE SITIO WEB</h1>
+                  <h1 className="title theme-gradient">
+                    Posicionamiento en Google (SEO) desde Panamá
+                  </h1>
                   <p>
-                    Tenemos de todos los sabores: <br></br>A medida, Con
-                    Plantilla, con React, Angular, Wordpress, HTML Básico,{" "}
-                    <br></br>Lo que necesites.
+                    Un buen posicionamiento en Google es la cuna donde <br />
+                    convergen una estrategia de Marketing Digital fuerte.
                   </p>
                 </div>
               </div>
@@ -74,27 +75,26 @@ class ServiceDetails extends Component {
                       </div>
                       <div className="col-lg-6 col-12">
                         <div className="details mt_md--30 mt_sm--30">
+                          <h2 className="title mt-5">
+                            Posicionar tu web en el 2020
+                          </h2>
                           <p>
-                            En un medio tan competitivo se tiene 3 segundos para
-                            impresionar al visitante, y esto lo sabemos.
+                            Encontrar las palabras claves o los términos de
+                            búsqueda mas utilizadas para luego insertarlos en el
+                            sitio es una de las muchas técnicas que se utilizan
+                            en el desarrollo de las actividades de
+                            posicionamiento en bsucadores.
                           </p>
+                          <h2 className="title mt-5">
+                            La búsqueda por voz es el futuro.
+                          </h2>
                           <p>
-                            Nuestros diseños web están pensados en siempre
-                            ayudar a nuestros clientes a vender su producto o
-                            servicio, ofreciendo una imagen profesional de su
-                            negocio con un sitio web de alto impacto.
+                            El crecimiento de las búsquedas por voz en los
+                            últimos meses ha experimentado un crecimiento
+                            exponencial. En Social Media Panamá optimizados tu
+                            sitio para un efectivo posicionamient para búsquedas
+                            por voz.
                           </p>
-                          <h3 className="title">Tipo de Diseño web:</h3>
-                          <ul className="liststyle">
-                            <li>Sitios Web Auto-Administrables.</li>
-                            <li>Páginas web optimizadas para Buscadores.</li>
-                            <li>Cotizadores en línea.</li>
-                            <li>Sitios Web con Woocommerce.</li>
-                            <li>
-                              Páginas Web Rápidas, con código limpio y con mucha
-                              documentación.
-                            </li>
-                          </ul>
                         </div>
                       </div>
                     </div>
@@ -104,30 +104,28 @@ class ServiceDetails extends Component {
                     <div className="row sercice-details-content align-items-center">
                       <div className="col-lg-6 col-12 order-2 order-lg-1">
                         <div className="details mt_md--30 mt_sm--30">
+                          <h3 className="title">Definimos Palabras Claves</h3>
                           <p>
-                            Podemos ofrecere una solución completa en el aspecto
-                            tecnico creativo de tu requerimiento web.
+                            Desarrollo de contenido para satisfacer las
+                            necesidades de búsqueda con el fin de presentar su
+                            sitio web a las personas que{" "}
+                            <b>
+                              {" "}
+                              buscan los servicios o productos que usted brinda
+                            </b>
+                            .
                           </p>
-                          <p>
-                            Personalizamos framework maduros como Wordpress y
-                            también trabajamos con Frameworks Basados en
-                            JavaScript.
-                          </p>
+                        </div>
+                        <div className="details mt_md--30 mt_sm--30 mt-5">
                           <h3 className="title">
-                            Servicios de desarrollo de progressive web apps
+                            Contruimos un sólido SEO Local
                           </h3>
-                          <ul className="liststyle">
-                            <li>
-                              Sitios Web hecho en React. Esta página esta
-                              construida en React.
-                            </li>
-                            <li>
-                              Hibridos entre React y Wordpress. Como este sitio.
-                            </li>
-
-                            <li>Sitios Web Hechos en Gatsby</li>
-                            <li>Sitios Web Hechos con Angular </li>
-                          </ul>
+                          <p>
+                            En Social Media Panamá nos centramos en construir un
+                            posicionamiento en buscadores de calidad mediante
+                            estrategias de Marketing de contenidos y estrategias
+                            de Redes Sociales.
+                          </p>
                         </div>
                       </div>
                       <div className="col-lg-6 col-12 order-1 order-lg-2">
@@ -159,26 +157,32 @@ class ServiceDetails extends Component {
                         <AnimationSlider></AnimationSlider>
                       </div>
                       <div className="col-lg-6 col-12">
-                        <div className="details mt_md--30 mt_sm--30">
-                          <p>
-                            En un medio tan competitivo se tiene 3 segundos para
-                            impresionar al visitante, y esto lo sabemos.
-                          </p>
-                          <p>
-                            Nuestros diseños web están pensados en siempre
-                            ayudar a nuestros clientes a vender su producto o
-                            servicio, ofreciendo una imagen profesional de su
-                            negocio con un sitio web de alto impacto.
-                          </p>
-                          <h3 className="title">Tipo de Diseño web:</h3>
+                        <div className="details mt_md--30 mt_sm--30 mt-5">
+                          <h3 className="title mt-5">
+                            ¿Qué factores le gusta a los buscadores en un sitio
+                            web?
+                          </h3>
                           <ul className="liststyle">
-                            <li>Sitios Web Auto-Administrables.</li>
-                            <li>Páginas web optimizadas para Buscadores.</li>
-                            <li>Cotizadores en línea.</li>
-                            <li>Sitios Web con Woocommerce.</li>
                             <li>
-                              Páginas Web Rápidas, con código limpio y con mucha
-                              documentación.
+                              El contenido debe satisfacer rápidamente la
+                              información que el usuario necesita saber.
+                            </li>
+                            <li>
+                              Identificamos por tu las ubicaciones en donde debe
+                              aparecer los términos de búsqueda.{" "}
+                            </li>
+                            <li>
+                              Creamos los vinculos necesarios para enlazarlo en
+                              las redes sociales.
+                            </li>
+                            <li>
+                              Encontrarse con posibles palabras clave o términos
+                              de busqueda desde un punto de vista
+                              conversacional.
+                            </li>
+                            <li>
+                              Los términos "long tail" en diferentes partes del
+                              sitio web.
                             </li>
                           </ul>
                         </div>
@@ -189,12 +193,14 @@ class ServiceDetails extends Component {
                     <div className="row sercice-details-content pb--80 align-items-center">
                       <div className="col-lg-12 col-12">
                         <h2>Trabajos</h2>
-                        <Portafolio />
+                        <p>
+                          Algunas de las cuentas bajo nuestra responsabilidad
+                        </p>
                       </div>
                     </div>
                     <div className="row sercice-details-content pb--80 align-items-center">
                       <div className="col-lg-12 col-12">
-                        {/* <ModalContact /> */}
+                        {/* <ModalContact />  */}
                       </div>
                     </div>
                     {/* End Single Area */}
@@ -210,4 +216,4 @@ class ServiceDetails extends Component {
     );
   }
 }
-export default ServiceDetails;
+export default ServiceDetailsSM;
