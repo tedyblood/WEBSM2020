@@ -38,28 +38,31 @@ class Header extends Component {
     let logoUrl;
     if (logo === "light") {
       logoUrl = (
-        <img srcSet="/assets/images/logo/logo-light.png" alt="Digital Agency" />
+        <img src="/assets/images/logo/logo-light.png" alt="Digital Agency" />
       );
     } else if (logo === "dark") {
       logoUrl = (
-        <img srcSet="/assets/images/logo/logo-dark.png" alt="Digital Agency" />
+        <img src="/assets/images/logo/logo-dark.png" alt="Digital Agency" />
       );
     } else if (logo === "symbol-dark") {
       logoUrl = (
         <img
-          srcSet="/assets/images/logo/logo-symbol-dark.png"
+          src="/assets/images/logo/logo-symbol-dark.png"
           alt="Digital Agency"
         />
       );
     } else if (logo === "symbol-light") {
       logoUrl = (
         <img
-          srcSet="/assets/images/logo/logo-symbol-light.png"
+          src="/assets/images/logo/logo-symbol-light.png"
           alt="Digital Agency"
         />
       );
     } else {
-      logoUrl = <Logo />;
+      logoUrl = (
+        //   <img src="/assets/images/logo/logo.png" alt="Digital Agency" />
+        <Logo />
+      );
     }
 
     return (

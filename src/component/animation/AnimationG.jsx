@@ -122,19 +122,19 @@ class AnimationG extends Component {
   render() {
     return (
       <React.Fragment>
-        <div className="containerAnime">
-          <div className="me">
-            <div className="hair"></div>
-            <div className="clothes">
-              <div className="jumper"></div>
+        <div class="containerAnime">
+          <div class="me">
+            <div class="hair"></div>
+            <div class="clothes">
+              <div class="jumper"></div>
             </div>
-            <div className="neck"></div>
-            <div className="head">
-              <div className="bangs"></div>
+            <div class="neck"></div>
+            <div class="head">
+              <div class="bangs"></div>
             </div>
           </div>
-          <div className="mouse">
-            <i className="fa fa-mouse-pointer" aria-hidden="true"></i>
+          <div class="mouse">
+            <i class="fa fa-mouse-pointer" aria-hidden="true"></i>
           </div>
         </div>
       </React.Fragment>
