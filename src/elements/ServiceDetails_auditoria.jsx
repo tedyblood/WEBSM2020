@@ -42,9 +42,8 @@ class ServiceDetails_auditoria extends Component {
                     Consultor de Marketing Digital
                   </h1>
                   <p>
-                    Tenemos de todos los sabores: <br></br>A medida, Con
-                    Plantilla, con React, Angular, Wordpress, HTML Básico,{" "}
-                    <br></br>Lo que necesites.
+                    Somos los profesionales que podemos ayudarte a salir del
+                    caos.
                   </p>
                 </div>
               </div>
@@ -63,7 +62,11 @@ class ServiceDetails_auditoria extends Component {
                     <h2 className="title">
                       Servicio de consultoría de marketing digital.
                     </h2>
-                    <p>Lorem ipsum dolor sit amet, is. Digital Brands. </p>
+                    <p>
+                      Soluciones practicas
+                      <br /> con las elegir las herramientas adecuadas
+                      <br /> para cada parte de la estrategia.
+                    </p>
                   </div>
                   <div className="inner">
                     {/* Start Single Area */}
@@ -79,27 +82,22 @@ class ServiceDetails_auditoria extends Component {
                       </div>
                       <div className="col-lg-6 col-12">
                         <div className="details mt_md--30 mt_sm--30">
+                          <h3 className="title">
+                            Atraer clientes potenciales.
+                          </h3>
                           <p>
-                            En un medio tan competitivo se tiene 3 segundos para
-                            impresionar al visitante, y esto lo sabemos.
+                            Planificacamos y apoyamos la generación de contenido
+                            acorde a los objetivos de marketing.
                           </p>
+                        </div>
+                        <div className="details mt_md--30 mt_sm--30 mt-3">
+                          <h3 className="title">
+                            Automatización de procesos internos
+                          </h3>
                           <p>
-                            Nuestros diseños web están pensados en siempre
-                            ayudar a nuestros clientes a vender su producto o
-                            servicio, ofreciendo una imagen profesional de su
-                            negocio con un sitio web de alto impacto.
+                            Optimizamos el tiempo de tu equipo de trabajo con un
+                            correcto flujo de trabajo y comunicación.
                           </p>
-                          <h3 className="title">Tipo de Diseño web:</h3>
-                          <ul className="liststyle">
-                            <li>Sitios Web Auto-Administrables.</li>
-                            <li>Páginas web optimizadas para Buscadores.</li>
-                            <li>Cotizadores en línea.</li>
-                            <li>Sitios Web con Woocommerce.</li>
-                            <li>
-                              Páginas Web Rápidas, con código limpio y con mucha
-                              documentación.
-                            </li>
-                          </ul>
                         </div>
                       </div>
                     </div>
@@ -109,30 +107,26 @@ class ServiceDetails_auditoria extends Component {
                     <div className="row sercice-details-content align-items-center">
                       <div className="col-lg-6 col-12 order-2 order-lg-1">
                         <div className="details mt_md--30 mt_sm--30">
+                          <h3 className="title">Propuestas de marketing</h3>
                           <p>
-                            Podemos ofrecere una solución completa en el aspecto
-                            tecnico creativo de tu requerimiento web.
+                            Te ayudamos generando para tus prospectos propuestas
+                            basadas en la problemática de estos y como
+                            solucionarlos con un enfoque digital.
                           </p>
-                          <p>
-                            Personalizamos framework maduros como Wordpress y
-                            también trabajamos con Frameworks Basados en
-                            JavaScript.
-                          </p>
+                        </div>
+                        <div className="details mt_md--30 mt_sm--30 mt-3">
                           <h3 className="title">
-                            Servicios de desarrollo de progressive web apps
+                            Supervisión de implementación en clientes
                           </h3>
-                          <ul className="liststyle">
-                            <li>
-                              Sitios Web hecho en React. Esta página esta
-                              construida en React.
-                            </li>
-                            <li>
-                              Hibridos entre React y Wordpress. Como este sitio.
-                            </li>
-
-                            <li>Sitios Web Hechos en Gatsby</li>
-                            <li>Sitios Web Hechos con Angular </li>
-                          </ul>
+                          <p>
+                            Una vez que tenemos las estrategias integradas en un
+                            plan de acción con todos los recursos necesarios es
+                            importante realizar una correcta implementación y
+                            supervisión de la misma. En esta última fase se
+                            pueden detectar nuevos problemas que solventar e
+                            incorporar en una mejora de nuestros planes
+                            estratégicos.
+                          </p>
                         </div>
                       </div>
                       <div className="col-lg-6 col-12 order-1 order-lg-2">
@@ -155,51 +149,6 @@ class ServiceDetails_auditoria extends Component {
                             <span className="play-icon"></span>
                           </button>
                         </div>
-                      </div>
-                    </div>
-                    {/* End Single Area */}
-                    {/* Start Single Area */}
-                    <div className="row sercice-details-content pb--80 align-items-center">
-                      <div className="col-lg-6 col-12">
-                        <AnimationSlider></AnimationSlider>
-                      </div>
-                      <div className="col-lg-6 col-12">
-                        <div className="details mt_md--30 mt_sm--30">
-                          <p>
-                            En un medio tan competitivo se tiene 3 segundos para
-                            impresionar al visitante, y esto lo sabemos.
-                          </p>
-                          <p>
-                            Nuestros diseños web están pensados en siempre
-                            ayudar a nuestros clientes a vender su producto o
-                            servicio, ofreciendo una imagen profesional de su
-                            negocio con un sitio web de alto impacto.
-                          </p>
-                          <h3 className="title">Tipo de Diseño web:</h3>
-                          <ul className="liststyle">
-                            <li>Sitios Web Auto-Administrables.</li>
-                            <li>Páginas web optimizadas para Buscadores.</li>
-                            <li>Cotizadores en línea.</li>
-                            <li>Sitios Web con Woocommerce.</li>
-                            <li>
-                              Páginas Web Rápidas, con código limpio y con mucha
-                              documentación.
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    {/* End Single Area */}
-                    {/* Start Single Area */}
-                    <div className="row sercice-details-content pb--80 align-items-center">
-                      <div className="col-lg-12 col-12">
-                        <h2>Trabajos</h2>
-                        <Portafolio />
-                      </div>
-                    </div>
-                    <div className="row sercice-details-content pb--80 align-items-center">
-                      <div className="col-lg-12 col-12">
-                        {/* <ModalContact /> */}
                       </div>
                     </div>
                     {/* End Single Area */}
