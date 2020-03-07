@@ -29,6 +29,7 @@ import ServiceDetails_SEO from "./elements/ServiceDetails_SEO";
 import ServiceDetails_Mant from "./elements/ServiceDetails_Mant";
 import ServiceDetails_ppc from "./elements/ServiceDetails_ppc";
 import ServiceDetails_auditoria from "./elements/ServiceDetails_auditoria";
+import ServiceDetails_Tour360 from "./elements/ServiceDetails_Tour360";
 import Counters from "./elements/Counters";
 
 import { BrowserRouter, Switch, Route } from "react-router-dom";
@@ -77,13 +78,18 @@ class Root extends Component {
             />
             <Route
               exact
-              path={`${process.env.PUBLIC_URL}/consultoria-speaker-de-marketing-digital`}
+              path={`${process.env.PUBLIC_URL}/consultor-speaker-de-marketing-digital`}
               component={ServiceDetails_auditoria}
             />
             <Route
               exact
               path={`${process.env.PUBLIC_URL}/Servicio-WebMaster-Panama`}
               component={ServiceDetails_Mant}
+            />
+            <Route
+              exact
+              path={`${process.env.PUBLIC_URL}/tour-virtual-360-google`}
+              component={ServiceDetails_Tour360}
             />
             <Route
               exact

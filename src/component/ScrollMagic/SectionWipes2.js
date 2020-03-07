@@ -82,6 +82,7 @@ class SectionWipes2 extends Component {
   constructor(props) {
     super(props);
   }
+
   createMarkup(html) {
     return { __html: html };
   }

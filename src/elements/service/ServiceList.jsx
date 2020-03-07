@@ -44,14 +44,14 @@ const ServiceList = [
     title: "Consultorías y auditorías de marcas.",
     description:
       "Analizamos mes a mes los resultados para poder mejorar, plantear nuevas ideas.",
-    link: "/consultoria-speaker-de-marketing-digital"
+    link: "/consultor-speaker-de-marketing-digital"
   },
   {
     icon: <FiMonitor />,
     title: "Recorridos Virtuales 360",
     description:
       "Muestra de forma efectiva tus instalaciones y productos con un nuevo impacto visual.",
-    link: "/web-design-panama"
+    link: "/tour-virtual-360-google"
   },
   {
     icon: <FiMonitor />,
