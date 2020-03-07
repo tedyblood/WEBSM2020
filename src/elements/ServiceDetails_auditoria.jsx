@@ -7,13 +7,14 @@ import { Portafolio } from "../component/animation/PortafolioPag";
 
 // imp  ort ModalContact from "../component/common/ModalContact";
 
-class ServiceDetails extends Component {
+class ServiceDetails_auditoria extends Component {
   componentDidMount() {
     window.scrollTo(0, 0);
   }
+
   componentDidUpdate() {}
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       isOpen: false
     };
@@ -37,7 +38,9 @@ class ServiceDetails extends Component {
             <div className="row">
               <div className="col-lg-12">
                 <div className="rn-page-title text-center pt--100">
-                  <h1 className="title theme-gradient">DISEÑO DE SITIO WEB</h1>
+                  <h1 className="title theme-gradient">
+                    Consultor de Marketing Digital
+                  </h1>
                   <p>
                     Tenemos de todos los sabores: <br></br>A medida, Con
                     Plantilla, con React, Angular, Wordpress, HTML Básico,{" "}
@@ -51,15 +54,17 @@ class ServiceDetails extends Component {
         {/* End Breadcrump Area */}
         {/* Start Page Wrapper */}
         <div className="rn-service-details ptb--120 bg_color--1">
-          <GirAnimada bottom="23" />
+          <GirAnimada bottom="23"></GirAnimada>
           <div className="container">
             <div className="row">
               <div className="col-lg-12">
                 <div className="service-details-inner">
-                  {/* <div className="page-title mb--50">
-                                        <h2 className="title">Digital Brands.</h2>
-                                        <p>Lorem ipsum dolor sit amet, is. Digital Brands. </p>
-                                    </div> */}
+                  <div className="page-title mb--50">
+                    <h2 className="title">
+                      Servicio de consultoría de marketing digital.
+                    </h2>
+                    <p>Lorem ipsum dolor sit amet, is. Digital Brands. </p>
+                  </div>
                   <div className="inner">
                     {/* Start Single Area */}
                     <div className="row sercice-details-content pb--80 align-items-center">
@@ -210,4 +215,4 @@ class ServiceDetails extends Component {
     );
   }
 }
-export default ServiceDetails;
+export default ServiceDetails_auditoria;

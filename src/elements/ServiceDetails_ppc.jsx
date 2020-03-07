@@ -13,7 +13,6 @@ import {
 } from "react-simple-card";
 import ModalContact from "../component/common/ModalContact";
 import { FaCommentsDollar } from "react-icons/fa";
-import { Sticky } from "../component/ScrollMagicExamples/Sticky";
 
 class ServiceDetailsSM extends Component {
   componentDidMount() {
@@ -62,7 +61,7 @@ class ServiceDetailsSM extends Component {
 
         {/* Start Page Wrapper */}
         <div className="rn-service-details ptb--120 bg_color--1">
-          <GirAnimada></GirAnimada>
+          <GirAnimada bottom="23" />
           <div className="container">
             <div className="row">
               <div className="col-lg-12">
@@ -81,13 +80,7 @@ class ServiceDetailsSM extends Component {
                     {/* Start Single Area */}
                     <div className="row sercice-details-content pb--80 align-items-center">
                       <div className="col-lg-6 col-12">
-                        <div className="thumb">
-                          <Sticky
-                            imgOne="./assets/images/service/facebook2.gif"
-                            imgTwo="./assets/images/service/facebook2.gif"
-                            imgThree="./assets/images/service/extraLarge.png"
-                          ></Sticky>
-                        </div>
+                        <div className="thumb"></div>
                       </div>
                       <div className="col-lg-6 col-12">
                         <div className="details mt_md--30 mt_sm--30">

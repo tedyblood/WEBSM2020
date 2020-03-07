@@ -37,14 +37,14 @@ const ServiceList = [
     title: "Publicidad pagada en Google y Facebook.",
     description:
       "Servicio de Compra de Medios en Buscadores; Adwords, Bing, Yahoo JP y Yandex. ",
-    link: "/web-design-panama"
+    link: "/comprar-anuncios-instagram-facebook-youtube-google"
   },
   {
     icon: <FiMonitor />,
     title: "Consultorías y auditorías de marcas.",
     description:
       "Analizamos mes a mes los resultados para poder mejorar, plantear nuevas ideas.",
-    link: "/web-design-panama"
+    link: "/consultoria-speaker-de-marketing-digital"
   },
   {
     icon: <FiMonitor />,

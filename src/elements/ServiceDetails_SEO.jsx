@@ -52,7 +52,7 @@ class ServiceDetailsSM extends Component {
         {/* End Breadcrump Area */}
         {/* Start Page Wrapper */}
         <div className="rn-service-details ptb--120 bg_color--1">
-          <GirAnimada></GirAnimada>
+          <GirAnimada bottom="23" />
           <div className="container">
             <div className="row">
               <div className="col-lg-12">
