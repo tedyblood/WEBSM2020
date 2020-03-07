@@ -6,6 +6,18 @@
  *
  * Copyright (c) 2016 Daniel Eden
  */
+
+p.card-text.lista ul {
+  list-style: none;
+  text-align: left;
+}
+p.card-text.lista ul li {
+  font-size: initial;
+  font-weight: 100;
+}
+p.card-text.lista ul li strong {
+  text-align: lef;
+}
 .ReactModalPortal {
   z-index: 999;
   position: absolute;

@@ -26,6 +26,7 @@ import BlogDetails from "./elements/BlogDetails";
 import ServiceDetails_WD from "./elements/ServiceDetails_WD";
 import ServiceDetails_SM from "./elements/ServiceDetails_SM";
 import ServiceDetails_SEO from "./elements/ServiceDetails_SEO";
+import ServiceDetails_Mant from "./elements/ServiceDetails_Mant";
 import Counters from "./elements/Counters";
 
 import { BrowserRouter, Switch, Route } from "react-router-dom";
@@ -66,6 +67,11 @@ class Root extends Component {
               exact
               path={`${process.env.PUBLIC_URL}/Posicionamiento_en_Google_SEO_Panama`}
               component={ServiceDetails_SEO}
+            />
+            <Route
+              exact
+              path={`${process.env.PUBLIC_URL}/Servicio-WebMaster-Panama`}
+              component={ServiceDetails_Mant}
             />
             <Route
               exact

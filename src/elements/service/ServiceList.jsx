@@ -30,7 +30,7 @@ const ServiceList = [
     title: "Mantenimiento de Sitios Wordpress",
     description:
       "Toda instalación de WordPress necesita mantenimiento, y no de cualquier manera.",
-    link: "/web-design-panama"
+    link: "/Servicio-WebMaster-Panama"
   },
   {
     icon: <FiUsers />,
