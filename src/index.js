@@ -27,6 +27,8 @@ import ServiceDetails_WD from "./elements/ServiceDetails_WD";
 import ServiceDetails_SM from "./elements/ServiceDetails_SM";
 import ServiceDetails_SEO from "./elements/ServiceDetails_SEO";
 import ServiceDetails_Mant from "./elements/ServiceDetails_Mant";
+import ServiceDetails_ppc from "./elements/ServiceDetails_ppc";
+import ServiceDetails_auditoria from "./elements/ServiceDetails_auditoria";
 import Counters from "./elements/Counters";
 
 import { BrowserRouter, Switch, Route } from "react-router-dom";
@@ -67,6 +69,16 @@ class Root extends Component {
               exact
               path={`${process.env.PUBLIC_URL}/Posicionamiento_en_Google_SEO_Panama`}
               component={ServiceDetails_SEO}
+            />
+            <Route
+              exact
+              path={`${process.env.PUBLIC_URL}/comprar-anuncios-instagram-facebook-youtube-google`}
+              component={ServiceDetails_ppc}
+            />
+            <Route
+              exact
+              path={`${process.env.PUBLIC_URL}/consultoria-speaker-de-marketing-digital`}
+              component={ServiceDetails_auditoria}
             />
             <Route
               exact

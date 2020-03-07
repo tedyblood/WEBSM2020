@@ -122,7 +122,10 @@ class AnimationG extends Component {
   render() {
     return (
       <React.Fragment>
-        <div className="containerAnime">
+        <div
+          className="containerAnime"
+          style={{ bottom: this.props.bottom + "px" }}
+        >
           <div className="me">
             <div className="hair"></div>
             <div className="clothes">
