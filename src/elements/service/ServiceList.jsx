@@ -58,14 +58,14 @@ const ServiceList = [
     title: "Servicio OJS",
     description:
       "Instalación y configuración y mantenimiento de Open Journal System.",
-    link: "/web-design-panama"
+    link: "/pagina-web-OJS-Open-Journal-System"
   },
   {
     icon: <FiMonitor />,
     title: "WIFI Social",
     description:
       "Ofrece internet a tu clientes a cambio de una encuesta o una acción social.",
-    link: "/web-design-panama"
+    link: "/social-wifi-fi"
   }
 ];
 

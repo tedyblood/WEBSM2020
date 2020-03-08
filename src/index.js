@@ -30,6 +30,8 @@ import ServiceDetails_Mant from "./elements/ServiceDetails_Mant";
 import ServiceDetails_ppc from "./elements/ServiceDetails_ppc";
 import ServiceDetails_auditoria from "./elements/ServiceDetails_auditoria";
 import ServiceDetails_Tour360 from "./elements/ServiceDetails_Tour360";
+import ServiceDetails_OJS from "./elements/ServiceDetails_OJS";
+import ServiceDetails_sf from "./elements/ServiceDetails_sf";
 import Counters from "./elements/Counters";
 
 import { BrowserRouter, Switch, Route } from "react-router-dom";
@@ -63,6 +65,11 @@ class Root extends Component {
             />
             <Route
               exact
+              path={`${process.env.PUBLIC_URL}/social-wifi-fi`}
+              component={ServiceDetails_sf}
+            />
+            <Route
+              exact
               path={`${process.env.PUBLIC_URL}/manejo_de_redes_sociales`}
               component={ServiceDetails_SM}
             />
@@ -80,6 +87,11 @@ class Root extends Component {
               exact
               path={`${process.env.PUBLIC_URL}/consultor-speaker-de-marketing-digital`}
               component={ServiceDetails_auditoria}
+            />
+            <Route
+              exact
+              path={`${process.env.PUBLIC_URL}/pagina-web-OJS-Open-Journal-System`}
+              component={ServiceDetails_OJS}
             />
             <Route
               exact

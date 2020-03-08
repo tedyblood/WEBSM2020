@@ -31,10 +31,7 @@ class BLogList extends Component {
       <Fragment>
         <div className="row">
           {this.state.posts.map((value, i) => (
-            <div
-              className="col-lg-4 col-md-6 col-sm-6 col-12"
-              key={this.post.id}
-            >
+            <div className="col-lg-4 col-md-6 col-sm-6 col-12" key={value.id}>
               <div className="blog blog-style--1">
                 <div className="thumbnail">
                   <a href="/">

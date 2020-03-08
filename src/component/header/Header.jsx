@@ -82,35 +82,38 @@ class Header extends Component {
                   <Link to="/service">Servicios</Link>
                   <ul className="submenu">
                     <li>
-                      <Link to="/service">Servicios</Link>
+                      <Link to="/manejo_de_redes_sociales">Redes Sociales</Link>{" "}
                     </li>
                     <li>
-                      {" "}
-                      <Link to="/service-details">Redes Sociales</Link>{" "}
+                      <Link to="/comprar-anuncios-instagram-facebook-youtube-google">
+                        Anuncios en Instagram
+                      </Link>{" "}
                     </li>
                     <li>
-                      {" "}
-                      <Link to="/service-details">Diseño Web</Link>{" "}
+                      <Link to="/web-design-panama">Diseño Web</Link>{" "}
                     </li>
                     <li>
-                      {" "}
-                      <Link to="/service-details">Campañas PPC</Link>{" "}
+                      <Link to="/posicionamiento_en_GOOGLE_SEO_Panama">
+                        Posicionamiento en Buscadores
+                      </Link>
                     </li>
                     <li>
-                      {" "}
-                      <Link to="/service-details">Mantenimiento Web</Link>{" "}
+                      <Link to="/Servicio-WebMaster-Panama">
+                        Mantenimiento Web
+                      </Link>
                     </li>
                     <li>
-                      {" "}
-                      <Link to="/service-details">
+                      <Link to="/tour-virtual-360-google">
                         Recorridos y Tours Virtuales 360
-                      </Link>{" "}
+                      </Link>
                     </li>
                     <li>
-                      {" "}
-                      <Link to="/service-details">
+                      <Link to="/pagina-web-OJS-Open-Journal-System">
                         Open Journal System
-                      </Link>{" "}
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/social-wifi-fi">Wifi Social</Link>
                     </li>
                   </ul>
                 </li>

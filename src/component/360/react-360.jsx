@@ -24,6 +24,7 @@ export default class SphereComponent extends Component {
       panorama: this.props.photo,
       anim_speed: "3rpm",
       loading_txt: "Cargando imagen...",
+
       navbar: ["autorotate", "zoom", "fullscreen"]
     });
   }

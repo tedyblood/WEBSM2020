@@ -8,7 +8,8 @@ export default class post extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      posts: []
+      posts: [],
+      imgPosts: []
     };
     this.createMarkup = this.createMarkup.bind();
   }
@@ -34,16 +35,71 @@ export default class post extends Component {
     });
   };
 
-  componentDidMount() {
+  consultaJson(url, tipo_consulta, numItems) {
     this.serverRequest = axios
       .get(
-        `https://socialmedia-panama.com/wp-json/wp/v2/posts?per_page=${this.column.item}`
+        // `https://socialmedia-panama.com/wp-json/wp/v2/posts?per_page=${this.column.item}`
+        `${url}${tipo_consulta}${numItems}`
       )
       .then(posts => {
         this.setState({
           posts: posts.data
         });
+        // console.log(this.state.posts[0]._links["wp:featuredmedia"][0].href);
+      })
+      .catch(function(error) {
+        // handle error
+        console.log(error);
       });
+  }
+  consultaImgJson(id) {
+    console.log(id);
+
+    if (id) {
+      console.log("tenemos id");
+      this.serverRequest = axios
+        .get(id)
+        .then(posts => {
+          this.setState({
+            imgPosts: posts.data
+          });
+          console.log(this.state.imgPosts);
+          axios.CancelToken.source();
+          // const respuesta = posts.data[0].guid.rendered;
+        })
+        .catch(function(error) {
+          // handle error
+          console.log(error);
+        });
+    }
+
+    // if (Object.keys(this.state.imgPosts).length === 0) {
+    //   this.serverRequest = axios
+    //     .get(`${url}${tipo_consulta}${id}`)
+    //     .then(posts => {
+    //       this.setState({
+    //         imgPosts: posts.data
+    //       });
+
+    //       // const respuesta = posts.data[0].guid.rendered;
+    //     })
+    //     .catch(function(error) {
+    //       // handle error
+    //       console.log(error);
+    //     });
+    // }
+    // /*Final de la comparación*/
+    return this.state.imgPosts;
+  }
+
+  componentDidMount() {
+    this.consultaJson(
+      // "https://www.socialmedia-panama.com",
+      // "https://www.trazos-web.com",
+      "https://wpdirecto.com",
+      "/wp-json/wp/v2/posts?per_page=",
+      this.props.item
+    );
   }
   componentWillUnmount() {}
 
@@ -56,23 +112,27 @@ export default class post extends Component {
       <React.Fragment>
         <div className="row">
           {this.state.posts.map((value, i) => (
-            <div className="col-lg-4 col-md-6 col-sm-6 col-12" key={value.id}>
-              <div className="blog blog-style--3 mb--0 mt--40">
+            <div className=" col-12" key={value.id}>
+              <div className="blog blog-style--3 mb--0 mt--20">
                 <div className="thumbnail">
                   <Link
                     to={`/blog-details/${value.slug}/${value.id}`}
                     onClick={this.handleChange(value.id)}
                   >
-                    <img
+                    {/* <img
                       className="w-100"
-                      src={value.jetpack_featured_media_url}
-                      //src={`/assets/images/blog/blog-03.jpg`}
+                      // src={this.state.imgPosts}
+                      src={this.consultaImgJson(
+                        value._links["wp:featuredmedia"][0].href
+                      )}
                       alt="Blog Images"
-                    />
+                    /> */}
                   </Link>
                   <div className="content">
                     <p className="blogtype">{value.category}</p>
-                    <h4 className="title text-white text-justify">
+                    <h4
+                      className={"title text-justify " + this.props.claseTitulo}
+                    >
                       <Link
                         to={`/blog-details/${value.slug}/${value.id}`}
                         onClick={this.handleChange(value.id)}
