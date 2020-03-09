@@ -5,7 +5,7 @@ import ContactTwo from "../../elements/contact/ContactTwo";
 Modal.setAppElement("#root");
 
 function ModalContact(props) {
-  console.log(props);
+  // console.log(props);
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
   return (

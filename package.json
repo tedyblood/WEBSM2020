@@ -2,7 +2,7 @@
   "name": "trydo",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://tedyblood.github.io/WEBSM2020/",
+  "homepage": "https://hopeful-lamarr-7e7cfa.netlify.com/",
   "basename": "/",
   "dependencies": {
     "@babel/core": "7.4.3",
@@ -34,6 +34,7 @@
     "google-map-react": "^1.1.5",
     "gsap": "^3.2.2",
     "html-webpack-plugin": "4.0.0-beta.5",
+    "http-proxy-middleware": "^1.0.1",
     "identity-obj-proxy": "3.0.0",
     "imagesloaded": "^4.1.4",
     "is-wsl": "^1.1.0",

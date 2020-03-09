@@ -16,7 +16,7 @@ export class ShowImgInPost extends Component {
   }
 
   GetData = query => {
-    console.log(this.props.url);
+    // console.log(this.props.url);
     setTimeout(() => {
       axios
         .get(this.props.url)
@@ -25,7 +25,7 @@ export class ShowImgInPost extends Component {
           this.setState({
             PostImg: response.data
           });
-          console.log(response.data);
+          // console.log(response.data);
           this.setState({ imageLoad: true });
         })
         .catch(function(error) {

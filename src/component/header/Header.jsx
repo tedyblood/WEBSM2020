@@ -68,7 +68,7 @@ class Header extends Component {
       >
         <div className="header-wrapper" id="header-wrapper">
           <div className="header-left">
-            <div className="logo">
+            <div className="logo w-100">
               <a href="/">{logoUrl}</a>
             </div>
           </div>
@@ -123,16 +123,16 @@ class Header extends Component {
 
                 <li className="has-droupdown">
                   <Link to="/blog">Blog</Link>
-                  <ul className="submenu">
+                  {/* <ul className="submenu">
                     <li>
                       <Link to="/blog">Blog List</Link>
                     </li>
                     <li>
                       <Link to="/blog-details">Blog Details</Link>
                     </li>
-                  </ul>
+                  </ul> */}
                 </li>
-                <li className="has-droupdown">
+                {/* <li className="has-droupdown">
                   <Link to="#">Portafolio</Link>
                   <ul className="submenu">
                     <li>
@@ -142,7 +142,7 @@ class Header extends Component {
                       <Link to="/portfolio-details">Portfolio Details</Link>
                     </li>
                   </ul>
-                </li>
+                </li> */}
                 {/* <li>
                   <Link to="/contact">Contacto</Link>
                 </li> */}

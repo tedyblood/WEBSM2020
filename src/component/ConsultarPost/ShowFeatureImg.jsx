@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
+import "./style.css";
 
 export class ShowImgInPost extends Component {
   constructor() {
@@ -7,7 +8,7 @@ export class ShowImgInPost extends Component {
     this.state = {
       isOpen: false,
       JsonImagen: [],
-      imageLoad: false
+      imageLoad: "visible"
     };
   }
   componentDidMount() {
@@ -20,19 +21,22 @@ export class ShowImgInPost extends Component {
       // .get("https://wpdirecto.com/wp-json/wp/v2/media/5609")
       .then(response => {
         this.setState({
-          PostImg: response.data
+          PostImg: response.data,
+          imageLoad: "invisible"
         });
-        this.setState({ imageLoad: true });
       })
       .catch(function(error) {
         // handle error
         console.log(error);
       });
   };
+
   render() {
     return (
       <React.Fragment>
         <div className="thumbnail">
+          <div class={"linear-background " + this.state.imageLoad}></div>
+
           <img
             src={this.state.PostImg && this.state.PostImg.guid.rendered}
             alt={this.state.PostImg && this.state.PostImg.slug}

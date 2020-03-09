@@ -41,6 +41,7 @@ export default class post extends Component {
   };
 
   consultaJson(url, tipo_consulta, numItems) {
+    // console.log(url + tipo_consulta + numItems);
     this.serverRequest = axios
       .get(`${url}${tipo_consulta}${numItems}`)
       .then(posts => {
@@ -48,7 +49,7 @@ export default class post extends Component {
           posts: posts.data,
           visible: { visibility: "hidden" }
         });
-        console.log(this.state.posts);
+        // console.log(this.state.posts);
       })
       .catch(function(error) {
         // handle error
@@ -59,7 +60,6 @@ export default class post extends Component {
   componentDidMount() {
     this.consultaJson(
       "https://www.socialmedia-panama.com",
-      // "https://www.trazos-web.com",
       // "https://wpdirecto.com",
       // "http://www.agrfoodmarketing.com/",
       // "http://cnnespanol.cnn.com/",
