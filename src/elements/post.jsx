@@ -3,6 +3,8 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 import ls from "local-storage";
 
+import ShowFeaturedImg from "../component/ConsultarPost/ShowFeatureImg";
+
 export default class post extends Component {
   column = this.props;
   constructor(props) {
@@ -46,50 +48,12 @@ export default class post extends Component {
           posts: posts.data
         });
         // console.log(this.state.posts[0]._links["wp:featuredmedia"][0].href);
+        console.log(this.state.posts);
       })
       .catch(function(error) {
         // handle error
         console.log(error);
       });
-  }
-  consultaImgJson(id) {
-    console.log(id);
-
-    if (id) {
-      console.log("tenemos id");
-      this.serverRequest = axios
-        .get(id)
-        .then(posts => {
-          this.setState({
-            imgPosts: posts.data
-          });
-          console.log(this.state.imgPosts);
-          axios.CancelToken.source();
-          // const respuesta = posts.data[0].guid.rendered;
-        })
-        .catch(function(error) {
-          // handle error
-          console.log(error);
-        });
-    }
-
-    // if (Object.keys(this.state.imgPosts).length === 0) {
-    //   this.serverRequest = axios
-    //     .get(`${url}${tipo_consulta}${id}`)
-    //     .then(posts => {
-    //       this.setState({
-    //         imgPosts: posts.data
-    //       });
-
-    //       // const respuesta = posts.data[0].guid.rendered;
-    //     })
-    //     .catch(function(error) {
-    //       // handle error
-    //       console.log(error);
-    //     });
-    // }
-    // /*Final de la comparación*/
-    return this.state.imgPosts;
   }
 
   componentDidMount() {
@@ -112,27 +76,20 @@ export default class post extends Component {
       <React.Fragment>
         <div className="row">
           {this.state.posts.map((value, i) => (
-            <div className=" col-12" key={value.id}>
+            <div className=" col-4" key={value.id}>
               <div className="blog blog-style--3 mb--0 mt--20">
                 <div className="thumbnail">
                   <Link
                     to={`/blog-details/${value.slug}/${value.id}`}
                     onClick={this.handleChange(value.id)}
                   >
-                    {/* <img
-                      className="w-100"
-                      // src={this.state.imgPosts}
-                      src={this.consultaImgJson(
-                        value._links["wp:featuredmedia"][0].href
-                      )}
-                      alt="Blog Images"
-                    /> */}
+                    <ShowFeaturedImg
+                      url={value._links["wp:featuredmedia"][0].href}
+                    />
                   </Link>
                   <div className="content">
                     <p className="blogtype">{value.category}</p>
-                    <h4
-                      className={"title text-justify " + this.props.claseTitulo}
-                    >
+                    <h4 className={"title" + this.props.claseTitulo}>
                       <Link
                         to={`/blog-details/${value.slug}/${value.id}`}
                         onClick={this.handleChange(value.id)}
@@ -140,6 +97,14 @@ export default class post extends Component {
                         {value.title.rendered}
                       </Link>
                     </h4>
+                    <div>
+                      {}
+                      <p
+                        dangerouslySetInnerHTML={{
+                          __html: value.content.rendered.substr(0, 400)
+                        }}
+                      ></p>
+                    </div>
                   </div>
                 </div>
               </div>

@@ -16,7 +16,7 @@ class Blog extends Component {
         {/* Start Blog Area */}
         <div className="rn-blog-area ptb--120 bg_color--1">
           <div className="container">
-            <BlogList item="10" claseTitulo=" text-black " />
+            <BlogList item="15" claseTitulo=" text-black " />
             <div className="row mt--20">
               <div className="col-lg-12">
                 {/* Start Pagination Area */}

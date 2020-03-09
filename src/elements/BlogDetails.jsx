@@ -7,15 +7,17 @@ import Moment from "react-moment";
 import Paralax from "../home/Paralax";
 import { Redirect, Router } from "react-router";
 
+import { ShowImgInPost } from "../component/ConsultarPost/ShowImgInPost";
+
 class BlogDetails extends Component {
   state = {};
   componentDidMount() {
     window.scrollTo(0, 0);
-
     this.setState({
       id: this.props.match.params,
       idPost: "post-ID-" + this.props.match.params.postId,
-      postLS: this.GetData()
+      postLS: this.GetData(),
+      imageStatus: "loading"
     });
     this.verificaLocalData();
   }
@@ -40,7 +42,13 @@ class BlogDetails extends Component {
       }
     }, 2);
   }
+  handleImageLoaded() {
+    this.setState(this.setState({ imageStatus: "loaded" }));
+  }
 
+  handleImageErrored() {
+    this.setState(this.setState({ imageStatus: "failed to load" }));
+  }
   GetData() {
     return JSON.parse(
       localStorage.getItem("post-ID-" + this.props.match.params.postId)
@@ -101,15 +109,12 @@ class BlogDetails extends Component {
                           this.state.postLS.content.rendered
                       }}
                     ></p>
-                    <div className="thumbnail">
-                      <img
-                        src={
-                          this.state.postLS &&
-                          this.state.postLS.jetpack_featured_media_url
-                        }
-                        alt="Blog Images"
-                      />
-                    </div>
+                    <ShowImgInPost
+                      url={
+                        this.state.postLS &&
+                        this.state.postLS._links["wp:featuredmedia"][0].href
+                      }
+                    />
                   </div>
                 </div>
               </div>
