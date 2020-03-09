@@ -79,10 +79,6 @@ const SectionWipes2Styled = styled.div`
 `;
 
 class SectionWipes2 extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   createMarkup(html) {
     return { __html: html };
   }
@@ -102,7 +98,7 @@ class SectionWipes2 extends Component {
                         <img
                           className="card-img-top"
                           src={this.props.dataHome[0].img}
-                          alt="Card image cap"
+                          alt={this.props.dataHome[0].img}
                         />
                         <h5 class="card-title">
                           {this.props.dataHome[0].titulo}

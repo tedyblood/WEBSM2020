@@ -4,8 +4,6 @@ import ModalVideo from "react-modal-video";
 import { FiClock, FiUser, FiMessageCircle, FiHeart } from "react-icons/fi";
 import { Link } from "react-router-dom";
 import Moment from "react-moment";
-import Paralax from "../home/Paralax";
-import { Redirect, Router } from "react-router";
 
 import { ShowImgInPost } from "../component/ConsultarPost/ShowImgInPost";
 
@@ -129,8 +127,9 @@ class BlogDetails extends Component {
             <div className="row">
               <div className="col-lg-12">
                 <div className="inner">
-                  <h3 className="title mb--40 fontWeight500">Leave a Reply</h3>
-                  <form action="#">
+                  <h3 className="title mb--40 fontWeight500">Comentarios</h3>
+
+                  {/* <form action="#">
                     <div className="row">
                       <div className="col-lg-6 col-md-12 col-12">
                         <div className="rnform-group">
@@ -152,9 +151,9 @@ class BlogDetails extends Component {
                         </div>
                       </div>
                       <div className="col-lg-12">
-                        <div className="blog-btn">
-                          {/* <a className="rn-button-style--2 btn-solid" href="#"></a> */}
-                          <Link
+                        <div className="blog-btn"> */}
+                  {/* <a className="rn-button-style--2 btn-solid" href="#"></a> */}
+                  {/* <Link
                             className="rn-button-style--2 btn-solid"
                             to="/blog-details"
                           >
@@ -163,7 +162,7 @@ class BlogDetails extends Component {
                         </div>
                       </div>
                     </div>
-                  </form>
+                  </form> */}
                 </div>
               </div>
             </div>

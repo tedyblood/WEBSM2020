@@ -13,7 +13,8 @@ export default class post extends Component {
     super(props);
     this.state = {
       posts: [],
-      imgPosts: []
+      imgPosts: [],
+      visible: { visibility: "visible" }
     };
     this.createMarkup = this.createMarkup.bind();
   }
@@ -41,15 +42,12 @@ export default class post extends Component {
 
   consultaJson(url, tipo_consulta, numItems) {
     this.serverRequest = axios
-      .get(
-        // `https://socialmedia-panama.com/wp-json/wp/v2/posts?per_page=${this.column.item}`
-        `${url}${tipo_consulta}${numItems}`
-      )
+      .get(`${url}${tipo_consulta}${numItems}`)
       .then(posts => {
         this.setState({
-          posts: posts.data
+          posts: posts.data,
+          visible: { visibility: "hidden" }
         });
-        // console.log(this.state.posts[0]._links["wp:featuredmedia"][0].href);
         console.log(this.state.posts);
       })
       .catch(function(error) {
@@ -60,9 +58,12 @@ export default class post extends Component {
 
   componentDidMount() {
     this.consultaJson(
-      // "https://www.socialmedia-panama.com",
+      "https://www.socialmedia-panama.com",
       // "https://www.trazos-web.com",
-      "https://wpdirecto.com",
+      // "https://wpdirecto.com",
+      // "http://www.agrfoodmarketing.com/",
+      // "http://cnnespanol.cnn.com/",
+      // "http://www.elplural.com/",
       "/wp-json/wp/v2/posts?per_page=",
       this.props.item
     );
@@ -76,9 +77,18 @@ export default class post extends Component {
   render() {
     return (
       <React.Fragment>
+        <div class="d-flex justify-content-center ">
+          <div
+            class={"spinner-border"}
+            style={this.state.visible}
+            role="status"
+          >
+            <span class="sr-only">Cargando...</span>
+          </div>
+        </div>
         <div className="row">
           {this.state.posts.map((value, i) => (
-            <div className=" col-4 " key={value.id}>
+            <div className="col-xs-12 col-sm-6 col-lg-4" key={value.id}>
               <div className="blog blog-style--3 mb--0 mt--20">
                 <div className="thumbnail">
                   <Link
