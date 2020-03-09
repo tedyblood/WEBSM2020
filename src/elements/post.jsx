@@ -5,6 +5,8 @@ import ls from "local-storage";
 
 import ShowFeaturedImg from "../component/ConsultarPost/ShowFeatureImg";
 
+let sanitizeHtml = require("sanitize-html");
+
 export default class post extends Component {
   column = this.props;
   constructor(props) {
@@ -76,7 +78,7 @@ export default class post extends Component {
       <React.Fragment>
         <div className="row">
           {this.state.posts.map((value, i) => (
-            <div className=" col-4" key={value.id}>
+            <div className=" col-4 " key={value.id}>
               <div className="blog blog-style--3 mb--0 mt--20">
                 <div className="thumbnail">
                   <Link
@@ -91,20 +93,27 @@ export default class post extends Component {
                     <p className="blogtype">{value.category}</p>
                     <h4 className={"title" + this.props.claseTitulo}>
                       <Link
+                        className={"title" + this.props.claseTitulo}
                         to={`/blog-details/${value.slug}/${value.id}`}
                         onClick={this.handleChange(value.id)}
                       >
                         {value.title.rendered}
                       </Link>
                     </h4>
-                    <div>
-                      {}
-                      <p
-                        dangerouslySetInnerHTML={{
-                          __html: value.content.rendered.substr(0, 400)
-                        }}
-                      ></p>
-                    </div>
+                    <div
+                      className={"Exerpt title" + this.props.claseTitulo}
+                      dangerouslySetInnerHTML={{
+                        __html: sanitizeHtml(value.excerpt.rendered)
+                      }}
+                    ></div>
+
+                    <Link
+                      className=" btn btn-danger btn-lg"
+                      to={`/blog-details/${value.slug}/${value.id}`}
+                      onClick={this.handleChange(value.id)}
+                    >
+                      Ver
+                    </Link>
                   </div>
                 </div>
               </div>

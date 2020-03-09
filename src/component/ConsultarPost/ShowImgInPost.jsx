@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 export class ShowImgInPost extends Component {
   constructor() {
@@ -36,6 +37,13 @@ export class ShowImgInPost extends Component {
   render() {
     return (
       <React.Fragment>
+        <a
+          href={this.state.PostImg && this.state.PostImg.link}
+          className="btn btn-success btn-block mb-5"
+          target="_blank"
+        >
+          IR AL ARTÍCULO ORIGINAL
+        </a>
         <div className="thumbnail">
           <img
             src={this.state.PostImg && this.state.PostImg.guid.rendered}
