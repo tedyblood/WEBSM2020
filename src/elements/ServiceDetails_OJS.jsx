@@ -5,6 +5,7 @@ import GirAnimada from "../component/animation/AnimationG";
 import { AnimationSlider } from "../component/animation/AnimationSlider";
 import { Portafolio } from "../component/animation/PortafolioPag";
 import R360 from "../component/360/react-360";
+import ContactTwo from "../elements/contact/ContactTwo";
 import logoTrust from "../../public/assets/images/brand/trusted-ES.png";
 import pano1 from "../../public/assets/images/360/1.jpg";
 import pano2 from "../../public/assets/images/360/2.jpg";
@@ -71,7 +72,11 @@ class ServiceDetails_auditoria extends Component {
                     <div className="row sercice-details-content pb--80 align-items-center">
                       <div className="col-lg-6 col-12">
                         <div className="thumb">
-                          <R360 />
+                          <img
+                            className="w-100"
+                            src="/assets/images/service/dev-ojs-panama.png"
+                            alt="OJS DEV PANAMA"
+                          />
                         </div>
                       </div>
                       <div className="col-lg-6 col-12">
@@ -126,7 +131,11 @@ class ServiceDetails_auditoria extends Component {
                       </div>
                       <div className="col-lg-6 col-12 order-1 order-lg-2">
                         <div className="thumb position-relative">
-                          <R360 />
+                          <img
+                            className="w-100"
+                            src="/assets/images/service/dev-ojs-panama-2.png"
+                            alt="OJS DEV PANAMA"
+                          />
                         </div>
                       </div>
                     </div>
@@ -137,7 +146,11 @@ class ServiceDetails_auditoria extends Component {
             </div>
           </div>
         </div>
-
+        {/* Start Contact Page Area  */}
+        <div className="rn-contact-page ptb--120 bg_color--1">
+          <ContactTwo />
+        </div>
+        {/* End Contact Page Area  */}
         {/* End Page Wrapper */}
       </React.Fragment>
     );

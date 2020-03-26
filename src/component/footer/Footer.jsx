@@ -23,7 +23,10 @@ class Footer extends Component {
                 <div className="footer-left">
                   <div className="inner">
                     <span>Trabajemos en tu</span>
-                    <h2>Marketing Digital</h2>
+                    <h2>
+                      Marketing
+                      <br /> Digital
+                    </h2>
                     <a className="rn-button-style--2" href="/contact">
                       <span>Contacto</span>
                     </a>

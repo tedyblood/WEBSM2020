@@ -6,6 +6,8 @@ import { AnimationSlider } from "../component/animation/AnimationSlider";
 import { Portafolio } from "../component/animation/PortafolioPag";
 import Instagram from "../elements/service/instagramTwo";
 
+import ContactTwo from "../elements/contact/ContactTwo";
+
 import ModalContact from "../component/common/ModalContact";
 
 class ServiceDetailsSM extends Component {
@@ -69,7 +71,7 @@ class ServiceDetailsSM extends Component {
                         <div className="thumb">
                           <img
                             className="w-100"
-                            src="/assets/images/service/service-01.png"
+                            src="/assets/images/service/socialmedia.png"
                             alt="Service Images"
                           />
                         </div>
@@ -144,21 +146,9 @@ class ServiceDetailsSM extends Component {
                         <div className="thumb position-relative">
                           <img
                             className="w-100"
-                            src="/assets/images/service/service-02.png"
+                            src="/assets/images/service/socialmedia-panama.png"
                             alt="Service Images"
                           />
-                          <ModalVideo
-                            channel="youtube"
-                            isOpen={this.state.isOpen}
-                            videoId="ZOoVOfieAF8"
-                            onClose={() => this.setState({ isOpen: false })}
-                          />
-                          <button
-                            className="video-popup"
-                            onClick={this.openModal}
-                          >
-                            <span className="play-icon"></span>
-                          </button>
                         </div>
                       </div>
                     </div>
@@ -224,11 +214,11 @@ class ServiceDetailsSM extends Component {
                         <Instagram />
                       </div>
                     </div>
-                    <div className="row sercice-details-content pb--80 align-items-center">
-                      <div className="col-lg-12 col-12">
-                        {/* <ModalContact />  */}
-                      </div>
+                    {/* Start Contact Page Area  */}
+                    <div className="rn-contact-page ptb--120 bg_color--1">
+                      <ContactTwo />
                     </div>
+                    {/* End Contact Page Area  */}
                     {/* End Single Area */}
                   </div>
                 </div>

@@ -3,7 +3,7 @@ import PageHelmet from "../component/common/Helmet";
 import ModalVideo from "react-modal-video";
 import GirAnimada from "../component/animation/AnimationG";
 import { AnimationSlider } from "../component/animation/AnimationSlider";
-import { Portafolio } from "../component/animation/PortafolioPag";
+import ContactTwo from "../elements/contact/ContactTwo";
 
 // imp  ort ModalContact from "../component/common/ModalContact";
 
@@ -56,10 +56,16 @@ class ServiceDetails extends Component {
             <div className="row">
               <div className="col-lg-12">
                 <div className="service-details-inner">
-                  {/* <div className="page-title mb--50">
-                                        <h2 className="title">Digital Brands.</h2>
-                                        <p>Lorem ipsum dolor sit amet, is. Digital Brands. </p>
-                                    </div> */}
+                  <div className="page-title mb--50">
+                    <h2 className="title">
+                      Cualquiera puede configurar un nuevo sitio web.
+                    </h2>
+                    <p>
+                      Construimos experiencias estratégicas y atractivas que
+                      refuerzan la credibilidad, comunican mensajes clave y
+                      convierten las perspectivas en ganancias.
+                    </p>
+                  </div>
                   <div className="inner">
                     {/* Start Single Area */}
                     <div className="row sercice-details-content pb--80 align-items-center">
@@ -67,7 +73,7 @@ class ServiceDetails extends Component {
                         <div className="thumb">
                           <img
                             className="w-100"
-                            src="/assets/images/service/service-01.png"
+                            src="/assets/images/service/web-design-panama.png"
                             alt="Service Images"
                           />
                         </div>
@@ -134,13 +140,13 @@ class ServiceDetails extends Component {
                         <div className="thumb position-relative">
                           <img
                             className="w-100"
-                            src="/assets/images/service/service-02.png"
+                            src="/assets/images/service/app-angular-react-panama.png"
                             alt="Service Images"
                           />
                           <ModalVideo
                             channel="youtube"
                             isOpen={this.state.isOpen}
-                            videoId="ZOoVOfieAF8"
+                            videoId="FtGQzKmsYI0"
                             onClose={() => this.setState({ isOpen: false })}
                           />
                           <button
@@ -182,21 +188,42 @@ class ServiceDetails extends Component {
                             </li>
                           </ul>
                         </div>
+                        <div className="details mt_md--30 mt_sm--30">
+                          <p>
+                            Conocemos el poder de las ventas y el marketing para
+                            convertir a un usuario en un cliente.
+                          </p>
+                          <p>
+                            Ofrecemos una amplia gama de herramientas fáciles de
+                            usar que crean experiencias de usuario atractivas y
+                            agradables que van más allá de simples páginas web e
+                            infografías interactivas en línea.
+                          </p>
+                          <p>
+                            Nuestro sistema de gestión de contenido permite a
+                            los clientes crear, personalizar y compartir
+                            múltiples formas de vender productos y servicios a
+                            través de activos de contenido en una sola
+                            plataforma. Somos un equipo global de socios que
+                            empujan los límites para crear negocios en línea
+                            rentables y de rápido crecimiento.
+                          </p>
+                          <p>
+                            Conectamos una amplia gama de marcas para respaldar
+                            sus experiencias de usuario específicas. Le ayudamos
+                            a implementar una hermosa interfaz de usuario sin
+                            sacrificar la velocidad o el rendimiento.
+                          </p>
+                        </div>
                       </div>
                     </div>
                     {/* End Single Area */}
                     {/* Start Single Area */}
-                    <div className="row sercice-details-content pb--80 align-items-center">
-                      <div className="col-lg-12 col-12">
-                        <h2>Trabajos</h2>
-                        <Portafolio />
-                      </div>
+                    {/* Start Contact Page Area  */}
+                    <div className="rn-contact-page ptb--120 bg_color--1">
+                      <ContactTwo />
                     </div>
-                    <div className="row sercice-details-content pb--80 align-items-center">
-                      <div className="col-lg-12 col-12">
-                        {/* <ModalContact /> */}
-                      </div>
-                    </div>
+                    {/* End Contact Page Area  */}
                     {/* End Single Area */}
                   </div>
                 </div>

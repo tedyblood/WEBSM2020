@@ -6,22 +6,24 @@ import { AnimationSlider } from "../component/animation/AnimationSlider";
 import { Portafolio } from "../component/animation/PortafolioPag";
 import SectionWipes2 from "../component/ScrollMagic/SectionWipes2";
 import ModalContact from "../component/common/ModalContact";
+import ContactTwo from "../elements/contact/ContactTwo";
 
 const dataHome = [
   {
-    img: "https://via.placeholder.com/498x350",
+    img: "./assets/images/service/web-supp-1.png",
     titulo: `Plan Webmaster Inicio`,
     subtitulo: "$50 Mensuales",
     parrafo:
       "<ul><li ><strong>4 Horas al mes.</strong></li> <li><strong>Añadir / Borrar Texto (No incluye la creación del texto)</strong></li><li><strong>Añadir / Borrar Imagenes maximo 5 al mes (No incluye diseño ni modificaciones)</strong></li><li><strong>Mantenimiento del Sitio Web</strong></li><li><strong>Actualizaciones de scripts, de plataforma si es CMS WordPress.</strong></li><li><strong>BackUP de su Sitio Web (1 vez por mes)<br></strong></li></ul>",
     url: "#",
     url_texto: "Solicita una cotización",
-    offSet: "1"
+    offSet: "1",
+    panelColor: "panel-normal"
   }
 ];
 const data = [
   {
-    img: "https://via.placeholder.com/498x350",
+    img: "./assets/images/service/web-supp-2.png",
     titulo: "Plan Webmaster intermedio",
     subtitulo: "$120 Mensuales",
     parrafo: `<ul >
@@ -35,12 +37,13 @@ const data = [
       </ul>`,
     url: "/contact",
     url_texto: "Solicita una cotización",
-    offSet: "1"
+    offSet: "1",
+    panelColor: "panel-silver"
   },
   {
-    img: "https://via.placeholder.com/498x350",
+    img: "./assets/images/service/web-supp-3.png",
     titulo: "Plan Webmaster Avanzado",
-    subtitulo: "Subtitulo del Home",
+    subtitulo: "$180 Mensual",
     parrafo: `<ul >
       <li ><strong>14 Horas al mes.</li>
       <li ><strong>Añadir / Borrar Texto (No incluye la creación del texto)</li>
@@ -52,7 +55,8 @@ const data = [
       </ul>`,
     url: "/contact",
     url_texto: "Solicita una cotización",
-    offSet: "2"
+    offSet: "2",
+    panelColor: "panel-gold"
   }
 ];
 class ServiceDetailsMant extends Component {
@@ -117,7 +121,7 @@ class ServiceDetailsMant extends Component {
                         <div className="thumb">
                           <img
                             className="w-100"
-                            src="/assets/images/service/service-01.png"
+                            src="/assets/images/service/web-supp.png"
                             alt="Service Images"
                           />
                         </div>
@@ -146,7 +150,10 @@ class ServiceDetailsMant extends Component {
                     {/* End Single Area */}
                     <div className="page-title mb--50">
                       <h2 className="title">Precios</h2>
-                      <p>Lorem ipsum dolor sit amet, is. Digital Brands. </p>
+                      <p>
+                        A continuación la lista de precios que tenemos
+                        disponible para el 2020 - 2021{" "}
+                      </p>
                     </div>
                     {/* Start Single Area */}
                     <div className="container-fluid align-items-center">
@@ -169,7 +176,11 @@ class ServiceDetailsMant extends Component {
             </div>
           </div>
         </div>
-
+        {/* Start Contact Page Area  */}
+        <div className="rn-contact-page ptb--120 bg_color--1">
+          <ContactTwo />
+        </div>
+        {/* End Contact Page Area  */}
         {/* End Page Wrapper */}
       </React.Fragment>
     );

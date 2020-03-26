@@ -4,6 +4,7 @@ import ModalVideo from "react-modal-video";
 import GirAnimada from "../component/animation/AnimationG";
 import { AnimationSlider } from "../component/animation/AnimationSlider";
 import { Portafolio } from "../component/animation/PortafolioPag";
+import ContactTwo from "../elements/contact/ContactTwo";
 
 import ModalContact from "../component/common/ModalContact";
 
@@ -52,7 +53,7 @@ class ServiceDetailsSM extends Component {
         {/* End Breadcrump Area */}
         {/* Start Page Wrapper */}
         <div className="rn-service-details ptb--120 bg_color--1">
-          <GirAnimada bottom="23" />
+          <GirAnimada bottom="-220" />
           <div className="container">
             <div className="row">
               <div className="col-lg-12">
@@ -68,7 +69,7 @@ class ServiceDetailsSM extends Component {
                         <div className="thumb">
                           <img
                             className="w-100"
-                            src="/assets/images/service/service-01.png"
+                            src="/assets/images/service/seo.png"
                             alt="Service Images"
                           />
                         </div>
@@ -132,13 +133,13 @@ class ServiceDetailsSM extends Component {
                         <div className="thumb position-relative">
                           <img
                             className="w-100"
-                            src="/assets/images/service/service-02.png"
+                            src="/assets/images/service/seo-2.png"
                             alt="Service Images"
                           />
                           <ModalVideo
                             channel="youtube"
                             isOpen={this.state.isOpen}
-                            videoId="ZOoVOfieAF8"
+                            videoId="pJAEg5ErSlI"
                             onClose={() => this.setState({ isOpen: false })}
                           />
                           <button
@@ -189,21 +190,11 @@ class ServiceDetailsSM extends Component {
                       </div>
                     </div>
                     {/* End Single Area */}
-                    {/* Start Single Area */}
-                    <div className="row sercice-details-content pb--80 align-items-center">
-                      <div className="col-lg-12 col-12">
-                        <h2>Trabajos</h2>
-                        <p>
-                          Algunas de las cuentas bajo nuestra responsabilidad
-                        </p>
-                      </div>
+                    {/* Start Contact Page Area  */}
+                    <div className="rn-contact-page ptb--120 bg_color--1">
+                      <ContactTwo />
                     </div>
-                    <div className="row sercice-details-content pb--80 align-items-center">
-                      <div className="col-lg-12 col-12">
-                        {/* <ModalContact />  */}
-                      </div>
-                    </div>
-                    {/* End Single Area */}
+                    {/* End Contact Page Area  */}
                   </div>
                 </div>
               </div>

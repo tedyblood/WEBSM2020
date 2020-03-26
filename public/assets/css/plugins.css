@@ -6,7 +6,9 @@
  *
  * Copyright (c) 2016 Daniel Eden
  */
-
+.Estilos_Card_PPC {
+  min-height: 663px;
+}
 p.card-text.lista ul {
   list-style: none;
   text-align: left;

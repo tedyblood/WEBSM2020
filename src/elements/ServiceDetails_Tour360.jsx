@@ -9,6 +9,8 @@ import logoTrust from "../../public/assets/images/brand/trusted-ES.png";
 import pano1 from "../../public/assets/images/360/1.jpg";
 import pano2 from "../../public/assets/images/360/2.jpg";
 
+import ContactTwo from "../elements/contact/ContactTwo";
+
 // imp  ort ModalContact from "../component/common/ModalContact";
 
 class ServiceDetails_auditoria extends Component {
@@ -133,7 +135,11 @@ class ServiceDetails_auditoria extends Component {
             </div>
           </div>
         </div>
-
+        {/* Start Contact Page Area  */}
+        <div className="rn-contact-page ptb--120 bg_color--1">
+          <ContactTwo />
+        </div>
+        {/* End Contact Page Area  */}
         {/* End Page Wrapper */}
       </React.Fragment>
     );

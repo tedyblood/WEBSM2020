@@ -3,7 +3,7 @@ import PageHelmet from "../component/common/Helmet";
 import ModalVideo from "react-modal-video";
 import GirAnimada from "../component/animation/AnimationG";
 import { AnimationSlider } from "../component/animation/AnimationSlider";
-import { Portafolio } from "../component/animation/PortafolioPag";
+import ContactTwo from "../elements/contact/ContactTwo";
 
 // imp  ort ModalContact from "../component/common/ModalContact";
 
@@ -158,7 +158,11 @@ class ServiceDetails_auditoria extends Component {
             </div>
           </div>
         </div>
-
+        {/* Start Contact Page Area  */}
+        <div className="rn-contact-page ptb--120 bg_color--1">
+          <ContactTwo />
+        </div>
+        {/* End Contact Page Area  */}
         {/* End Page Wrapper */}
       </React.Fragment>
     );

@@ -4,6 +4,7 @@ import PageHelmet from "../component/common/Helmet";
 import GirAnimada from "../component/animation/AnimationG";
 import { AnimationSlider } from "../component/animation/AnimationSlider";
 import { PricingTable, PricingSlot, PricingDetail } from "react-pricing-table";
+import ContactTwo from "../elements/contact/ContactTwo";
 import {
   Card,
   CardHeader,
@@ -49,8 +50,8 @@ class ServiceDetailsSM extends Component {
                     La publicidad de Pago Por Clic
                   </h1>
                   <p>
-                    Servicio de mantenimiento técnico para sitios web que
-                    funcionan bajo WordPress.
+                    La compra de medios en Instagram tiene un impacto inmediato
+                    a un precio muy competitivo.
                   </p>
                 </div>
               </div>
@@ -72,6 +73,14 @@ class ServiceDetailsSM extends Component {
                       anunciarse en Instagram?
                     </h2>
                     <p>
+                      La publicidad en instagram como en tantos otros canales
+                      tiene un costo base de 1 dólar diario, sin embargo esto se
+                      puede resumir en un gran, Depende
+                      <br />
+                      <hr /> Dependerá de los recursos disponibles, dependera de
+                      los objetivos, del costo del clic. En cualquier caso
+                      nosotros asesoramos a nuestros clientes en tiempo y forma,
+                      además hacemos una proyección de resultados esperados.
                       Podemos obtener resultados a gran escala o en micro
                       segmentos con el objetivo de alcance
                     </p>
@@ -80,7 +89,14 @@ class ServiceDetailsSM extends Component {
                     {/* Start Single Area */}
                     <div className="row sercice-details-content pb--80 align-items-center">
                       <div className="col-lg-6 col-12">
-                        <div className="thumb"></div>
+                        <div className="thumb">
+                          {" "}
+                          <img
+                            className="w-100"
+                            src="/assets/images/service/ppc.png"
+                            alt="Service Images"
+                          />
+                        </div>
                       </div>
                       <div className="col-lg-6 col-12">
                         <div className="details mt_md--30 mt_sm--30">
@@ -146,8 +162,8 @@ class ServiceDetailsSM extends Component {
                       </div>
                       <div className="col-lg-4 col-12">
                         <div className="details mt_md--30 mt_sm--30">
-                          <Card>
-                            <ImageHeader imageSrc="http://via.placeholder.com/600x250" />
+                          <Card className="Estilos_Card_PPC">
+                            <ImageHeader imageSrc="/assets/images/service/publicos-ppc.png" />
                             <CardHeader>
                               <h3>Públicos personalizados</h3>
                             </CardHeader>
@@ -168,8 +184,8 @@ class ServiceDetailsSM extends Component {
                       </div>
                       <div className="col-lg-4 col-12">
                         <div className="details mt_md--30 mt_sm--30">
-                          <Card>
-                            <ImageHeader imageSrc="http://via.placeholder.com/600x250" />
+                          <Card className="Estilos_Card_PPC">
+                            <ImageHeader imageSrc="/assets/images/service/publicos-ppc2.png" />
                             <CardHeader>
                               <h3>Públicos similares</h3>
                             </CardHeader>
@@ -191,8 +207,8 @@ class ServiceDetailsSM extends Component {
                       </div>
                       <div className="col-lg-4 col-12">
                         <div className="details mt_md--30 mt_sm--30">
-                          <Card>
-                            <ImageHeader imageSrc="http://via.placeholder.com/600x250" />
+                          <Card className="Estilos_Card_PPC">
+                            <ImageHeader imageSrc="/assets/images/service/publicos-ppc3.png" />
                             <CardHeader>
                               <h3>Personas cerca de ti</h3>
                             </CardHeader>
@@ -218,7 +234,11 @@ class ServiceDetailsSM extends Component {
             </div>
           </div>
         </div>
-
+        {/* Start Contact Page Area  */}
+        <div className="rn-contact-page ptb--120 bg_color--1">
+          <ContactTwo />
+        </div>
+        {/* End Contact Page Area  */}
         {/* End Page Wrapper */}
       </React.Fragment>
     );

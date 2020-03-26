@@ -17,10 +17,11 @@ class ContactTwo extends Component {
           <div className="row row--35 align-items-start">
             <div className="col-lg-6 order-2 order-lg-1">
               <div className="section-title text-left mb--50">
-                <h2 className="title">Contact Us.</h2>
+                <h2 className="title">Contacto</h2>
                 <p className="description">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Architecto cupiditate aperiam neque.
+                  Haga un contacto directo con nosotros aquí ↓<br />
+                  Cuéntanos acerca de tu proyecto. Nos reunimos y nosotros
+                  invitamos el Café!
                 </p>
               </div>
               <div className="form-wrapper">
@@ -31,7 +32,7 @@ class ContactTwo extends Component {
                                             type="text"
                                             name="name"
                                             id="item01"
-                                            value={this.state.rnName}
+                                            
                                             onChange={(e)=>{this.setState({rnName: e.target.value});}}
                                             placeholder="Your Name *"
                                         />
@@ -42,7 +43,7 @@ class ContactTwo extends Component {
                                             type="text"
                                             name="email"
                                             id="item02"
-                                            value={this.state.rnEmail}
+                                            
                                             onChange={(e)=>{this.setState({rnEmail: e.target.value});}}
                                             placeholder="Your email *"
                                         />
@@ -53,7 +54,7 @@ class ContactTwo extends Component {
                                             type="text"
                                             name="subject"
                                             id="item03"
-                                            value={this.state.rnSubject}
+                                            
                                             onChange={(e)=>{this.setState({rnSubject: e.target.value});}}
                                             placeholder="Write a Subject"
                                         />
@@ -63,7 +64,7 @@ class ContactTwo extends Component {
                                             type="text"
                                             id="item04"
                                             name="message"
-                                            value={this.state.rnMessage}
+                                            
                                             onChange={(e)=>{this.setState({rnMessage: e.target.value});}}
                                             placeholder="Your Message"
                                         />
@@ -74,7 +75,7 @@ class ContactTwo extends Component {
             </div>
             <div className="col-lg-6 order-1 order-lg-2">
               <div className="thumbnail mb_md--30 mb_sm--30">
-                <img src="/assets/images/about/about-6.jpg" alt="trydo" />
+                <img src="/assets/images/gif/jt.gif" alt="trydo" />
               </div>
             </div>
           </div>

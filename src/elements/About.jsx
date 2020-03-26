@@ -116,7 +116,8 @@ class About extends Component {
                   <h2 className="title">Nuestra Historia</h2>
                   <p>
                     La secuencia de imágenes describe los diferentes momentos en
-                    los que hemos sido invitados como expositores.
+                    los que hemos sido invitados como expositores, partiendo
+                    desde los primeros Panamá Twittea.
                   </p>
                 </div>
               </div>
@@ -184,6 +185,19 @@ class About extends Component {
         {/* Start Brand Area */}
         <div className="rn-brand-area brand-separation bg_color--5 ptb--120">
           <div className="container">
+            <div className="row">
+              <div className="col-lg-12">
+                <div className="section-title service-style--3 text-center mb--25">
+                  <h2 className="title">Para quién he trabajado</h2>
+                  <p>
+                    Algunas de las marcas que ha confiando en nuetra gestión.
+                    Algunas de ellas son clientes originarios. Dicho de otra
+                    forma, son marcas con las que trabajamos desde que iniciamos
+                    como agencia, hace más de 10 años.
+                  </p>
+                </div>
+              </div>
+            </div>
             <div className="row">
               <div className="col-lg-12">
                 <BrandTwo />

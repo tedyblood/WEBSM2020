@@ -4,16 +4,17 @@ import { FiHeadphones, FiMail, FiMapPin } from "react-icons/fi";
 import GoogleMapReact from "google-map-react";
 import ContactTwo from "../elements/contact/ContactTwo";
 import BrandTwo from "../elements/BrandTwo";
+import Mailto from "react-protected-mailto";
 
-const AnyReactComponent = ({ text }) => <div>{text}</div>;
+const AnyReactComponent = ({ text }) => <div className="dot">{text}</div>;
 
 class Contact extends Component {
   static defaultProps = {
     center: {
-      lat: 59.95,
-      lng: 30.33
+      lat: 9.01552,
+      lng: -79.534833
     },
-    zoom: 11
+    zoom: 15
   };
 
   render() {
@@ -23,17 +24,18 @@ class Contact extends Component {
 
         {/* Start Breadcrump Area */}
         <div
-          className="rn-page-title-area pt--120 pb--190 bg_image bg_image--17"
+          className="rn-page-title-area pt--120 pb--190 bg_image bg_image--25"
           data-black-overlay="6"
         >
           <div className="container">
             <div className="row">
               <div className="col-lg-12">
                 <div className="rn-page-title text-center pt--100">
-                  <h2 className="title theme-gradient">Cntact With Us</h2>
+                  <h2 className="title theme-gradient">Contacto</h2>
                   <p>
-                    Contrary to popular belief, Lorem Ipsum is not simply random
-                    text.{" "}
+                    Por la naturaleza de nuestro trabajo, no paramos la gestión
+                    de nuestros clientes, en medio del COVID-19 con la modalidad
+                    de teletrabajo.
                   </p>
                 </div>
               </div>
@@ -53,12 +55,14 @@ class Contact extends Component {
                     <FiHeadphones />
                   </div>
                   <div className="inner">
-                    <h4 className="title">Contact With Phone Number</h4>
+                    <h4 className="title">Teléfono y WhatsApp</h4>
                     <p>
-                      <a href="tel:+057 254 365 456">+057 254 365 456</a>
+                      {/* <a href="tel:+5072059514">205-9514</a> */}
+                      <Mailto tel="+5072059514" />
                     </p>
                     <p>
-                      <a href="tel:+856 325 652 984">+856 325 652 984</a>
+                      <Mailto tel="+50765164741" />
+                      {/* <a href="tel:+50765164741">+507 65164741</a> */}
                     </p>
                   </div>
                 </div>
@@ -72,13 +76,8 @@ class Contact extends Component {
                     <FiMail />
                   </div>
                   <div className="inner">
-                    <h4 className="title">Email Address</h4>
-                    <p>
-                      <a href="mailto:admin@gmail.com">admin@gmail.com</a>
-                    </p>
-                    <p>
-                      <a href="mailto:example@gmail.com">example@gmail.com</a>
-                    </p>
+                    <h4 className="title">Email</h4>
+                    <Mailto email="contacto@socialmedia-panama.com" />
                   </div>
                 </div>
               </div>
@@ -91,10 +90,11 @@ class Contact extends Component {
                     <FiMapPin />
                   </div>
                   <div className="inner">
-                    <h4 className="title">Location</h4>
+                    <h4 className="title">Oficinas</h4>
                     <p>
-                      5678 Bangla Main Road, cities 580 <br /> GBnagla, example
-                      54786
+                      Ciudad de Panamá <br />
+                      Dorado City Center, <br />
+                      Piso 3, Oficina 303
                     </p>
                   </div>
                 </div>
@@ -115,13 +115,16 @@ class Contact extends Component {
         <div className="rn-contact-map-area position-relative">
           <div style={{ height: "650px", width: "100%" }}>
             <GoogleMapReact
+              bootstrapURLKeys={{
+                key: "AIzaSyC9qSUYBCY0HMzs7L8UpHWpEPx8WaBN-dY"
+              }}
               defaultCenter={this.props.center}
               defaultZoom={this.props.zoom}
             >
               <AnyReactComponent
-                lat={59.955413}
-                lng={30.337844}
-                text="My Marker"
+                lat={9.01552}
+                lng={-79.534833}
+                text="Social Media Panamá"
               />
             </GoogleMapReact>
           </div>

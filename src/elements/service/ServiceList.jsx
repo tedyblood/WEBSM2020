@@ -1,10 +1,13 @@
 import React, { Component } from "react";
-import { FiCast, FiLayers, FiUsers, FiMonitor } from "react-icons/fi";
+
 import { Link } from "react-router-dom";
+import randomColor from "randomcolor";
+
+import SVGIcon from "../logoSVG/SvgIcon";
 
 const ServiceList = [
   {
-    icon: <FiCast />,
+    icon: <SVGIcon name="WD" width={54} fill={randomColor()} />,
     title: "Diseño de Sitios Web",
     description:
       "Construimos sitios web optimizados y seguros para que desarrolles e-Commerce.",
@@ -12,56 +15,59 @@ const ServiceList = [
     link: "/web-design-panama"
   },
   {
-    icon: <FiLayers />,
+    icon: <SVGIcon name="RS" width={54} fill={randomColor()} />,
+
     title: "Manejo de Redes Sociales",
     description:
       "Notarás un aumento de actividad orgánica y real en tus canales sociales.",
     link: "/manejo_de_redes_sociales"
   },
   {
-    icon: <FiUsers />,
+    icon: <SVGIcon name="SEO" width={54} fill={randomColor()} />,
     title: "SEO",
     description:
       "Aumenta tu visibilidad y atrae más usuarios con nuestros servicios de posicionamiento SEO.",
     link: "/posicionamiento_en_GOOGLE_SEO_Panama"
   },
   {
-    icon: <FiMonitor />,
+    icon: <SVGIcon name="WP" width={54} fill={randomColor()} />,
     title: "Mantenimiento de Sitios Wordpress",
     description:
       "Toda instalación de WordPress necesita mantenimiento, y no de cualquier manera.",
     link: "/Servicio-WebMaster-Panama"
   },
   {
-    icon: <FiUsers />,
+    icon: <SVGIcon name="ADS" width={54} fill={randomColor()} />,
+
     title: "Publicidad pagada en Google y Facebook.",
     description:
       "Servicio de Compra de Medios en Buscadores; Adwords, Bing, Yahoo JP y Yandex. ",
     link: "/comprar-anuncios-instagram-facebook-youtube-google"
   },
   {
-    icon: <FiMonitor />,
+    icon: <SVGIcon name="CONST" width={54} fill={randomColor()} />,
+
     title: "Consultorías y auditorías de marcas.",
     description:
       "Analizamos mes a mes los resultados para poder mejorar, plantear nuevas ideas.",
     link: "/consultor-speaker-de-marketing-digital"
   },
   {
-    icon: <FiMonitor />,
+    icon: <SVGIcon name="PHOTO" width={54} fill={randomColor()} />,
     title: "Recorridos Virtuales 360",
     description:
       "Muestra de forma efectiva tus instalaciones y productos con un nuevo impacto visual.",
     link: "/tour-virtual-360-google"
   },
   {
-    icon: <FiMonitor />,
+    icon: <SVGIcon name="OJS" width={54} fill={randomColor()} />,
     title: "Servicio OJS",
     description:
       "Instalación y configuración y mantenimiento de Open Journal System.",
     link: "/pagina-web-OJS-Open-Journal-System"
   },
   {
-    icon: <FiMonitor />,
+    icon: <SVGIcon name="WIFI" width={54} fill={randomColor()} />,
     title: "WIFI Social",
     description:
       "Ofrece internet a tu clientes a cambio de una encuesta o una acción social.",

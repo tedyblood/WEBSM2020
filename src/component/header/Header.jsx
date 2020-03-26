@@ -121,7 +121,7 @@ class Header extends Component {
                   <Link to="/about">Nosotros</Link>
                 </li>
 
-                <li className="has-droupdown">
+                <li>
                   <Link to="/blog">Blog</Link>
                   {/* <ul className="submenu">
                     <li>

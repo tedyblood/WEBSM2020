@@ -10,11 +10,16 @@ class Blog extends Component {
       <React.Fragment>
         <PageHelmet pageTitle="Noticias de Redes Sociales y Marketing Digital" />
         {/* Start Breadcrump Area */}
-        <Breadcrumb title={"Lista de Noticias"} />
+        <Breadcrumb
+          title={"Lista de Noticias"}
+          pageDescr={
+            "Experiencias que reflejan el </Yo> de nuestra agencia de Marketing Digital Panama."
+          }
+        />
         {/* End Breadcrump Area */}
 
         {/* Start Blog Area */}
-        <div className="rn-blog-area ptb--120 bg_color--1">
+        <div className="rn-blog-area ptb--120 ">
           <div className="container">
             <BlogList item="24" claseTitulo=" text-black" />
             <div className="row mt--20">

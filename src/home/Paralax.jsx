@@ -35,28 +35,8 @@ const image7 = "/assets/images/bg/paralax/959V0854.JPG";
 
 const image8 = "/assets/images/bg/paralax/bg-image-24.jpg";
 
-const PortfolioList = [
-  {
-    image: "image-1",
-    category: "Development",
-    title: "Getting tickets to the big show"
-  },
-  {
-    image: "image-2",
-    category: "Development",
-    title: "Getting tickets to the big show"
-  },
-  {
-    image: "image-3",
-    category: "Development",
-    title: "Getting tickets to the big show"
-  }
-];
-
 class Paralax extends Component {
   render() {
-    const PostList = BlogContent.slice(0, 3);
-    // const ServiceContent = ServiceList.slice(0 , 3);
     return (
       <Fragment>
         {/* Start Slider Area   */}

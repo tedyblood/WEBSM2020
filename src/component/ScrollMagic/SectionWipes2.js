@@ -94,7 +94,7 @@ class SectionWipes2 extends Component {
                 <section className="panel">
                   <div class="col-sm-12 my-auto">
                     <div class="card card-block w-50 effect2">
-                      <div class="card-body">
+                      <div class="card-body panel-normal">
                         <img
                           className="card-img-top"
                           src={this.props.dataHome[0].img}
@@ -103,7 +103,7 @@ class SectionWipes2 extends Component {
                         <h5 class="card-title">
                           {this.props.dataHome[0].titulo}
                         </h5>
-                        <h6 class="card-subtitle mb-2 text-muted">
+                        <h6 class="card-subtitle mb-2 precioTXT">
                           {this.props.dataHome[0].subtitulo}
                         </h6>
                         <p
@@ -133,14 +133,14 @@ class SectionWipes2 extends Component {
                               item.offSet * 2
                             }
                           >
-                            <div class="card-body">
+                            <div class={"card-body " + item.panelColor}>
                               <img
                                 className="card-img-top"
-                                src="https://via.placeholder.com/498x350"
+                                src={item.img}
                                 alt="Card image cap"
                               />
                               <h5 class="card-title">{item.titulo}</h5>
-                              <h6 class="card-subtitle mb-2 text-muted">
+                              <h6 class="card-subtitle mb-2 precioTXT">
                                 {item.subtitulo}
                               </h6>
                               <p
