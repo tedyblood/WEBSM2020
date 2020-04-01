@@ -5,6 +5,8 @@ import ls from "local-storage";
 
 import ShowFeaturedImg from "../component/ConsultarPost/ShowFeatureImg";
 
+import jsonData from "../../public/assets/json/f1";
+
 let sanitizeHtml = require("sanitize-html");
 
 export default class post extends Component {
@@ -14,7 +16,8 @@ export default class post extends Component {
     this.state = {
       posts: [],
       imgPosts: [],
-      visible: { visibility: "visible" }
+      visible: { visibility: "visible" },
+      jsonData: jsonData
     };
     this.createMarkup = this.createMarkup.bind();
   }
@@ -40,34 +43,6 @@ export default class post extends Component {
     });
   };
 
-  consultaJson(url, tipo_consulta, numItems) {
-    // console.log(url + tipo_consulta + numItems);
-    this.serverRequest = axios
-      .get(`${url}${tipo_consulta}${numItems}`)
-      .then(posts => {
-        this.setState({
-          posts: posts.data,
-          visible: { visibility: "hidden" }
-        });
-        // console.log(this.state.posts);
-      })
-      .catch(function(error) {
-        // handle error
-        console.log(error);
-      });
-  }
-
-  componentDidMount() {
-    this.consultaJson(
-      "https://www.socialmedia-panama.com",
-      // "https://wpdirecto.com",
-      // "http://www.agrfoodmarketing.com/",
-      // "http://cnnespanol.cnn.com/",
-      // "http://www.elplural.com/",
-      "/wp-json/wp/v2/posts?per_page=",
-      this.props.item
-    );
-  }
   componentWillUnmount() {}
 
   createMarkup(html) {
@@ -77,17 +52,9 @@ export default class post extends Component {
   render() {
     return (
       <React.Fragment>
-        <div class="d-flex justify-content-center ">
-          <div
-            class={"spinner-border"}
-            style={this.state.visible}
-            role="status"
-          >
-            <span class="sr-only">Cargando...</span>
-          </div>
-        </div>
+        <div class="d-flex justify-content-center "></div>
         <div className="row">
-          {this.state.posts.map((value, i) => (
+          {this.state.jsonData.map((value, i) => (
             <div className="col-xs-12 col-sm-6 col-lg-4" key={value.id}>
               <div className="blog blog-style--3 mb--0 mt--20">
                 <div className="thumbnail">

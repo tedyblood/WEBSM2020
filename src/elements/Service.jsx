@@ -7,7 +7,11 @@ class Service extends Component {
   render() {
     return (
       <React.Fragment>
-        <PageHelmet pageTitle="Servicios de Marketing Digital" />
+        <PageHelmet
+          pageTitle="Servicios de Marketing Digital"
+          pageDesc="Avanzadas estrategias digitales por personal con mucha experiencia. Marketing Digital, Gestión de Redes, SEO, SEM, SMO, publicidad digital, web, ecommerce, analítica y email marketing ¡Hablemos!
+"
+        />
 
         {/* Start Breadcrump Area */}
         <Breadcrumb title={"Servicios de Marketing Digital"} />

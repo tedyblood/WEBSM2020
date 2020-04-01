@@ -7,10 +7,7 @@ class PageHelmet extends Component {
       <React.Fragment>
         <Helmet>
           <title>{this.props.pageTitle} || Social Media Panamá </title>
-          <meta
-            name="description"
-            content="Aeroland – Multipurpose eCommerce React Template is a multi-use React template. It is designed to go well with multi-purpose websites. Aeroland Bootstrap 4 Template will create that various landing Template."
-          />
+          <meta name="description" content={this.props.pageDesc} />
         </Helmet>
       </React.Fragment>
     );
