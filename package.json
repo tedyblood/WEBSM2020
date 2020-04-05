@@ -2,7 +2,7 @@
   "name": "SM",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://hopeful-lamarr-7e7cfa.netlify.com/",
+  "homepage": "https://aqueous-reaches-20868.herokuapp.com/",
   "basename": "/",
   "dependencies": {
     "@babel/core": "7.4.3",
