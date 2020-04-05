@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "homepage": "https://aqueous-reaches-20868.herokuapp.com/",
+  "engines": {
+    "node": "12.16.x"
+  },
   "basename": "/",
   "dependencies": {
     "@babel/core": "7.4.3",
