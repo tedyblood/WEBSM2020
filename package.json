@@ -1,5 +1,5 @@
 {
-  "name": "trydo",
+  "name": "SM",
   "version": "0.1.0",
   "private": true,
   "homepage": "https://hopeful-lamarr-7e7cfa.netlify.com/",
@@ -110,7 +110,8 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js"
+    "test": "node scripts/test.js",
+    "heroku-postbuild": "npm run build"
   },
   "eslintConfig": {
     "extends": "react-app"
