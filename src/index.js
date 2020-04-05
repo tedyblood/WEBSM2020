@@ -34,15 +34,33 @@ import ServiceDetails_OJS from "./elements/ServiceDetails_OJS";
 import ServiceDetails_sf from "./elements/ServiceDetails_sf";
 import Counters from "./elements/Counters";
 
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
 import * as serviceWorker from "./serviceWorker";
+const Page404 = ({ location }) => (
+  <section>
+    <div className=" container-fluid vh-100  d-flex align-items-center margin404 imagen-fondo-404">
+      <div className="row w-100">
+        <div className="col-6">
+          <h1 class="margin404h2">
+            <b>404</b>
+            <br /> Not Found
+          </h1>
+        </div>
+        <div className="col-6">
+          La página que usted ha solicitado no se encuentra disponible. <br />
+          Disculpe las molestias.
+        </div>
+      </div>
+    </div>
+  </section>
+);
 
 class Root extends Component {
   render() {
     return (
       <BrowserRouter basename={"/"}>
-        <Switch>
-          <Layout>
+        <Layout>
+          <Switch>
             <Route
               exact
               path={`${process.env.PUBLIC_URL}/`}
@@ -140,11 +158,12 @@ class Root extends Component {
             />
             <Route
               exact
-              path={`${process.env.PUBLIC_URL}/blog-details/:id/:postId`}
+              path={`${process.env.PUBLIC_URL}/blog/:id/:postId`}
               component={BlogDetails}
             />
-          </Layout>
-        </Switch>
+            <Route component={Page404} />
+          </Switch>
+        </Layout>
       </BrowserRouter>
     );
   }

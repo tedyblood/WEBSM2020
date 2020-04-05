@@ -1,3 +1,22 @@
+.imagen-fondo-404 {
+  background-image: url("../../assets/images/slider/nofound.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-blend-mode: color-dodge;
+  background-position: 0px 90px;
+}
+.margin404 {
+  margin-bottom: -120px;
+  background-color: #1e1f25;
+  color: white;
+  font-size: 2em;
+  text-align: center;
+}
+
+h1.margin404h2 {
+  color: #87b7ff;
+  font-size: 2.5em;
+}
 .botoneraPost {
   width: 100%;
   position: fixed;

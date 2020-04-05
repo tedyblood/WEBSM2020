@@ -5,7 +5,7 @@ import ls from "local-storage";
 
 import ShowFeaturedImg from "../component/ConsultarPost/ShowFeatureImg";
 
-import jsonData from "../../public/assets/json/f1";
+import jsonData from "../../public/assets/json/f2";
 
 let sanitizeHtml = require("sanitize-html");
 
@@ -17,13 +17,13 @@ export default class post extends Component {
       posts: [],
       imgPosts: [],
       visible: { visibility: "visible" },
-      jsonData: jsonData
+      jsonData: jsonData,
     };
     this.createMarkup = this.createMarkup.bind();
   }
 
   //Pasa el parametro ID desde el clic en el artículo
-  handleChange = param => e => {
+  handleChange = (param) => (e) => {
     // param is the argument you passed to the function
     // e is the event object that returned
     //console.log(param);
@@ -59,7 +59,7 @@ export default class post extends Component {
               <div className="blog blog-style--3 mb--0 mt--20">
                 <div className="thumbnail">
                   <Link
-                    to={`/blog-details/${value.slug}/${value.id}`}
+                    to={`/blog/${value.slug}/${value.id}`}
                     onClick={this.handleChange(value.id)}
                   >
                     <ShowFeaturedImg
@@ -71,7 +71,7 @@ export default class post extends Component {
                     <h4 className={"title" + this.props.claseTitulo}>
                       <Link
                         className={"title" + this.props.claseTitulo}
-                        to={`/blog-details/${value.slug}/${value.id}`}
+                        to={`/blog/${value.slug}/${value.id}`}
                         onClick={this.handleChange(value.id)}
                       >
                         {value.title.rendered}
@@ -80,13 +80,13 @@ export default class post extends Component {
                     <div
                       className={"Exerpt title" + this.props.claseTitulo}
                       dangerouslySetInnerHTML={{
-                        __html: sanitizeHtml(value.excerpt.rendered)
+                        __html: sanitizeHtml(value.excerpt.rendered),
                       }}
                     ></div>
 
                     <Link
                       className=" btn btn-danger btn-lg"
-                      to={`/blog-details/${value.slug}/${value.id}`}
+                      to={`/blog/${value.slug}/${value.id}`}
                       onClick={this.handleChange(value.id)}
                     >
                       Ver
