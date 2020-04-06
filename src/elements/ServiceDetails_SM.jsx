@@ -1,14 +1,12 @@
 import React, { Component } from "react";
 import PageHelmet from "../component/common/Helmet";
-import ModalVideo from "react-modal-video";
+
 import GirAnimada from "../component/animation/AnimationG";
 import { AnimationSlider } from "../component/animation/AnimationSlider";
-import { Portafolio } from "../component/animation/PortafolioPag";
+
 import Instagram from "../elements/service/instagramTwo";
 
 import ContactTwo from "../elements/contact/ContactTwo";
-
-import ModalContact from "../component/common/ModalContact";
 
 class ServiceDetailsSM extends Component {
   componentDidMount() {
@@ -18,7 +16,7 @@ class ServiceDetailsSM extends Component {
   constructor() {
     super();
     this.state = {
-      isOpen: false
+      isOpen: false,
     };
     this.openModal = this.openModal.bind(this);
   }
@@ -40,9 +38,9 @@ class ServiceDetailsSM extends Component {
             <div className="row">
               <div className="col-lg-12">
                 <div className="rn-page-title text-center pt--100">
-                  <h2 className="title theme-gradient">
+                  <h1 className="title theme-gradient">
                     Gestion de Redes Sociales
-                  </h2>
+                  </h1>
                   <p>
                     Alta experiencia en manejo de redes sociales para potenciar
                     tu negocio en el mundo digital

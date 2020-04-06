@@ -1,12 +1,12 @@
 import React, { Component, Fragment } from "react";
 import { Parallax } from "react-parallax";
 import CounterOne from "../elements/counters/CounterOne";
-import BlogContent from "../elements/blog/BlogContent";
 import BrandTwo from "../elements/BrandTwo";
 import ServiceList from "../elements/service/ServiceList";
 import ParrafoList from "../elements/Parrafos/ParrafoOne";
 import Post from "../elements/post";
 import ModalContact from "../component/common/ModalContact";
+import PageHelmet from "../component/common/Helmet";
 
 import Moment from "react-moment";
 import "moment/locale/es";
@@ -39,6 +39,12 @@ class Paralax extends Component {
   render() {
     return (
       <Fragment>
+        {/* Start Pagehelmet  */}
+        <PageHelmet
+          pageTitle="Social Media Panamá"
+          pageDesc="Somos una agencia de marketing digital con base en Panamá, especializada en Digital Commerce Marketing. SEO, SEM, Social Media."
+        />
+        {/* End Pagehelmet  */}
         {/* Start Slider Area   */}
         <div className="slider-wrapper">
           {/* Start Single Slide */}

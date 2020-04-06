@@ -8,7 +8,30 @@ span.title.theme-gradient {
   font-weight: 900;
   line-height: 96px;
 }
+h1.description {
+  color: white;
+  font-size: xx-large !important;
+  font-weight: 700 !important;
+}
 @media only screen and (max-width: 767px) {
+  .sc-AxjAm.bcMPWx {
+    display: none;
+  }
+  h2.title.mt-5 {
+    font-size: x-large;
+  }
+  h1.title.theme-gradient {
+    font-size: xx-large !important;
+  }
+  .error404page {
+    position: absolute;
+    display: contents;
+  }
+  .header-area .header-wrapper .mainmenunav ul.mainmenu li a {
+    color: white;
+    font-size: large;
+    font-weight: 500;
+  }
   span.title.theme-gradient {
     font-size: 50px !important;
     line-height: 50px;
@@ -16,7 +39,7 @@ span.title.theme-gradient {
   h1.description {
     color: #e2f8ff !important;
     font-family: inherit;
-    font-size: x-large;
+    font-size: x-large !important;
   }
 }
 .bg-color--1 {

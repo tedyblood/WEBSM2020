@@ -77,13 +77,6 @@ class Header extends Component {
               <ul className="mainmenu">
                 <li>
                   <Link onClick={this.CLoseMenuTrigger} to="/">
-                    <div className="logo w-50">
-                      <a href="/">{logoUrl}</a>
-                    </div>
-                  </Link>
-                </li>
-                <li>
-                  <Link onClick={this.CLoseMenuTrigger} to="/">
                     Inicio
                   </Link>
                 </li>

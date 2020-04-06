@@ -22,7 +22,7 @@ class ServiceDetails_auditoria extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      isOpen: false
+      isOpen: false,
     };
     this.openModal = this.openModal.bind(this);
   }
@@ -44,7 +44,9 @@ class ServiceDetails_auditoria extends Component {
             <div className="row">
               <div className="col-lg-12">
                 <div className="rn-page-title text-center pt--100">
-                  <h1 className="title theme-gradient">Tour Virtual</h1>
+                  <h1 className="title theme-gradient">
+                    Tour Virtual, Realidad Aumentada
+                  </h1>
                   <p>Logramos que seas visible en Google Maps.</p>
                 </div>
               </div>
