@@ -3,19 +3,32 @@ import {
   FaTwitter,
   FaInstagram,
   FaFacebookF,
-  FaLinkedinIn
+  FaLinkedinIn,
+  FaWhatsapp,
 } from "react-icons/fa";
+
+import $ from "jquery";
+import "./src/floating-wpp.min.css";
 
 const SocialShare = [
   { Social: <FaFacebookF />, link: "https://www.facebook.com/" },
   { Social: <FaLinkedinIn />, link: "https://www.linkedin.com/" },
   { Social: <FaInstagram />, link: "https://www.instagram.com/" },
-  { Social: <FaTwitter />, link: "https://twitter.com/" }
+  { Social: <FaTwitter />, link: "https://twitter.com/" },
 ];
 class Footer extends Component {
+  componentDidMount() {}
   render() {
     return (
       <React.Fragment>
+        <a
+          href="https://api.whatsapp.com/send?phone=65164741&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20."
+          class="float"
+          target="_blank"
+        >
+          <FaWhatsapp />
+        </a>
+
         <footer className="footer-area">
           <div className="footer-wrapper">
             <div className="row align-items-end row--0">
@@ -42,7 +55,7 @@ class Footer extends Component {
                         <h4>Enlaces</h4>
                         <ul className="ft-link">
                           <li>
-                            <a href="/portfolio">Trabajo</a>
+                            <a href="/">Inicio</a>
                           </li>
                           <li>
                             <a href="/about">Nosotros</a>

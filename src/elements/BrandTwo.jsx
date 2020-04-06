@@ -109,7 +109,7 @@ class BrandTwo extends Component {
           </li>
           <li>
             <img
-              src="/assets/images/brand/lapradera.png"
+              src="/assets/images/brand/LaPradera.png"
               alt="Logo Images La Pradera Panama"
             />
           </li>

@@ -47,8 +47,20 @@ const Page404 = ({ location }) => (
           </h1>
         </div>
         <div className="col-6">
-          La página que usted ha solicitado no se encuentra disponible. <br />
-          Disculpe las molestias.
+          <p className="Fondo404Blanco">
+            La página que usted ha solicitado no se encuentra disponible. <br />
+            Disculpe las molestias.
+          </p>
+          <p className="Fondo404Blanco">
+            Si esta buscando el tutorial para hacer transmisiones en instagram
+            desde PC, lo puede encontrar en nuestro blog.
+          </p>
+          <a
+            className="Fondo404Blanco"
+            href="https://www.socialmedia-panama.com/blog/marketing-digital-como-transmitir-en-vivo-en-instagram-desde-pc/7757"
+          >
+            Transmitir en vivo en instagram desde pc
+          </a>
         </div>
       </div>
     </div>
@@ -155,6 +167,11 @@ class Root extends Component {
               exact
               path={`${process.env.PUBLIC_URL}/counters`}
               component={Counters}
+            />
+            <Redirect
+              exact
+              path="https://www.socialmedia-panama.com/marketing-digital-como-transmitir-en-vivo-en-instagram-desde-pc/"
+              to="https://www.socialmedia-panama.com/blog/marketing-digital-como-transmitir-en-vivo-en-instagram-desde-pc/7757"
             />
             <Route
               exact

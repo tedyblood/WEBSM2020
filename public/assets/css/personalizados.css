@@ -1,3 +1,41 @@
+p.Fondo404Blanco {
+  padding: 5px;
+  background-color: #efefef3b;
+}
+span.title.theme-gradient {
+  font-size: 110px !important;
+  font-family: "montserrat";
+  font-weight: 900;
+  line-height: 96px;
+}
+h1.description {
+  color: white;
+  font-size: xx-large !important;
+  font-weight: 700 !important;
+}
+@media only screen and (max-width: 767px) {
+  .header-area .header-wrapper .mainmenunav ul.mainmenu li a {
+    color: white;
+    font-size: large;
+    font-weight: 500;
+  }
+  span.title.theme-gradient {
+    font-size: 50px !important;
+    line-height: 50px;
+  }
+  h1.description {
+    color: #e2f8ff !important;
+    font-family: inherit;
+    font-size: x-large !important;
+  }
+}
+.bg-color--1 {
+  background-color: #333;
+}
+footer.footer-area {
+  background-color: #14151b;
+}
+
 .post-style-margen {
   margin-bottom: 100px;
 }

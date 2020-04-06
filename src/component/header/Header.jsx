@@ -10,7 +10,7 @@ class Header extends Component {
     this.menuTrigger = this.menuTrigger.bind(this);
     this.CLoseMenuTrigger = this.CLoseMenuTrigger.bind(this);
     //  this.subMetuTrigger = this.subMetuTrigger.bind(this);
-    window.addEventListener("load", function() {
+    window.addEventListener("load", function () {
       console.log("All assets are loaded");
     });
   }
@@ -26,7 +26,7 @@ class Header extends Component {
     var elements = document.querySelectorAll(".has-droupdown > a");
     for (var i in elements) {
       if (elements.hasOwnProperty(i)) {
-        elements[i].onclick = function() {
+        elements[i].onclick = function () {
           this.parentElement
             .querySelector(".submenu")
             .classList.toggle("active");
@@ -76,76 +76,99 @@ class Header extends Component {
             <nav className="mainmenunav d-lg-block">
               <ul className="mainmenu">
                 <li>
-                  <Link to="/">Inicio</Link>
+                  <Link onClick={this.CLoseMenuTrigger} to="/">
+                    <div className="logo w-50">
+                      <a href="/">{logoUrl}</a>
+                    </div>
+                  </Link>
+                </li>
+                <li>
+                  <Link onClick={this.CLoseMenuTrigger} to="/">
+                    Inicio
+                  </Link>
                 </li>
                 <li className="has-droupdown">
-                  <Link to="/service">Servicios</Link>
-                  <ul className="submenu">
+                  <Link onClick={this.CLoseMenuTrigger} to="/service">
+                    Servicios
+                  </Link>
+                  <ul className="submenu active">
                     <li>
-                      <Link to="/manejo_de_redes_sociales">Redes Sociales</Link>{" "}
+                      <Link
+                        onClick={this.CLoseMenuTrigger}
+                        to="/manejo_de_redes_sociales"
+                      >
+                        Redes Sociales
+                      </Link>{" "}
                     </li>
                     <li>
-                      <Link to="/comprar-anuncios-instagram-facebook-youtube-google">
+                      <Link
+                        onClick={this.CLoseMenuTrigger}
+                        to="/comprar-anuncios-instagram-facebook-youtube-google"
+                      >
                         Anuncios en Instagram
                       </Link>{" "}
                     </li>
                     <li>
-                      <Link to="/web-design-panama">Diseño Web</Link>{" "}
+                      <Link
+                        onClick={this.CLoseMenuTrigger}
+                        to="/web-design-panama"
+                      >
+                        Diseño Web
+                      </Link>{" "}
                     </li>
                     <li>
-                      <Link to="/posicionamiento_en_GOOGLE_SEO_Panama">
+                      <Link
+                        onClick={this.CLoseMenuTrigger}
+                        to="/posicionamiento_en_GOOGLE_SEO_Panama"
+                      >
                         Posicionamiento en Buscadores
                       </Link>
                     </li>
                     <li>
-                      <Link to="/Servicio-WebMaster-Panama">
+                      <Link
+                        onClick={this.CLoseMenuTrigger}
+                        to="/Servicio-WebMaster-Panama"
+                      >
                         Mantenimiento Web
                       </Link>
                     </li>
                     <li>
-                      <Link to="/tour-virtual-360-google">
+                      <Link
+                        onClick={this.CLoseMenuTrigger}
+                        to="/tour-virtual-360-google"
+                      >
                         Recorridos y Tours Virtuales 360
                       </Link>
                     </li>
                     <li>
-                      <Link to="/pagina-web-OJS-Open-Journal-System">
+                      <Link
+                        onClick={this.CLoseMenuTrigger}
+                        to="/pagina-web-OJS-Open-Journal-System"
+                      >
                         Open Journal System
                       </Link>
                     </li>
                     <li>
-                      <Link to="/social-wifi-fi">Wifi Social</Link>
+                      <Link
+                        onClick={this.CLoseMenuTrigger}
+                        to="/social-wifi-fi"
+                      >
+                        Wifi Social
+                      </Link>
                     </li>
                   </ul>
                 </li>
                 <li>
-                  <Link to="/about">Nosotros</Link>
+                  <Link onClick={this.CLoseMenuTrigger} to="/about">
+                    Nosotros
+                  </Link>
                 </li>
 
                 <li>
-                  <Link to="/blog">Blog</Link>
-                  {/* <ul className="submenu">
-                    <li>
-                      <Link to="/blog">Blog List</Link>
-                    </li>
-                    <li>
-                      <Link to="/blog-details">Blog Details</Link>
-                    </li>
-                  </ul> */}
+                  <Link onClick={this.CLoseMenuTrigger} to="/blog">
+                    Blog
+                  </Link>
                 </li>
-                {/* <li className="has-droupdown">
-                  <Link to="#">Portafolio</Link>
-                  <ul className="submenu">
-                    <li>
-                      <Link to="/portfolio">Portfolio</Link>
-                    </li>
-                    <li>
-                      <Link to="/portfolio-details">Portfolio Details</Link>
-                    </li>
-                  </ul>
-                </li> */}
-                {/* <li>
-                  <Link to="/contact">Contacto</Link>
-                </li> */}
               </ul>
             </nav>
             <div className="header-btn">

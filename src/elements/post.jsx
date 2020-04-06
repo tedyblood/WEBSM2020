@@ -53,7 +53,7 @@ export default class post extends Component {
     return (
       <React.Fragment>
         <div class="d-flex justify-content-center "></div>
-        <div className="row">
+        <div className="row mx-1">
           {this.state.jsonData.map((value, i) => (
             <div
               className="col-xs-12 col-sm-6 col-lg-4 post-style-margen"

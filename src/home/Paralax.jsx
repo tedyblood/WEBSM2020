@@ -18,8 +18,8 @@ const SlideList = [
     title: "Simple, Efectivo y Pagable.",
     description: "El Marketing Digital ideal.",
     buttonText: "¿Nos reunimos?",
-    buttonLink: "/contact"
-  }
+    buttonLink: "/contact",
+  },
 ];
 const sliderImage = "/assets/images/bg/paralax/bg-image-2.jpg";
 
@@ -54,14 +54,14 @@ class Paralax extends Component {
                       <div className={`inner ${value.textPosition}`}>
                         {value.category ? <span>{value.category}</span> : ""}
                         {value.title ? (
-                          <h1 className="title theme-gradient">
+                          <span className="title theme-gradient">
                             {value.title}
-                          </h1>
+                          </span>
                         ) : (
                           ""
                         )}
                         {value.description ? (
-                          <p className="description">{value.description}</p>
+                          <h1 className="description">{value.description}</h1>
                         ) : (
                           ""
                         )}
@@ -150,60 +150,6 @@ class Paralax extends Component {
 
         {/* End Service Area  */}
 
-        {/* Start CounterUp Area */}
-        <Parallax
-          className="rn-counterup-area rn-paralax-counterup"
-          bgImage={image6}
-          strength={1000}
-        >
-          <div className="counterup-area ptb--120">
-            <div className="container">
-              <div className="row">
-                <div className="col-lg-12">
-                  <div className="section-title service-style--2 text-center mb--30 mb_sm--0">
-                    <h3>¿Nos reunimos?</h3>
-                    <p>
-                      Analizamos tu situación sin ningún tipo de compromiso.
-                      Sólo necesitamos:
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <CounterOne />
-              <ModalContact />
-            </div>
-          </div>
-        </Parallax>
-        {/* End CounterUp Area */}
-
-        {/* Start Blog Area */}
-        <Parallax
-          className="rn-blog-area rn-testimonial-light"
-          bgImage={image8}
-          strength={700}
-          data-black-overlay="7"
-        >
-          <div className="blog-area ptb--120" data-black-overlay="6">
-            <div className="container">
-              <div className="row">
-                <div className="col-lg-12">
-                  <div className="section-title service-style--2 text-center mb--30 mb_sm--0">
-                    <h2>Noticias</h2>
-                    <p>
-                      Experiencias que reflejan el ADN de nuestra agencia de
-                      Marketing Digital en Panamá.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="row">
-                <Post item="3" claseTitulo=" text-white " />
-              </div>
-            </div>
-          </div>
-        </Parallax>
-        {/* End Blog Area */}
-
         {/* Start Brand Area */}
         <Parallax
           className="rn-brand-area brand-separation ptb--120"
@@ -233,6 +179,60 @@ class Paralax extends Component {
         </Parallax>
 
         {/* End Brand Area */}
+        {/* Start CounterUp Area */}
+        <Parallax
+          className="rn-counterup-area rn-paralax-counterup"
+          bgImage={image6}
+          strength={1000}
+        >
+          <div className="counterup-area ptb--120">
+            <div className="container">
+              <div className="row">
+                <div className="col-lg-12">
+                  <div className="section-title service-style--2 text-center mb--30 mb_sm--0">
+                    <h3>¿Nos reunimos?</h3>
+                    <p>
+                      Analizamos tu situación sin ningún tipo de compromiso.
+                      Sólo necesitamos:
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <CounterOne />
+              <ModalContact />
+            </div>
+          </div>
+        </Parallax>
+        {/* End CounterUp Area */}
+        {/* Start Blog Area */}
+        <Parallax
+          className="rn-blog-area rn-testimonial-light"
+          strength={700}
+          data-black-overlay="7"
+        >
+          <div
+            className="blog-area ptb--120 bg-color--1"
+            data-black-overlay="6"
+          >
+            <div className="container">
+              <div className="row">
+                <div className="col-lg-12">
+                  <div className="section-title service-style--2 text-center mb--30 mb_sm--0">
+                    <h2>Noticias</h2>
+                    <p>
+                      Experiencias que reflejan el ADN de nuestra agencia de
+                      Marketing Digital en Panamá.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="row">
+                <Post item="3" claseTitulo=" text-white " />
+              </div>
+            </div>
+          </div>
+        </Parallax>
+        {/* End Blog Area */}
       </Fragment>
     );
   }
