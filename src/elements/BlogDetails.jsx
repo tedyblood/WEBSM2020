@@ -6,7 +6,7 @@ import { Link, Redirect } from "react-router-dom";
 import Moment from "react-moment";
 
 import { ShowImgInPost } from "../component/ConsultarPost/ShowImgInPost";
-import jsonData from "../../public/assets/json/f2";
+import jsonData from "../../public/assets/json/f1";
 
 class BlogDetails extends Component {
   state = {};

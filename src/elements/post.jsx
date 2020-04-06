@@ -5,7 +5,7 @@ import ls from "local-storage";
 
 import ShowFeaturedImg from "../component/ConsultarPost/ShowFeatureImg";
 
-import jsonData from "../../public/assets/json/f2";
+import jsonData from "../../public/assets/json/f1";
 
 let sanitizeHtml = require("sanitize-html");
 
@@ -55,16 +55,19 @@ export default class post extends Component {
         <div class="d-flex justify-content-center "></div>
         <div className="row">
           {this.state.jsonData.map((value, i) => (
-            <div className="col-xs-12 col-sm-6 col-lg-4" key={value.id}>
-              <div className="blog blog-style--3 mb--0 mt--20">
+            <div
+              className="col-xs-12 col-sm-6 col-lg-4 post-style-margen"
+              key={value.id}
+            >
+              <div className="blog blog-style--3 mb--0 mt--20 ">
                 <div className="thumbnail">
                   <Link
                     to={`/blog/${value.slug}/${value.id}`}
                     onClick={this.handleChange(value.id)}
                   >
-                    <ShowFeaturedImg
+                    {/* <ShowFeaturedImg
                       url={value._links["wp:featuredmedia"][0].href}
-                    />
+                    /> */}
                   </Link>
                   <div className="content">
                     <p className="blogtype">{value.category}</p>

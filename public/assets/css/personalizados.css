@@ -1,3 +1,10 @@
+.post-style-margen {
+  margin-bottom: 100px;
+}
+a.btn.btn-danger.btn-lg {
+  color: #9eb7c7;
+  font-weight: 600;
+}
 .imagen-fondo-404 {
   background-image: url("../../assets/images/slider/nofound.png");
   background-repeat: no-repeat;
