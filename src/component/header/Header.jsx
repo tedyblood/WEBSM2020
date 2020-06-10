@@ -88,9 +88,9 @@ class Header extends Component {
                     <li>
                       <Link
                         onClick={this.CLoseMenuTrigger}
-                        to="/manejo_de_redes_sociales"
+                        to="/manejo-de-redes-sociales"
                       >
-                        Redes Sociales
+                        Gestión de Redes Sociales
                       </Link>{" "}
                     </li>
                     <li>
@@ -112,7 +112,7 @@ class Header extends Component {
                     <li>
                       <Link
                         onClick={this.CLoseMenuTrigger}
-                        to="/posicionamiento_en_GOOGLE_SEO_Panama"
+                        to="/posicionamiento-en-GOOGLE-SEO-Panama"
                       >
                         Posicionamiento en Buscadores
                       </Link>

@@ -1,3 +1,15 @@
+::selection {
+  color: #262626;
+  background: #dbc304;
+}
+.easyOutTest{
+  opacity: 0;
+}
+.container.Parrafos {
+  margin-bottom: 5rem;
+}
+.mainmenunav ul.mainmenu>li>ul.submenu li a {  
+  color: #262626!important;}
 p.Fondo404Blanco {
   padding: 5px;
   background-color: #efefef3b;

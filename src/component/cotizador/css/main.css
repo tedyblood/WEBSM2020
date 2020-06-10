@@ -1,0 +1,155 @@
+.btn:hover {
+  color: #447bee;
+}
+.iconSocialMedia {
+  fill: #262626;
+  font-size: 2rem;
+}
+.titleColumn>h5 {
+  color: white;
+  font-size: 1.2em;
+  text-align: left;
+  font-weight: 600;
+  margin-bottom: 7%;
+}
+.PrecioLoad>div.titleColumn>h5 {
+  color: #262626!important;
+  text-align: center;
+  margin: 5px;
+}
+.PrecioLoad>div.titleColumn {
+  color: rgb(31, 18, 77);
+  margin-top: 0px;
+  border-top: 2px solid rgb(63, 51, 101);
+  border-right: 2px solid rgb(63, 51, 101);
+  border-bottom: 2px solid rgb(63, 51, 101);
+  margin-left: -16px;
+  max-height: 39px;
+  width: 129%;
+  position: relative;
+  font-weight: 900;
+  margin-bottom: 25%;
+  text-align: center;
+}
+.btn-primary-custom {
+box-shadow: inset 0px 2px 0px 0px #ffffff;
+background: linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
+background-color: #f9f9f9;
+border-radius: 3px;
+border: 1px solid #dcdcdc;
+display: inline-block;
+cursor: pointer;
+color: rgb(31, 18, 77);
+font-size: 15px;
+font-weight: bold;
+padding: 25px 40px;
+text-decoration: none;
+text-shadow: 0px 1px 0px #ffffff;
+margin-right: 1%;
+}
+.btn-primary-custom:hover {
+/* background: linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%); */
+background-color: #e9e9e9;
+}
+.btn-primary-custom:active {
+position: relative;
+top: 1px;
+}
+/* input[type=checkbox], input[type=radio] {    display: none; } */
+input[type="checkbox"] {
+display: none;
+}
+.btn-seleccionado {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem #262626!important;
+animation: blink 2s steps(2, start) infinite;
+}
+label.btn-primary:hover {
+color: #fff;
+background-color: #007bff !important;
+border-color: #007bff !important;
+}
+@keyframes blink {
+to {
+  background-color: linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
+}
+}
+.my-element {
+color: blue;
+animation: blink 1s steps(2, start) infinite;
+}
+img.ImgIcon {
+max-height: 31px;
+}
+ul.ListaServicios {
+list-style-type: none;
+}
+.col-lg-5.p-2.bg-primary.d-flex.flex-wrap.align-content-end.d-flex.justify-content-around.CajasRedes
+> label {
+width: 32%;
+}
+.titleColumn {
+width: 100%;
+padding-left: 13px;
+color: white;
+margin-top: -31px;
+}
+.Botones,
+.ServiciosData {
+  background: rgba(116,95,185,1);
+  background: -moz-linear-gradient(top, rgba(116,95,185,1) 0%, rgba(65,124,241,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(116,95,185,1)), color-stop(100%, rgba(65,124,241,1)));
+  background: -webkit-linear-gradient(top, rgba(116,95,185,1) 0%, rgba(65,124,241,1) 100%);
+  background: -o-linear-gradient(top, rgba(116,95,185,1) 0%, rgba(65,124,241,1) 100%);
+  background: -ms-linear-gradient(top, rgba(116,95,185,1) 0%, rgba(65,124,241,1) 100%);
+  background: linear-gradient(to bottom, rgba(116,95,185,1) 0%, rgba(65,124,241,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#745fb9', endColorstr='#417cf1', GradientType=0 );
+border-top: 39px inset #745fb9;
+color:white;
+}
+ul.ListaServicios {
+padding-inline-start: 0px;
+}
+.ServiciosData {
+border-left: 2px dashed #ffffff;
+}
+.PrecioLoad>div.titleColumn {
+  color: rgb(31, 18, 77);
+  margin-top: 0px;
+  border-top: 2px solid rgba(116,95,185,1);
+  border-right: 2px solid rgba(116,95,185,1);
+  border-bottom: 2px solid rgba(116,95,185,1);
+  margin-left: -16px;
+  max-height: 39px;
+  width: 129%;
+  position: relative;
+  font-weight: 900;
+  margin-bottom: 25%;
+  text-align: center;
+}
+.btn.focus, .btn:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem #262626!important;
+}
+.PrecioLoad {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.PrecioWrap {
+  color: #262626;
+  font-weight: 800;
+  width: 100%;
+  text-align: center;
+}
+h5#PrecioText {
+  font-size: 2em;
+  font-weight: 600;
+}
+ul.ListaServicios {
+  font-size: 1.1em;
+}
+ul.ListaServicios>li::before {
+  content: "-";
+}

@@ -32,15 +32,16 @@ import ServiceDetails_auditoria from "./elements/ServiceDetails_auditoria";
 import ServiceDetails_Tour360 from "./elements/ServiceDetails_Tour360";
 import ServiceDetails_OJS from "./elements/ServiceDetails_OJS";
 import ServiceDetails_sf from "./elements/ServiceDetails_sf";
-import Counters from "./elements/Counters";
+
 
 import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
 import * as serviceWorker from "./serviceWorker";
 const Page404 = ({ location }) => (
   <section>
-    <div className=" container-fluid vh-100  d-flex align-items-center margin404 imagen-fondo-404">
+    <div className=" container-fluid vh-100  d-flex align-items-center margin404">
       <div className="row w-100">
-        <div className="col-6">
+        <div className="col-6">  
+        <div class=" imagen-fondo-404 w-100 p-5"></div>        
           <h1 class="margin404h2">
             <b>404</b>
             <br /> Not Found
@@ -79,102 +80,98 @@ class Root extends Component {
               component={Paralax}
             />
             <Route
-              exact
+              // exact
               path={`${process.env.PUBLIC_URL}/service`}
               component={Service}
-            />
+            />            
             <Route
-              exact
+              // exact
               path={`${process.env.PUBLIC_URL}/service-details`}
               component={ServiceDetails}
             />
             <Route
-              exact
+              // exact
               path={`${process.env.PUBLIC_URL}/web-design-panama`}
               component={ServiceDetails_WD}
             />
             <Route
-              exact
+              // exact
               path={`${process.env.PUBLIC_URL}/social-wifi-fi`}
               component={ServiceDetails_sf}
             />
             <Route
-              exact
-              path={`${process.env.PUBLIC_URL}/manejo_de_redes_sociales`}
+              // exact
+              path={`${process.env.PUBLIC_URL}/manejo-de-redes-sociales`}
               component={ServiceDetails_SM}
             />
             <Route
-              exact
-              path={`${process.env.PUBLIC_URL}/Posicionamiento_en_Google_SEO_Panama`}
+              // exact
+              path={`${process.env.PUBLIC_URL}/Posicionamiento-en-Google-SEO-Panama`}
               component={ServiceDetails_SEO}
             />
             <Route
-              exact
+              // exact
               path={`${process.env.PUBLIC_URL}/comprar-anuncios-instagram-facebook-youtube-google`}
               component={ServiceDetails_ppc}
             />
             <Route
-              exact
+              // exact
               path={`${process.env.PUBLIC_URL}/consultor-speaker-de-marketing-digital`}
               component={ServiceDetails_auditoria}
             />
             <Route
-              exact
+              // exact
               path={`${process.env.PUBLIC_URL}/pagina-web-OJS-Open-Journal-System`}
               component={ServiceDetails_OJS}
             />
             <Route
-              exact
+              // exact
               path={`${process.env.PUBLIC_URL}/Servicio-WebMaster-Panama`}
               component={ServiceDetails_Mant}
             />
             <Route
-              exact
+              // exact
               path={`${process.env.PUBLIC_URL}/tour-virtual-360-google`}
               component={ServiceDetails_Tour360}
             />
             <Route
-              exact
+              // exact
               path={`${process.env.PUBLIC_URL}/contact`}
               component={Contact}
             />
             <Route
-              exact
+              // exact
               path={`${process.env.PUBLIC_URL}/about`}
               component={About}
             />
             <Route
-              exact
+              // exact
               path={`${process.env.PUBLIC_URL}/portfolio`}
               component={Portfolio}
             />
             <Route
-              exact
+              // exact
               path={`${process.env.PUBLIC_URL}/portfolio-details`}
               component={PortfolioDetails}
             />
             <Route
-              exact
+              // exact
               path={`${process.env.PUBLIC_URL}/blog`}
               component={Blog}
             />
             <Route
-              exact
+              // exact
               path={`${process.env.PUBLIC_URL}/blog-details`}
               component={BlogDetails}
             />
-            <Route
-              exact
-              path={`${process.env.PUBLIC_URL}/counters`}
-              component={Counters}
-            />
+
             <Redirect
-              exact
+              // exact
               path="https://www.socialmedia-panama.com/marketing-digital-como-transmitir-en-vivo-en-instagram-desde-pc/"
               to="https://www.socialmedia-panama.com/blog/marketing-digital-como-transmitir-en-vivo-en-instagram-desde-pc/7757"
             />
             <Route
-              exact
+              // exact
               path={`${process.env.PUBLIC_URL}/blog/:id/:postId`}
               component={BlogDetails}
             />

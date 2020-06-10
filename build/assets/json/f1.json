@@ -1,5 +1,233 @@
 [
   {
+    "id": 100762,
+    "date": "2019-07-31T04:27:49",
+    "date_gmt": "2019-07-31T04:27:49",
+    "guid": { "rendered": "https://www.socialmedia-panama.com/?p=10076" },
+    "modified": "2019-07-31T04:27:49",
+    "modified_gmt": "2019-07-31T04:27:49",
+    "slug": "TikTok-p",
+    "status": "publish",
+    "type": "post",
+    "link": "https://socialmedia-panama.com/transmite-en-intagram-desde-una-pc-usando-yellowduck-app/",
+    "title": {
+      "rendered": "Pro Tip: Así es como debes trabajar con Influencers en TikTok"
+    },
+    "content": {
+      "rendered": "<p>En abril, el Tribunal de Distrito de Nueva York falló en contra de la fotógrafa Stephanie Sinclair que había intentado demandar a Mashable por incrustar una de sus publicaciones de Instagram en una historia de Mashable, esencialmente re-publicando su trabajo sin permiso.</p><p>El tribunal consideró que, debido a que la imagen estaba incrustada, la licencia permaneció con Instagram y, por lo tanto, estaba sujeta a los Términos de Servicio de Instagram.lo que significa que Mashable esencialmente no era responsable de la violación de los derechos de autor porque la imagen todavía estaba alojada en Instagram.</p><p>That makes sense, and aligns with the general understanding around embedding. But a new ruling this week could put that into question yet again.</p><p>Los detalles de este son importantes, según Ars Technica : El fotógrafo Elliot McGucken tomó una foto rara de un lago efímero en el Valle de la Muerte. Por lo general, el Valle de la Muerte está completamente seco, pero ocasionalmente una fuerte lluvia creará un cuerpo de agua considerable. Newsweek solicitó la licencia de la imagen, pero McGucken rechazó su oferta. Entonces, Newsweek incluyó una publicación del feed de Instagram de McGucken que contenía la imagen </p><p>El fotógrafo Elliot McGucken tomó na foto rara de un lago efímero en el Valle de la Muerte. Por lo general, el Valle de la Muerte está completamente seco, pero ocasionalmente una fuerte lluvia creará un cuerpo de agua considerable. Newsweek solicitó la licencia de la imagen, pero McGucken rechazó su oferta. Entonces, Newsweek incluyó una publicación del feed de Instagram de McGucken que contenía la imagen </p><p>Entonces, siguiendo la decisión de Mashable, Newsweek debería estar bien, incluso si esto parece una táctica bastante barata de su parte. </p><p>Aparentemente no, a pesar de utilizar el caso Mashable como precedente, el Tribunal del Distrito Sur de Nueva York dictaminó que no había suficiente explicación definitiva dentro de los términos de Instagram para desestimar la demanda de inmediato.</p><p>Y luego Instagram agregó más combustible al fuego al emitir esta declaración :</p><p>Si bien nuestros términos nos permiten otorgar una sublicencia, no otorgamos una para nuestra API de inserción. Nuestras políticas de plataforma requieren que terceros tengan los derechos necesarios de los titulares de derechos aplicables. Esto incluye garantizar que tengan una licencia para compartir este contenido , si la ley exige una licencia</p><p>Entonces, Instagram dice que, de hecho, los editores necesitan permiso explícito de los creadores para insertar sus publicaciones, lo que podría significar que cada publicación de Instagram incrustada en la web es responsable de un desafío legal, dependiendo de los detalles. </p><p>Esa sería una decisión importante, y podría avisar a muchos propietarios de sitios web. Aún no se han aclarado todas las complejidades, pero si esto se cumple, eso podría significar que ya no podrá insertar ninguna publicación de Instagram en su sitio web sin el permiso directo del creador de la publicación.</p><p>Las reglas sobre derechos de autor en línea son a menudo confusas, con regulaciones diseñadas para medios heredados que realmente no encajan en la esfera digital. Algunas leyes se han reformado, de forma variable, para adaptarse al contenido de las redes sociales, pero en su mayor parte, los sitios web han podido compartir lo que les gusta a través de incrustaciones sin ninguna preocupación. Si se establece un precedente para un cambio en esa regulación, eso podría haber tenido un impacto extendido en la empresa matriz de Instagram, Facebook, y se inserta en Facebook.com, e incluso en otras plataformas como Twitter, según los detalles legales. </p>",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>Por lo general, el contenido adecuado para YouTube o Instagram no funcionará bien en TikTok, así que dé a sus influencers algo de espacio para adaptar el contenido a lo que saben que funciona bien.      </p>",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 10077,
+    "comment_status": "open",
+    "ping_status": "open",
+    "sticky": false,
+    "template": "",
+    "format": "standard",
+    "meta": [],
+    "categories": [90],
+    "tags": [],
+    "yst_prominent_words": [
+      1018,
+      1019,
+      304,
+      1017,
+      1021,
+      297,
+      298,
+      296,
+      1020,
+      260,
+      299,
+      302,
+      1016
+    ],
+    "jetpack_featured_media_url": "https://socialmedia-panama.com/wp-content/uploads/2019/07/0_iXryLTrw5i93JjEu.png",
+    "_links": {
+      "self": [
+        { "href": "https://socialmedia-panama.com/wp-json/wp/v2/posts/10076" }
+      ],
+      "collection": [
+        { "href": "https://socialmedia-panama.com/wp-json/wp/v2/posts" }
+      ],
+      "about": [
+        { "href": "https://socialmedia-panama.com/wp-json/wp/v2/types/post" }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://socialmedia-panama.com/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://socialmedia-panama.com/wp-json/wp/v2/comments?post=10076"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 1,
+          "href": "https://socialmedia-panama.com/wp-json/wp/v2/posts/10076/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 10084,
+          "href": "https://socialmedia-panama.com/wp-json/wp/v2/posts/10076/revisions/10084"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://socialmedia-panama.com/wp-json/wp/v2/media/10077"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://socialmedia-panama.com/wp-json/wp/v2/media?parent=10076"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "category",
+          "embeddable": true,
+          "href": "https://socialmedia-panama.com/wp-json/wp/v2/categories?post=10076"
+        },
+        {
+          "taxonomy": "post_tag",
+          "embeddable": true,
+          "href": "https://socialmedia-panama.com/wp-json/wp/v2/tags?post=10076"
+        },
+        {
+          "taxonomy": "yst_prominent_words",
+          "embeddable": true,
+          "href": "https://socialmedia-panama.com/wp-json/wp/v2/yst_prominent_words?post=10076"
+        }
+      ],
+      "curies": [
+        { "name": "wp", "href": "https://api.w.org/{rel}", "templated": true }
+      ]
+    }
+  },{
+    "id": 100762,
+    "date": "2019-07-31T04:27:49",
+    "date_gmt": "2019-07-31T04:27:49",
+    "guid": { "rendered": "https://www.socialmedia-panama.com/?p=10076" },
+    "modified": "2019-07-31T04:27:49",
+    "modified_gmt": "2019-07-31T04:27:49",
+    "slug": "transmite-en-intagram-desde-una-pc-usando-yellowduck-app",
+    "status": "publish",
+    "type": "post",
+    "link": "https://socialmedia-panama.com/transmite-en-intagram-desde-una-pc-usando-yellowduck-app/",
+    "title": {
+      "rendered": "Es posible que deba obtener el permiso del creador para las incrustaciones de Instagram, según Instagram      "
+    },
+    "content": {
+      "rendered": "<p>En abril, el Tribunal de Distrito de Nueva York falló en contra de la fotógrafa Stephanie Sinclair que había intentado demandar a Mashable por incrustar una de sus publicaciones de Instagram en una historia de Mashable, esencialmente re-publicando su trabajo sin permiso.</p><p>El tribunal consideró que, debido a que la imagen estaba incrustada, la licencia permaneció con Instagram y, por lo tanto, estaba sujeta a los Términos de Servicio de Instagram.lo que significa que Mashable esencialmente no era responsable de la violación de los derechos de autor porque la imagen todavía estaba alojada en Instagram.</p><p>That makes sense, and aligns with the general understanding around embedding. But a new ruling this week could put that into question yet again.</p><p>Los detalles de este son importantes, según Ars Technica : El fotógrafo Elliot McGucken tomó una foto rara de un lago efímero en el Valle de la Muerte. Por lo general, el Valle de la Muerte está completamente seco, pero ocasionalmente una fuerte lluvia creará un cuerpo de agua considerable. Newsweek solicitó la licencia de la imagen, pero McGucken rechazó su oferta. Entonces, Newsweek incluyó una publicación del feed de Instagram de McGucken que contenía la imagen </p><p>El fotógrafo Elliot McGucken tomó na foto rara de un lago efímero en el Valle de la Muerte. Por lo general, el Valle de la Muerte está completamente seco, pero ocasionalmente una fuerte lluvia creará un cuerpo de agua considerable. Newsweek solicitó la licencia de la imagen, pero McGucken rechazó su oferta. Entonces, Newsweek incluyó una publicación del feed de Instagram de McGucken que contenía la imagen </p><p>Entonces, siguiendo la decisión de Mashable, Newsweek debería estar bien, incluso si esto parece una táctica bastante barata de su parte. </p><p>Aparentemente no, a pesar de utilizar el caso Mashable como precedente, el Tribunal del Distrito Sur de Nueva York dictaminó que no había suficiente explicación definitiva dentro de los términos de Instagram para desestimar la demanda de inmediato.</p><p>Y luego Instagram agregó más combustible al fuego al emitir esta declaración :</p><p>Si bien nuestros términos nos permiten otorgar una sublicencia, no otorgamos una para nuestra API de inserción. Nuestras políticas de plataforma requieren que terceros tengan los derechos necesarios de los titulares de derechos aplicables. Esto incluye garantizar que tengan una licencia para compartir este contenido , si la ley exige una licencia</p><p>Entonces, Instagram dice que, de hecho, los editores necesitan permiso explícito de los creadores para insertar sus publicaciones, lo que podría significar que cada publicación de Instagram incrustada en la web es responsable de un desafío legal, dependiendo de los detalles. </p><p>Esa sería una decisión importante, y podría avisar a muchos propietarios de sitios web. Aún no se han aclarado todas las complejidades, pero si esto se cumple, eso podría significar que ya no podrá insertar ninguna publicación de Instagram en su sitio web sin el permiso directo del creador de la publicación.</p><p>Las reglas sobre derechos de autor en línea son a menudo confusas, con regulaciones diseñadas para medios heredados que realmente no encajan en la esfera digital. Algunas leyes se han reformado, de forma variable, para adaptarse al contenido de las redes sociales, pero en su mayor parte, los sitios web han podido compartir lo que les gusta a través de incrustaciones sin ninguna preocupación. Si se establece un precedente para un cambio en esa regulación, eso podría haber tenido un impacto extendido en la empresa matriz de Instagram, Facebook, y se inserta en Facebook.com, e incluso en otras plataformas como Twitter, según los detalles legales. </p>",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>El Tribunal de Distrito de Nueva York falló en contra de la fotógrafa Stephanie Sinclair que había intentado demandar a Mashable por incrustar una de sus publicaciones de Instagram en una historia de Mashable, esencialmente re-publicando su trabajo sin permiso.</p>",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 10077,
+    "comment_status": "open",
+    "ping_status": "open",
+    "sticky": false,
+    "template": "",
+    "format": "standard",
+    "meta": [],
+    "categories": [90],
+    "tags": [],
+    "yst_prominent_words": [
+      1018,
+      1019,
+      304,
+      1017,
+      1021,
+      297,
+      298,
+      296,
+      1020,
+      260,
+      299,
+      302,
+      1016
+    ],
+    "jetpack_featured_media_url": "https://socialmedia-panama.com/wp-content/uploads/2019/07/0_iXryLTrw5i93JjEu.png",
+    "_links": {
+      "self": [
+        { "href": "https://socialmedia-panama.com/wp-json/wp/v2/posts/10076" }
+      ],
+      "collection": [
+        { "href": "https://socialmedia-panama.com/wp-json/wp/v2/posts" }
+      ],
+      "about": [
+        { "href": "https://socialmedia-panama.com/wp-json/wp/v2/types/post" }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://socialmedia-panama.com/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://socialmedia-panama.com/wp-json/wp/v2/comments?post=10076"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 1,
+          "href": "https://socialmedia-panama.com/wp-json/wp/v2/posts/10076/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 10084,
+          "href": "https://socialmedia-panama.com/wp-json/wp/v2/posts/10076/revisions/10084"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://socialmedia-panama.com/wp-json/wp/v2/media/10077"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://socialmedia-panama.com/wp-json/wp/v2/media?parent=10076"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "category",
+          "embeddable": true,
+          "href": "https://socialmedia-panama.com/wp-json/wp/v2/categories?post=10076"
+        },
+        {
+          "taxonomy": "post_tag",
+          "embeddable": true,
+          "href": "https://socialmedia-panama.com/wp-json/wp/v2/tags?post=10076"
+        },
+        {
+          "taxonomy": "yst_prominent_words",
+          "embeddable": true,
+          "href": "https://socialmedia-panama.com/wp-json/wp/v2/yst_prominent_words?post=10076"
+        }
+      ],
+      "curies": [
+        { "name": "wp", "href": "https://api.w.org/{rel}", "templated": true }
+      ]
+    }
+  },{
     "id": 10076,
     "date": "2019-07-31T04:27:49",
     "date_gmt": "2019-07-31T04:27:49",
@@ -836,11 +1064,11 @@
       "rendered": "Muestra las ofertas de tu negocio en  Google Maps."
     },
     "content": {
-      "rendered": "<p>[vc_row][vc_column width=&#8221;1/2&#8243;][vc_column_text]A todos les encanta una buena oferta. Ya sea que est\u00e9n comprando en una tienda de ropa favorita o en una cafeter\u00eda local por primera vez, una oferta atractiva puede atraer nuevos clientes a tu negocio.</p>\n<p>Para ayudar a las personas a encontrar tus promociones, Google ha generado en los perfiles de negocios un nuevo dise\u00f1o dedicado para que los propietarios de negocios verificados presenten sus ofertas m\u00e1s recientes.</p>\n<p>[/vc_column_text][/vc_column][vc_column width=&#8221;1/2&#8243;][vc_single_image image=&#8221;7896&#8243; img_size=&#8221;large&#8221;][/vc_column][/vc_row][vc_row][vc_column width=&#8221;1/2&#8243;][vc_column_text]<img src=\"https://www.socialmedia-panama.com/wp-content/uploads/2019/03/ezgif-4-b9f63157be3c.gif\" alt=\"Google\" />[/vc_column_text][/vc_column][vc_column width=&#8221;1/2&#8243;][vc_column_text]Crear una oferta es muy sencillo, al crear una publicaci\u00f3n en Google My Business, ver\u00e1 una opci\u00f3n para categorizar la oferta. Desde all\u00ed, puede incluir una descripci\u00f3n de la promoci\u00f3n, un c\u00f3digo de cup\u00f3n o incluir un t\u00e9rmino y condici\u00f3n \u00fatil para sus clientes.</p>\n<p>Seg\u00fan Google, se permite desplegar hasta 10 ofertas \u00fanicas en el carrusel.</p>\n<p>Todo esto es muy facil hacerlo desde la app de Google My Business, la puedes encontrar en Google Play y App Store.</p>\n<p>[/vc_column_text][/vc_column][/vc_row]</p>\n",
+      "rendered": "<p>A todos les encanta una buena oferta. Ya sea que est\u00e9n comprando en una tienda de ropa favorita o en una cafeter\u00eda local por primera vez, una oferta atractiva puede atraer nuevos clientes a tu negocio.</p>\n<p>Para ayudar a las personas a encontrar tus promociones, Google ha generado en los perfiles de negocios un nuevo dise\u00f1o dedicado para que los propietarios de negocios verificados presenten sus ofertas m\u00e1s recientes.</p>\n<p>[/vc_column_text][/vc_column][vc_column width=&#8221;1/2&#8243;][vc_single_image image=&#8221;7896&#8243; img_size=&#8221;large&#8221;][/vc_column][/vc_row]<img src=\"https://www.socialmedia-panama.com/wp-content/uploads/2019/03/ezgif-4-b9f63157be3c.gif\" alt=\"Google\" />[/vc_column_text][/vc_column][vc_column width=&#8221;1/2&#8243;][vc_column_text]Crear una oferta es muy sencillo, al crear una publicaci\u00f3n en Google My Business, ver\u00e1 una opci\u00f3n para categorizar la oferta. Desde all\u00ed, puede incluir una descripci\u00f3n de la promoci\u00f3n, un c\u00f3digo de cup\u00f3n o incluir un t\u00e9rmino y condici\u00f3n \u00fatil para sus clientes.</p>\n<p>Seg\u00fan Google, se permite desplegar hasta 10 ofertas \u00fanicas en el carrusel.</p>\n<p>Todo esto es muy facil hacerlo desde la app de Google My Business, la puedes encontrar en Google Play y App Store.</p>\n<p>[/vc_column_text][/vc_column][/vc_row]</p>\n",
       "protected": false
     },
     "excerpt": {
-      "rendered": "<p>[vc_row][vc_column width=&#8221;1/2&#8243;][vc_column_text]A todos les encanta una buena oferta. Ya sea que est\u00e9n comprando en una tienda de ropa favorita o en una cafeter\u00eda local por primera vez, una oferta atractiva puede atraer nuevos clientes a tu negocio. Para ayudar a las personas a encontrar tus promociones, Google ha generado en los perfiles de negocios un [&hellip;]</p>\n",
+      "rendered": "<p>A todos les encanta una buena oferta. Ya sea que est\u00e9n comprando en una tienda de ropa favorita o en una cafeter\u00eda local por primera vez, una oferta atractiva puede atraer nuevos clientes a tu negocio. Para ayudar a las personas a encontrar tus promociones, Google ha generado en los perfiles de negocios un [&hellip;]</p>\n",
       "protected": false
     },
     "author": 1,
@@ -1067,11 +1295,11 @@
       "rendered": "Marketing Digital Pro Tip: Transmitir en vivo en instagram desde pc"
     },
     "content": {
-      "rendered": "<p>[vc_row][vc_column][vc_column_text]Desde hace unos d\u00edas conseguimos transmistir un programa <strong>X</strong> en una cuenta de instagram que fu\u00e9 creada para fines de pruebas desde una computadora utilizando un software gratuito muy popular, llamado <a href=\"https://obsproject.com/\">OBS Studio.</a> instalamos el software en varios equipos y funciona perfectamente, pretendemos lanzar un v\u00eddeo tutorial paso a paso en espa\u00f1ol en donde se va brindar en detalles c\u00f3mo funciona este proceso y que deben hacer, por lo pronto lo dejaremos detallado en textos.</p>\n<p>C\u00f3mo parte de nuestro programa &#8220;Compartir el Conocimiento&#8221; que tenemos en Social Media Panam\u00e1 dejamos los ingrediente de esta maravilla.</p>\n<h2>\u00bfQu\u00e9 necesitamos?</h2>\n<p>Estos son los elementos que vamos a tener que instalar en nuestro computador, hago la observaci\u00f3n que estas pruebas se han realizado sobre Windows 10 Pro.</p>\n<ol>\n<li><a href=\"https://www.youtube.com/redirect?redir_token=lv65LZTXiEmLYShEk4vYXTFr8lN8MTU0ODYxMjA3MEAxNTQ4NTI1Njcw&amp;event=video_description&amp;v=NaX1Ge1Rthk&amp;q=https%3A%2F%2Fwindows.php.net%2Fdownload%23php-7.2\" target=\"_blank\" rel=\"noopener noreferrer\">PHP para Windows</a> : En mi caso descargu\u00e9 la versi\u00f3n 7.2</li>\n<li><a href=\"https://www.youtube.com/redirect?redir_token=lv65LZTXiEmLYShEk4vYXTFr8lN8MTU0ODYxMjA3MEAxNTQ4NTI1Njcw&amp;event=video_description&amp;v=NaX1Ge1Rthk&amp;q=https%3A%2F%2Fgetcomposer.org%2Fdownload%2F\" target=\"_blank\" rel=\"noopener noreferrer\">Get Composer para Windows</a></li>\n<li><a href=\"https://www.youtube.com/redirect?redir_token=lv65LZTXiEmLYShEk4vYXTFr8lN8MTU0ODYxMjA3MEAxNTQ4NTI1Njcw&amp;event=video_description&amp;v=NaX1Ge1Rthk&amp;q=https%3A%2F%2Fgithub.com%2FJRoy%2FInstagramLive-PHP\" target=\"_blank\" rel=\"noopener noreferrer\">El repositorio InstagramLive en GitHub</a></li>\n<li><a href=\"https://www.youtube.com/redirect?redir_token=lv65LZTXiEmLYShEk4vYXTFr8lN8MTU0ODYxMjA3MEAxNTQ4NTI1Njcw&amp;event=video_description&amp;v=NaX1Ge1Rthk&amp;q=https%3A%2F%2Fcurl.haxx.se%2Fca%2Fcacert.pem\" target=\"_blank\" rel=\"noopener noreferrer\">y este fichero cacert.pem</a></li>\n</ol>\n<h2>\u00bfC\u00f3mo lo instalamos?</h2>\n<p>Crea una carpeta en tu disco duro, preferiblemente que no sea en C:// intenta hacerlo en Escritorio o en Mis Documentos.</p>\n<p>Pasa todos los archivos a esta carpeta.</p>\n<p>Desde all\u00ed vas a instalar, descomprimir y ejecutar todas las acciones siguientes.</p>\n<p>En los foros hay varias formas de hacer esto, en nuestro caso funcion\u00f3 instalar primero GetComposer,</p>\n<p>Luego Descomprimir PHP para Windows en una carpeta antes mencionada, dentro vas a buscar la carpeta \\extras\\ssl\\ y vas a pegar el archivo <strong>cacert.pem</strong> que descargaste en los requisitos. Luego vas a buscar el archivo de configuraci\u00f3n PHP dentro del root de esta carpeta, vas a abrirlo, preferiblemente con tu procesador de textos favorito, en mi caso es Sublime Text. Pero tambi\u00e9n funciona con bloque de notas de windows, este archivo de configuraci\u00f3n php contiene varios par\u00e1metros que debes cambiar, los podr\u00e1s ver en el siguiente cuadro.</p>\n<p>Estas l\u00edneas no se encuentran juntas, tendr\u00e1s que buscarlas, recomiendo que hagas un ctrol+f.[/vc_column_text][vc_row_inner][vc_column_inner width=&#8221;1/2&#8243;][vc_column_text]</p>\n<h3>Original</h3>\n<pre class=\"lang:ini decode:true \">;extension=curl;\r\n;extension=gd2;\r\n;extension=exif\r\n[curl]\r\n; A default value for the CURLOPT_CAINFO option. This is required to be an\r\n; absolute path.\r\n;curl.cainfo = \"\"</pre>\n<p>[/vc_column_text][/vc_column_inner][vc_column_inner width=&#8221;1/2&#8243;][vc_column_text]</p>\n<h3>Modificada</h3>\n<pre class=\"lang:ini decode:true \">extension=curl;\r\nextension=gd2;\r\nextension=exif\r\n[curl]\r\n; A default value for the CURLOPT_CAINFO option. This is required to be an\r\n; absolute path.\r\ncurl.cainfo = \"C:\\Carpeta\\creada\\php-7.2.14\\extras\\ssl\\cacert.pem\"</pre>\n<p>[/vc_column_text][/vc_column_inner][/vc_row_inner][/vc_column][/vc_row][vc_row][vc_column][vc_column_text]Luego, abrir consola de comandos, ir a la carpeta InstagramLive-PHP (Dicho sea de paso, debe estar en una carpeta con todos los demas archivos de este tutorial). Una vez est\u00e9s dentro, vas a escribir el siguiente comando:</p>\n<h5>composer require mgp25/instagram-php react/child-process</h5>\n<p>Esto se va a tomar un tiempo, en mi caso tom\u00f3 al menos 30 minutos, as\u00ed que no desesperen.[/vc_column_text][vc_column_text]En la carpeta InstagramLive vas a buscar el archivo\u00a0config.php y vas a colocar las credenciales de tu cuenta de Instagram:</p>\n<pre class=\"lang:default decode:true\">&lt;?php\r\ndefine('IG_USERNAME', 'AQUI_USUARIO');\r\ndefine('IG_PASS', 'AQUI_PASSWORD');\r\ndefine('configVersionCode', '2');</pre>\n<p>Finalmente vas a escribir el comando</p>\n<h6><strong>php goLive.php &#8211;use-rmtps</strong></h6>\n<p>Acto seguido tendr\u00e1s las llaves para transmitir online en instagram desde OBS Studio.</p>\n<p>Desde aqu\u00ed recibir\u00e1s una pregunta, si quieres que el sistema abra OBS, vas a decir que si. Autom\u00e1ticamente va a abrir OBS y te\u00f3ricamente la transmisi\u00f3n va a iniciar, pero no habr\u00e1 nada hasta que reescribas el nombre de configuraci\u00f3n en OBS y las llaves de transmisi\u00f3n. Luego vas a presionar transmitir y corres cinta con el v\u00eddeo que quieres mostrar.[/vc_column_text][vc_row_inner][vc_column_inner][vc_column_text]</p>\n<h3>Datos Importantes:</h3>\n<p>[/vc_column_text][/vc_column_inner][/vc_row_inner][vc_row_inner][vc_column_inner width=&#8221;1/2&#8243;][vc_column_text]</p>\n<ol>\n<li>El Stream an OBS debe estar en un lienzo de 720&#215;1280 de resoluci\u00f3n y debe correr a 30 fps.</li>\n<li>Si no tienes una conexi\u00f3n buena, te recomiendo hacer un buffer de 20 seg.</li>\n<li>Si estas utilizando este m\u00e9todo, no debes estar logueado en la cuenta desde otro dispositivo, ni si quiera en Hootsuite, si no podr\u00edas perder la transmisi\u00f3n o algo mucho peor.</li>\n<li>Si quieres responder comentarios, tendr\u00e1s que utilizar una cuenta adicional.</li>\n<li>Para detener la transmisi\u00f3n debes escribir STOP en la pantalla de comando que se abre en tu computadora, es una pantalla adicional de PHP. OBS no controla el inicio o el final de la transmisi\u00f3n.</li>\n</ol>\n<p>[/vc_column_text][/vc_column_inner][vc_column_inner width=&#8221;1/2&#8243;][vc_column_text]</p>\n<ul>\n<li>Recuerda que la transmisi\u00f3n por este m\u00e9todo aplica las mismas normas del m\u00e9todo tradicional en lo que respecta al tiempo m\u00e1ximo de 1 hora.</li>\n<li>Al finalizar la transmisi\u00f3n, la consola te preguntar\u00e1 si quieres dejar el archivo por 24 horas. Al escribir YES se ejecuta.</li>\n<li>Cada vez que vallas a hacer live, debes asegurarte que las credenciales estan bien, luego vas a escribir en tu consola de comandos:\u00a0<strong>php -f goLive.php</strong></li>\n</ul>\n<p>[/vc_column_text][/vc_column_inner][/vc_row_inner][vc_column_text]Como pueden ver, la transmisi\u00f3n desde un computador es una realidad, aunque en estos momentos es una versi\u00f3n o una practica de <strong>Social Media</strong> y <strong>Marketing Digital</strong> no oficial y experimental, es muy probable que en los pr\u00f3ximos meses podamos tener acceso a m\u00e9todos mas sofisticados que nos permitan generar contenidos mas elaborados en Instagram.[/vc_column_text][vc_column_text]Las posibilidades que trae este tipo de pr\u00e1cticas, son alucinantes, tan s\u00f3lo imagina que si conseguimos que las marcas puedan hacer transmisiones en vivo desde Instagram, ech\u00e1ndole mano a las herramientas que tiene Instagram de notificaciones cuando alguien hace un En Vivo, tendr\u00eda una alt\u00edsima exposici\u00f3n, al menos por un tiempo.</p>\n<p>Es evidente que esta modalidad es una posibilidad real en el sistema y por alguna raz\u00f3n administrativa se encuentra en un estado no visible, esperemos que las Agencias de Marketing Digital podamos tener acceso a esto tipo de sistemas. A grandes rasgos traer\u00eda la posibilidad de tener una plataforma de video con un alcance y penetraci\u00f3n poderos\u00edsimo.</p>\n<p>Las agencias de Marketing Web estamos obligadas a escuchar todas las posibilidades que generan las plataformas actuales. Creo que lo que las mejores redes sociales que tenemos actualmente ( WhatsApp, Instagram, Facebook y Twitter ) tienen un potencial escondido. Se preguntar\u00e1n por que no menciono otras redes sociales, la respuesta es simple, solo menciono los espacios masivos. Las redes sociales m\u00e1s de nicho, generalmente no son productos con los que se puedan comerciar con las marcas, generalmente, su relaci\u00f3n valor de mantenimiento / beneficio no deja un balance positivo.</p>\n<p>Las Agencias de Marketing Digital que verdaderamente sobresalen tienen algo en com\u00fan, se atreven a experimentar y a so\u00f1ar, el prop\u00f3sito de este art\u00edculo es presentar un modelo que permita a las Especialistas Web una visi\u00f3n sobre las posibilidades del sistema, que destinen recursos para que sus organizaciones puedan desarrollar conocimiento. Esto tan s\u00f3lo es un caso pr\u00e1ctico sencillo, pero como mencion\u00e9 antes es solo el principio de muchas posibilidades que puede ir m\u00e1s all\u00e1 de las Redes Sociales en Panam\u00e1. Los invito que adoptemos un compromiso por innovar para que nuestro pa\u00eds se convierta en un punto de referencia para el Marketing Digital en Centro Am\u00e9rica.</p>\n<p>Gracias a @PhelpsGG por compartir los detalles cruciales de este proyecto.</p>\n<p>Si tienen alguna duda del proceso, estamos a un clic de distancia.</p>\n<p>Saludos</p>\n<p>&nbsp;</p>\n<p>ACTUALIZACI\u00d3N 10/mayo/2019 : Hemos comprobado que se pueden hacer m\u00faltiples transmisiones desde una PC, hasta ahora podemos hacer en 4 cuentas diferentes (por que es lo que soporta nuestra conexi\u00f3n). \u00bfC\u00f3mo se hace esto? sencillo, debes crear m\u00e1quinas virtuales y levantar varias instancias, considera tambien la limitante con los recursos de tu ordenador, no esperes hacer este mecanismo con una cafetera cualquiera : )</p>\n<p><img class=\"alignnone size-full wp-image-9069\" src=\"https://www.socialmedia-panama.com/wp-content/uploads/2019/01/transmision_en_vivo.png\" alt=\"Transmitir en instagram desde un ordenador con OJS\" width=\"1365\" height=\"731\" srcset=\"https://socialmedia-panama.com/wp-content/uploads/2019/01/transmision_en_vivo.png 1365w, https://socialmedia-panama.com/wp-content/uploads/2019/01/transmision_en_vivo-300x161.png 300w, https://socialmedia-panama.com/wp-content/uploads/2019/01/transmision_en_vivo-768x411.png 768w, https://socialmedia-panama.com/wp-content/uploads/2019/01/transmision_en_vivo-1024x548.png 1024w, https://socialmedia-panama.com/wp-content/uploads/2019/01/transmision_en_vivo-600x321.png 600w\" sizes=\"(max-width: 1365px) 100vw, 1365px\" />ACTUALIZACI\u00d3N 10/07/2019: Josh (El lider detr\u00e1s de todo esto) ha lanzado una nueva versi\u00f3n 1.8 con actualizaciones que varian cosas internas como el flujo de ingreso hasta una <strong>pantalla web para controlar responder comentarios y monitorear la respuesta de la comunidad</strong>. Tambi\u00e9n se alinea el sistema con los cambios en la API de Instagram, esto corrige los problemas de conexi\u00f3n que experimentaron algunos usuarios. Como siempre para acceder a esto debes ejecutar\u00a0 el comando <strong>php update.php\u00a0</strong>en tu consola y tendr\u00e1s la nuevas funcionalidades.</p>\n<p>Para ver la nueva consola, primero da inicio al LIVE desde la consola con este comando:php goLive.php &#8211;web -p &lt;nombre_de_cuenta&gt; luego te va a pedir las credenciales de la cuenta( usuario y contrase\u00f1a e instagram), acto seguido se va a abrir ojs y empezar\u00e1 la transmisi\u00f3n.</p>\n<p>Una vez tengas esto podr\u00e1s accesar al nuevo panel de control escribiendo esto en tu explorador: 127.0.0.1. Por defecto se conecta en el puerto 80, pero si quieres cambiarlo puedes hacerlo ingresado la direcci\u00f3n de esta forma: 127.0.0.1:PORT, donde puerto es el n\u00famero que tu quieres.</p>\n<p>[/vc_column_text][/vc_column][/vc_row][vc_row][vc_column][vc_video link=&#8221;https://www.youtube.com/watch?v=NaX1Ge1Rthk&#8221; align=&#8221;center&#8221; title=&#8221;Video Tutorial (ingles)&#8221;][/vc_column][/vc_row]</p>\n",
+      "rendered": "<p>s conseguimos transmistir un programa <strong>X</strong> en una cuenta de instagram que fu\u00e9 creada para fines de pruebas desde una computadora utilizando un software gratuito muy popular, llamado <a href=\"https://obsproject.com/\">OBS Studio.</a> instalamos el software en varios equipos y funciona perfectamente, pretendemos lanzar un v\u00eddeo tutorial paso a paso en espa\u00f1ol en donde se va brindar en detalles c\u00f3mo funciona este proceso y que deben hacer, por lo pronto lo dejaremos detallado en textos.</p>\n<p>C\u00f3mo parte de nuestro programa &#8220;Compartir el Conocimiento&#8221; que tenemos en Social Media Panam\u00e1 dejamos los ingrediente de esta maravilla.</p>\n<h2>\u00bfQu\u00e9 necesitamos?</h2>\n<p>Estos son los elementos que vamos a tener que instalar en nuestro computador, hago la observaci\u00f3n que estas pruebas se han realizado sobre Windows 10 Pro.</p>\n<ol>\n<li><a href=\"https://www.youtube.com/redirect?redir_token=lv65LZTXiEmLYShEk4vYXTFr8lN8MTU0ODYxMjA3MEAxNTQ4NTI1Njcw&amp;event=video_description&amp;v=NaX1Ge1Rthk&amp;q=https%3A%2F%2Fwindows.php.net%2Fdownload%23php-7.2\" target=\"_blank\" rel=\"noopener noreferrer\">PHP para Windows</a> : En mi caso descargu\u00e9 la versi\u00f3n 7.2</li>\n<li><a href=\"https://www.youtube.com/redirect?redir_token=lv65LZTXiEmLYShEk4vYXTFr8lN8MTU0ODYxMjA3MEAxNTQ4NTI1Njcw&amp;event=video_description&amp;v=NaX1Ge1Rthk&amp;q=https%3A%2F%2Fgetcomposer.org%2Fdownload%2F\" target=\"_blank\" rel=\"noopener noreferrer\">Get Composer para Windows</a></li>\n<li><a href=\"https://www.youtube.com/redirect?redir_token=lv65LZTXiEmLYShEk4vYXTFr8lN8MTU0ODYxMjA3MEAxNTQ4NTI1Njcw&amp;event=video_description&amp;v=NaX1Ge1Rthk&amp;q=https%3A%2F%2Fgithub.com%2FJRoy%2FInstagramLive-PHP\" target=\"_blank\" rel=\"noopener noreferrer\">El repositorio InstagramLive en GitHub</a></li>\n<li><a href=\"https://www.youtube.com/redirect?redir_token=lv65LZTXiEmLYShEk4vYXTFr8lN8MTU0ODYxMjA3MEAxNTQ4NTI1Njcw&amp;event=video_description&amp;v=NaX1Ge1Rthk&amp;q=https%3A%2F%2Fcurl.haxx.se%2Fca%2Fcacert.pem\" target=\"_blank\" rel=\"noopener noreferrer\">y este fichero cacert.pem</a></li>\n</ol>\n<h2>\u00bfC\u00f3mo lo instalamos?</h2>\n<p>Crea una carpeta en tu disco duro, preferiblemente que no sea en C:// intenta hacerlo en Escritorio o en Mis Documentos.</p>\n<p>Pasa todos los archivos a esta carpeta.</p>\n<p>Desde all\u00ed vas a instalar, descomprimir y ejecutar todas las acciones siguientes.</p>\n<p>En los foros hay varias formas de hacer esto, en nuestro caso funcion\u00f3 instalar primero GetComposer,</p>\n<p>Luego Descomprimir PHP para Windows en una carpeta antes mencionada, dentro vas a buscar la carpeta \\extras\\ssl\\ y vas a pegar el archivo <strong>cacert.pem</strong> que descargaste en los requisitos. Luego vas a buscar el archivo de configuraci\u00f3n PHP dentro del root de esta carpeta, vas a abrirlo, preferiblemente con tu procesador de textos favorito, en mi caso es Sublime Text. Pero tambi\u00e9n funciona con bloque de notas de windows, este archivo de configuraci\u00f3n php contiene varios par\u00e1metros que debes cambiar, los podr\u00e1s ver en el siguiente cuadro.</p>\n<p>Estas l\u00edneas no se encuentran juntas, tendr\u00e1s que buscarlas, recomiendo que hagas un ctrol+f.[/vc_column_text][vc_row_inner][vc_column_inner width=&#8221;1/2&#8243;][vc_column_text]</p>\n<h3>Original</h3>\n<pre class=\"lang:ini decode:true \">;extension=curl;\r\n;extension=gd2;\r\n;extension=exif\r\n[curl]\r\n; A default value for the CURLOPT_CAINFO option. This is required to be an\r\n; absolute path.\r\n;curl.cainfo = \"\"</pre>\n<p>[/vc_column_text][/vc_column_inner][vc_column_inner width=&#8221;1/2&#8243;][vc_column_text]</p>\n<h3>Modificada</h3>\n<pre class=\"lang:ini decode:true \">extension=curl;\r\nextension=gd2;\r\nextension=exif\r\n[curl]\r\n; A default value for the CURLOPT_CAINFO option. This is required to be an\r\n; absolute path.\r\ncurl.cainfo = \"C:\\Carpeta\\creada\\php-7.2.14\\extras\\ssl\\cacert.pem\"</pre>\n<p>[/vc_column_text][/vc_column_inner][/vc_row_inner][/vc_column][/vc_row]comandos, ir a la carpeta InstagramLive-PHP (Dicho sea de paso, debe estar en una carpeta con todos los demas archivos de este tutorial). Una vez est\u00e9s dentro, vas a escribir el siguiente comando:</p>\n<h5>composer require mgp25/instagram-php react/child-process</h5>\n<p>Esto se va a tomar un tiempo, en mi caso tom\u00f3 al menos 30 minutos, as\u00ed que no desesperen.[/vc_column_text][vc_column_text]En la carpeta InstagramLive vas a buscar el archivo\u00a0config.php y vas a colocar las credenciales de tu cuenta de Instagram:</p>\n<pre class=\"lang:default decode:true\">&lt;?php\r\ndefine('IG_USERNAME', 'AQUI_USUARIO');\r\ndefine('IG_PASS', 'AQUI_PASSWORD');\r\ndefine('configVersionCode', '2');</pre>\n<p>Finalmente vas a escribir el comando</p>\n<h6><strong>php goLive.php &#8211;use-rmtps</strong></h6>\n<p>Acto seguido tendr\u00e1s las llaves para transmitir online en instagram desde OBS Studio.</p>\n<p>Desde aqu\u00ed recibir\u00e1s una pregunta, si quieres que el sistema abra OBS, vas a decir que si. Autom\u00e1ticamente va a abrir OBS y te\u00f3ricamente la transmisi\u00f3n va a iniciar, pero no habr\u00e1 nada hasta que reescribas el nombre de configuraci\u00f3n en OBS y las llaves de transmisi\u00f3n. Luego vas a presionar transmitir y corres cinta con el v\u00eddeo que quieres mostrar.[/vc_column_text][vc_row_inner][vc_column_inner][vc_column_text]</p>\n<h3>Datos Importantes:</h3>\n<p>[/vc_column_text][/vc_column_inner][/vc_row_inner][vc_row_inner][vc_column_inner width=&#8221;1/2&#8243;][vc_column_text]</p>\n<ol>\n<li>El Stream an OBS debe estar en un lienzo de 720&#215;1280 de resoluci\u00f3n y debe correr a 30 fps.</li>\n<li>Si no tienes una conexi\u00f3n buena, te recomiendo hacer un buffer de 20 seg.</li>\n<li>Si estas utilizando este m\u00e9todo, no debes estar logueado en la cuenta desde otro dispositivo, ni si quiera en Hootsuite, si no podr\u00edas perder la transmisi\u00f3n o algo mucho peor.</li>\n<li>Si quieres responder comentarios, tendr\u00e1s que utilizar una cuenta adicional.</li>\n<li>Para detener la transmisi\u00f3n debes escribir STOP en la pantalla de comando que se abre en tu computadora, es una pantalla adicional de PHP. OBS no controla el inicio o el final de la transmisi\u00f3n.</li>\n</ol>\n<p>[/vc_column_text][/vc_column_inner][vc_column_inner width=&#8221;1/2&#8243;][vc_column_text]</p>\n<ul>\n<li>Recuerda que la transmisi\u00f3n por este m\u00e9todo aplica las mismas normas del m\u00e9todo tradicional en lo que respecta al tiempo m\u00e1ximo de 1 hora.</li>\n<li>Al finalizar la transmisi\u00f3n, la consola te preguntar\u00e1 si quieres dejar el archivo por 24 horas. Al escribir YES se ejecuta.</li>\n<li>Cada vez que vallas a hacer live, debes asegurarte que las credenciales estan bien, luego vas a escribir en tu consola de comandos:\u00a0<strong>php -f goLive.php</strong></li>\n</ul>\n<p>[/vc_column_text][/vc_column_inner][/vc_row_inner][vc_column_text]Como pueden ver, la transmisi\u00f3n desde un computador es una realidad, aunque en estos momentos es una versi\u00f3n o una practica de <strong>Social Media</strong> y <strong>Marketing Digital</strong> no oficial y experimental, es muy probable que en los pr\u00f3ximos meses podamos tener acceso a m\u00e9todos mas sofisticados que nos permitan generar contenidos mas elaborados en Instagram.[/vc_column_text][vc_column_text]Las posibilidades que trae este tipo de pr\u00e1cticas, son alucinantes, tan s\u00f3lo imagina que si conseguimos que las marcas puedan hacer transmisiones en vivo desde Instagram, ech\u00e1ndole mano a las herramientas que tiene Instagram de notificaciones cuando alguien hace un En Vivo, tendr\u00eda una alt\u00edsima exposici\u00f3n, al menos por un tiempo.</p>\n<p>Es evidente que esta modalidad es una posibilidad real en el sistema y por alguna raz\u00f3n administrativa se encuentra en un estado no visible, esperemos que las Agencias de Marketing Digital podamos tener acceso a esto tipo de sistemas. A grandes rasgos traer\u00eda la posibilidad de tener una plataforma de video con un alcance y penetraci\u00f3n poderos\u00edsimo.</p>\n<p>Las agencias de Marketing Web estamos obligadas a escuchar todas las posibilidades que generan las plataformas actuales. Creo que lo que las mejores redes sociales que tenemos actualmente ( WhatsApp, Instagram, Facebook y Twitter ) tienen un potencial escondido. Se preguntar\u00e1n por que no menciono otras redes sociales, la respuesta es simple, solo menciono los espacios masivos. Las redes sociales m\u00e1s de nicho, generalmente no son productos con los que se puedan comerciar con las marcas, generalmente, su relaci\u00f3n valor de mantenimiento / beneficio no deja un balance positivo.</p>\n<p>Las Agencias de Marketing Digital que verdaderamente sobresalen tienen algo en com\u00fan, se atreven a experimentar y a so\u00f1ar, el prop\u00f3sito de este art\u00edculo es presentar un modelo que permita a las Especialistas Web una visi\u00f3n sobre las posibilidades del sistema, que destinen recursos para que sus organizaciones puedan desarrollar conocimiento. Esto tan s\u00f3lo es un caso pr\u00e1ctico sencillo, pero como mencion\u00e9 antes es solo el principio de muchas posibilidades que puede ir m\u00e1s all\u00e1 de las Redes Sociales en Panam\u00e1. Los invito que adoptemos un compromiso por innovar para que nuestro pa\u00eds se convierta en un punto de referencia para el Marketing Digital en Centro Am\u00e9rica.</p>\n<p>Gracias a @PhelpsGG por compartir los detalles cruciales de este proyecto.</p>\n<p>Si tienen alguna duda del proceso, estamos a un clic de distancia.</p>\n<p>Saludos</p>\n<p>&nbsp;</p>\n<p>ACTUALIZACI\u00d3N 10/mayo/2019 : Hemos comprobado que se pueden hacer m\u00faltiples transmisiones desde una PC, hasta ahora podemos hacer en 4 cuentas diferentes (por que es lo que soporta nuestra conexi\u00f3n). \u00bfC\u00f3mo se hace esto? sencillo, debes crear m\u00e1quinas virtuales y levantar varias instancias, considera tambien la limitante con los recursos de tu ordenador, no esperes hacer este mecanismo con una cafetera cualquiera : )</p>\n<p><img class=\"alignnone size-full wp-image-9069\" src=\"https://www.socialmedia-panama.com/wp-content/uploads/2019/01/transmision_en_vivo.png\" alt=\"Transmitir en instagram desde un ordenador con OJS\" width=\"1365\" height=\"731\" srcset=\"https://socialmedia-panama.com/wp-content/uploads/2019/01/transmision_en_vivo.png 1365w, https://socialmedia-panama.com/wp-content/uploads/2019/01/transmision_en_vivo-300x161.png 300w, https://socialmedia-panama.com/wp-content/uploads/2019/01/transmision_en_vivo-768x411.png 768w, https://socialmedia-panama.com/wp-content/uploads/2019/01/transmision_en_vivo-1024x548.png 1024w, https://socialmedia-panama.com/wp-content/uploads/2019/01/transmision_en_vivo-600x321.png 600w\" sizes=\"(max-width: 1365px) 100vw, 1365px\" />ACTUALIZACI\u00d3N 10/07/2019: Josh (El lider detr\u00e1s de todo esto) ha lanzado una nueva versi\u00f3n 1.8 con actualizaciones que varian cosas internas como el flujo de ingreso hasta una <strong>pantalla web para controlar responder comentarios y monitorear la respuesta de la comunidad</strong>. Tambi\u00e9n se alinea el sistema con los cambios en la API de Instagram, esto corrige los problemas de conexi\u00f3n que experimentaron algunos usuarios. Como siempre para acceder a esto debes ejecutar\u00a0 el comando <strong>php update.php\u00a0</strong>en tu consola y tendr\u00e1s la nuevas funcionalidades.</p>\n<p>Para ver la nueva consola, primero da inicio al LIVE desde la consola con este comando:php goLive.php &#8211;web -p &lt;nombre_de_cuenta&gt; luego te va a pedir las credenciales de la cuenta( usuario y contrase\u00f1a e instagram), acto seguido se va a abrir ojs y empezar\u00e1 la transmisi\u00f3n.</p>\n<p>Una vez tengas esto podr\u00e1s accesar al nuevo panel de control escribiendo esto en tu explorador: 127.0.0.1. Por defecto se conecta en el puerto 80, pero si quieres cambiarlo puedes hacerlo ingresado la direcci\u00f3n de esta forma: 127.0.0.1:PORT, donde puerto es el n\u00famero que tu quieres.</p>\n<p>[/vc_column_text][/vc_column][/vc_row]e.com/watch?v=NaX1Ge1Rthk&#8221; align=&#8221;center&#8221; title=&#8221;Video Tutorial (ingles)&#8221;][/vc_column][/vc_row]</p>\n",
       "protected": false
     },
     "excerpt": {
-      "rendered": "<p>[vc_row][vc_column][vc_column_text]Desde hace unos d\u00edas conseguimos transmistir un programa X en una cuenta de instagram que fu\u00e9 creada para fines de pruebas desde una computadora utilizando un software gratuito muy popular, llamado OBS Studio. instalamos el software en varios equipos y funciona perfectamente, pretendemos lanzar un v\u00eddeo tutorial paso a paso en espa\u00f1ol en donde se [&hellip;]</p>\n",
+      "rendered": "<p>s conseguimos transmistir un programa X en una cuenta de instagram que fu\u00e9 creada para fines de pruebas desde una computadora utilizando un software gratuito muy popular, llamado OBS Studio. instalamos el software en varios equipos y funciona perfectamente, pretendemos lanzar un v\u00eddeo tutorial paso a paso en espa\u00f1ol en donde se [&hellip;]</p>\n",
       "protected": false
     },
     "author": 1,

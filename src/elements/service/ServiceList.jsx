@@ -20,14 +20,14 @@ const ServiceList = [
     title: "Manejo de Redes Sociales",
     description:
       "Notarás un aumento de actividad orgánica y real en tus canales sociales.",
-    link: "/manejo_de_redes_sociales"
+    link: "/manejo-de-redes-sociales"
   },
   {
     icon: <SVGIcon name="SEO" width={54} fill={randomColor()} />,
     title: "SEO",
     description:
       "Aumenta tu visibilidad y atrae más usuarios con nuestros servicios de posicionamiento SEO.",
-    link: "/posicionamiento_en_GOOGLE_SEO_Panama"
+    link: "/posicionamiento-en-GOOGLE-SEO-Panama"
   },
   {
     icon: <SVGIcon name="WP" width={54} fill={randomColor()} />,
@@ -86,7 +86,7 @@ class ServiceThree extends Component {
           {ServiceContent.map((val, i) => (
             <div className={`${column}`} key={i}>
               <Link to={val.link}>
-                <div className="service service__style--2">
+                <div className="service service-style--2">
                   <div className="icon">{val.icon}</div>
                   <div className="content">
                     <h3 className="title">{val.title}</h3>
