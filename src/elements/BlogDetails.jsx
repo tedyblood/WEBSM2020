@@ -5,7 +5,6 @@ import { FiClock, FiUser, FiMessageCircle, FiHeart } from "react-icons/fi";
 import { Link, Redirect } from "react-router-dom";
 import Moment from "react-moment";
 
-import { ShowImgInPost } from "../component/ConsultarPost/ShowImgInPost";
 import jsonData from "../../public/assets/json/f1";
 
 class BlogDetails extends Component {
@@ -187,14 +186,7 @@ class BlogDetails extends Component {
                             this.state.dataPostDetail.content.rendered,
                         }}
                       ></p>
-                      <ShowImgInPost
-                        url={
-                          this.state.dataPostDetail &&
-                          this.state.dataPostDetail._links[
-                            "wp:featuredmedia"
-                          ][0].href
-                        }
-                      />
+                      
                     </div>
                   </div>
                 </div>
@@ -202,53 +194,7 @@ class BlogDetails extends Component {
             </div>
           </div>
           {/* End Blog Details */}
-
-          {/* Start BLog Comment Form  */}
-          <div className="blog-comment-form pb--120 bg_color--1">
-            <div className="container">
-              <div className="row">
-                <div className="col-lg-12">
-                  <div className="inner">
-                    <h3 className="title mb--40 fontWeight500">Comentarios</h3>
-                    <form action="#">
-                      <div className="row">
-                        <div className="col-lg-6 col-md-12 col-12">
-                          <div className="rnform-group">
-                            <input type="text" placeholder="Name" />
-                          </div>
-                          <div className="rnform-group">
-                            <input type="email" placeholder="Email" />
-                          </div>
-                          <div className="rnform-group">
-                            <input type="text" placeholder="Website" />
-                          </div>
-                        </div>
-                        <div className="col-lg-6 col-md-12 col-12">
-                          <div className="rnform-group">
-                            <textarea
-                              type="text"
-                              placeholder="Comment"
-                            ></textarea>
-                          </div>
-                        </div>
-                        <div className="col-lg-12">
-                          <div className="blog-btn">
-                            <Link
-                              className="rn-button-style--2 btn-solid"
-                              to="/blog-details"
-                            >
-                              <span>SEND MESSAGE</span>
-                            </Link>
-                          </div>
-                        </div>
-                      </div>
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          {/* End BLog Comment Form  */}
+          
         </React.Fragment>
       );
     } else {
