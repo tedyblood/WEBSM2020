@@ -32,7 +32,7 @@ class ServiceDetails_auditoria extends Component {
     return (
       <React.Fragment>
         {/* Start Pagehelmet  */}
-        <PageHelmet pageTitle="Service Details" />
+        <PageHelmet pageTitle="Diseño de revistas electrónicas OJS"  pageDesc="Confección de repositorios de revistas diseñados en OJS."/>
         {/* End Pagehelmet  */}
         {/* Start Breadcrump Area */}
         <div

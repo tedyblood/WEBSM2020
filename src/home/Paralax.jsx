@@ -4,7 +4,7 @@ import CounterOne from "../elements/counters/CounterOne";
 import BrandTwo from "../elements/BrandTwo";
 import ServiceList from "../elements/service/ServiceList";
 import ParrafoList from "../elements/Parrafos/ParrafoOne";
-import Post from "../elements/post";
+import Post from "../elements/blog/BlogList";
 import ModalContact from "../component/common/ModalContact";
 import PageHelmet from "../component/common/Helmet";
 

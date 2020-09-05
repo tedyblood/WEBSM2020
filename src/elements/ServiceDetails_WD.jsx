@@ -26,7 +26,7 @@ class ServiceDetails extends Component {
     return (
       <React.Fragment>
         {/* Start Pagehelmet  */}
-        <PageHelmet pageTitle="Service Details" />
+        <PageHelmet pageTitle="Creación de eCommerce Website " pageDesc="Ofrecemos todo lo que necesitas para lanzar tu tienda online hoy mismo. Empieza a vender por internet con tu página web eCommerce."/>
         {/* End Pagehelmet  */}
         {/* Start Breadcrump Area */}
         <div
@@ -37,7 +37,7 @@ class ServiceDetails extends Component {
             <div className="row">
               <div className="col-lg-12">
                 <div className="rn-page-title text-center pt--100">
-                  <h1 className="title theme-gradient">DISEÑO DE SITIO WEB</h1>
+                  <h1 className="title theme-gradient">Diseño de Website eCommerce con respaldo</h1>
                   <p>
                     Tenemos de todos los sabores: <br></br>A medida, Con
                     Plantilla, con React, Angular, Wordpress, HTML Básico,{" "}

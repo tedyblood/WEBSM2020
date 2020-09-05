@@ -27,7 +27,7 @@ class ServiceDetailsSM extends Component {
     return (
       <React.Fragment>
         {/* Start Pagehelmet  */}
-        <PageHelmet pageTitle="Service Details" />
+        <PageHelmet pageTitle="Posicionamiento en Buscadores" pageDesc="Posicionamiento en buscadores u optimización de motores de búsqueda para páginas web en Panamá" />
         {/* End Pagehelmet  */}
         {/* Start Breadcrump Area */}
         <div

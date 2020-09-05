@@ -27,7 +27,7 @@ class ServiceDetails_auditoria extends Component {
     return (
       <React.Fragment>
         {/* Start Pagehelmet  */}
-        <PageHelmet pageTitle="Service Details" />
+        <PageHelmet pageTitle="Consultor de Marketing Digital" pageDesc="Consultor de marketing digital. 10 años de experiencia. Estrategias de marketing orientadas a conversiones y ventas." />
         {/* End Pagehelmet  */}
         {/* Start Breadcrump Area */}
         <div
@@ -75,7 +75,7 @@ class ServiceDetails_auditoria extends Component {
                         <div className="thumb">
                           <img
                             className="w-100"
-                            src="/assets/images/service/service-01.png"
+                            src="/assets/images/service/consultor-2.jpg"
                             alt="Service Images"
                           />
                         </div>
@@ -133,13 +133,13 @@ class ServiceDetails_auditoria extends Component {
                         <div className="thumb position-relative">
                           <img
                             className="w-100"
-                            src="/assets/images/service/service-02.png"
+                            src="/assets/images/service/consultor.jpg"
                             alt="Service Images"
                           />
                           <ModalVideo
                             channel="youtube"
                             isOpen={this.state.isOpen}
-                            videoId="ZOoVOfieAF8"
+                            videoId="HkkHU48ooE0"
                             onClose={() => this.setState({ isOpen: false })}
                           />
                           <button

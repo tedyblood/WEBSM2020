@@ -1,15 +1,23 @@
 import React, { Component } from "react";
 import PageHelmet from "../component/common/Helmet";
-import ModalVideo from "react-modal-video";
-import { FiClock, FiUser, FiMessageCircle, FiHeart } from "react-icons/fi";
-import { Link, Redirect } from "react-router-dom";
+import { FiClock} from "react-icons/fi";
 import Moment from "react-moment";
 
 import jsonData from "../../public/assets/json/f1";
 
-class BlogDetails extends Component {
+class BlogDetails extends React.Component {
+  constructor(props) {
+    super(props); 
+    this.state = {
+      isOpen: false,
+    };
+    this.openModal = this.openModal.bind(this);
+  }
   state = {};
   componentDidMount() {
+    
+    
+
     window.scrollTo(0, 0);
     this.setState({
       id: this.props.match.params,
@@ -32,6 +40,7 @@ class BlogDetails extends Component {
         );
       }
     });
+    
   }
 
   cargaEstados(dpd, pa, pi, pf) {
@@ -90,13 +99,7 @@ class BlogDetails extends Component {
 
   handleClickAvance = (event) => {};
   handleClickRetrocede = (event) => {};
-  constructor() {
-    super();
-    this.state = {
-      isOpen: false,
-    };
-    this.openModal = this.openModal.bind(this);
-  }
+  
   handleImageLoaded() {
     this.setState(this.setState({ imageStatus: "loaded" }));
   }
@@ -119,7 +122,11 @@ class BlogDetails extends Component {
     if (this.state.dataPostDetail && this.state.postSucess) {
       return (
         <React.Fragment>
-          <PageHelmet pageTitle="Blog Details" />
+          <PageHelmet pageTitle={this.state.dataPostDetail &&
+                        this.state.dataPostDetail.title.rendered} 
+                        pageDesc={`Publicado el: ${this.state.dataPostDetail &&
+                          this.state.dataPostDetail.date}  en el blog de noticias de Social Media Panamá`}
+                        />
           <div
             className="rn-page-title-area pt--120 pb--190 bg_image bg_image--7"
             data-black-overlay="7"

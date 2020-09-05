@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 
 import SVG from "../component/animation/GreenshockOne";
 
-
 import GirAnimada from "../component/animation/AnimationG";
 import { AnimationSlider } from "../component/animation/AnimationSlider";
 
@@ -16,7 +15,6 @@ import Cotizasm from "../component/cotizador/cotizasm";
 
 class ServiceDetailsSM extends Component {
   componentDidMount() {
-    
     window.scrollTo(0, 0);
   }
   componentDidUpdate() {}
@@ -34,7 +32,10 @@ class ServiceDetailsSM extends Component {
     return (
       <React.Fragment>
         {/* Start Pagehelmet  */}
-        <PageHelmet pageTitle="Service Details" />
+        <PageHelmet
+          pageTitle="Gestión de Redes Sociales"
+          pageDesc="Soporte local y gestión de redes sociales diarias, 48 horas de soporte de redes semanales. Organizamos Concursos y otras actividades lúdicas en tus perfiles."
+        />
         {/* End Pagehelmet  */}
         {/* Start Breadcrump Area */}
         <div
@@ -46,11 +47,10 @@ class ServiceDetailsSM extends Component {
               <div className="col-lg-12">
                 <div className="rn-page-title text-center pt--100">
                   <h1 className="title theme-gradient">
-                    Gestion de Redes Sociales
+                    Gestión de Redes Sociales
                   </h1>
                   <p>
-                    Alta experiencia en manejo de redes sociales para potenciar
-                    tu negocio en el mundo digital
+                    Alta experiencia en manejo de redes sociales para empresas en Latinoamérica
                   </p>
                 </div>
               </div>
@@ -123,7 +123,7 @@ class ServiceDetailsSM extends Component {
                     <div class="container">
                       <div class="row Row__Title_Cotizador">
                         <div class="Titulo__cotizador col-sm-12">
-                          <h2 class="title">Calcular costo servicio</h2>
+                          <h3 class="title">Calcular costo de paquete de redes sociales</h3>
                         </div>
                       </div>
                       <div class="row Row_Cotizador__Widget ">
@@ -131,11 +131,16 @@ class ServiceDetailsSM extends Component {
                           <Cotizasm />
                         </div>
                         <div class="Texto__Widget__Cotizador col-sm-6">
-                          Estos datos son estimados, todos nuestros servicios buscan un retorno de inversión mediante una secuencia de acciones personalizadas que no están listadas en esta calculadora. Lo invitamos a solicitar una cotización sin compromiso.
+                          Estos datos son estimados, todos nuestros servicios
+                          buscan un retorno de inversión mediante una secuencia
+                          de acciones personalizadas que no están listadas en
+                          esta calculadora. Lo invitamos a solicitar una
+                          cotización sin compromiso.
                         </div>
                         <div class="Call__To__Action__Widget col-sm-6 mt-3">
-                          <Link className="btn btn-warning" to="/contact">Solicita una cotización personalizada 
-                          </Link>          
+                          <Link className="btn btn-warning" to="/contact">
+                            Solicita una cotización personalizada
+                          </Link>
                         </div>
                       </div>
                     </div>
@@ -746,9 +751,7 @@ class ServiceDetailsSM extends Component {
                         </div>
                       </div>
                     </div>
-                    <div class="container Parrafos">
-
-                    </div>
+                    <div class="container Parrafos"></div>
 
                     {/* End Parrafos */}
                     {/* Start Single Area */}

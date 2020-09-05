@@ -35,7 +35,7 @@ class ServiceDetailsSM extends Component {
     return (
       <React.Fragment>
         {/* Start Pagehelmet  */}
-        <PageHelmet pageTitle="Service Details" />
+        <PageHelmet pageTitle="Servicios de Pago por Click (PPC)"  pageDesc="Servicio pago por clic en Facebook, Instagram, Waze, Twitter, Spotify, Amazon."/>
         {/* End Pagehelmet  */}
         {/* Start Breadcrump Area */}
         <div

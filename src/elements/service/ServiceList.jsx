@@ -68,10 +68,10 @@ const ServiceList = [
   },
   {
     icon: <SVGIcon name="WIFI" width={54} fill={randomColor()} />,
-    title: "WIFI Social",
+    title: "Diseño Gráfico",
     description:
-      "Ofrece internet a tu clientes a cambio de una encuesta o una acción social.",
-    link: "/social-wifi-fi"
+      "¿Estás Listo Para Obtener Todo El Trabajo Creativo Que Requieres?",
+    link: "/diseno-grafico-panama"
   }
 ];
 
@@ -85,7 +85,7 @@ class ServiceThree extends Component{
               <div className="row">
                   {ServiceContent.map( (val , i) => (
                       <div className={`${column}`} key={i}>
-                          <a href="/service-details">
+                          <a href={val.link}>
                               <div className="service service__style--2">
                                   <div className="icon">
                                       {val.icon}

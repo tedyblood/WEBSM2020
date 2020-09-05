@@ -131,6 +131,43 @@ class ServiceDetails_auditoria extends Component {
                       </div>
                     </div>
                     {/* End Single Area */}
+                    {/* Start Single Area */}
+                    <div className="row sercice-details-content align-items-center mt-5">
+                      <div className="col-lg-6 col-12 order-2 order-lg-1">
+                        
+                        
+                        <div className="details mt_md--30 mt_sm--30 mt-3">
+                          <h3 className="title">
+                            Ejemplo de video filmado en formato 360
+                          </h3>
+                          <p>
+                            Desde hace más de 5 años estamos realizando este tipo de filmaciones, tenemos experiencia comprobada y conocemos muy bien los requisitos de las plataformas que aceptan este tipo de formatos.
+                          </p>
+                        </div>
+                      </div>
+                      <div className="col-lg-6 col-12 order-1 order-lg-2">
+                        <div className="thumb position-relative">
+                          <img
+                            className="w-100"
+                            src="/assets/images/service/consultor.jpg"
+                            alt="Service Images"
+                          />
+                          <ModalVideo
+                            channel="youtube"
+                            isOpen={this.state.isOpen}
+                            videoId="HkkHU48ooE0"
+                            onClose={() => this.setState({ isOpen: false })}
+                          />
+                          <button
+                            className="video-popup"
+                            onClick={this.openModal}
+                          >
+                            <span className="play-icon"></span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    {/* End Single Area */}
                   </div>
                 </div>
               </div>

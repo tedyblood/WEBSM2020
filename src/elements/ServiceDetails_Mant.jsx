@@ -79,7 +79,7 @@ class ServiceDetailsMant extends Component {
     return (
       <React.Fragment>
         {/* Start Pagehelmet  */}
-        <PageHelmet pageTitle="Service Details" />
+        <PageHelmet pageTitle="Administración de páginas web" pageDesc="Como Webmaster nos aseguramos de que la información del sitio web sea correcta y segura." />
         {/* End Pagehelmet  */}
         {/* Start Breadcrump Area */}
         <div

@@ -190,7 +190,7 @@ function LoadServiceTXT(props) {
   render() {
     return (
       <>
-        <PageHelmet pageTitle="Cotizador" />
+        {/* <PageHelmet pageTitle="Cotizador" /> */}
         {/* Start Breadcrump Area */}
         {/* <Breadcrumb
           title={"Cotizador"}

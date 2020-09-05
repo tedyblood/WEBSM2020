@@ -68,10 +68,10 @@ const ServiceList = [
   },
   {
     icon: <SVGIcon name="WIFI" width={54} fill={randomColor()} />,
-    title: "WIFI Social",
+    title: "Diseño Gráfico",
     description:
-      "Ofrece internet a tu clientes a cambio de una encuesta o una acción social.",
-    link: "/social-wifi-fi"
+      "Conoce nuestra plataforma de diseño gráfico y ahorra tiempo y dinero.",
+    link: "/diseno-grafico-panama"
   }
 ];
 

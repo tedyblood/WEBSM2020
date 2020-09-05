@@ -144,9 +144,9 @@ class Header extends Component {
                     <li>
                       <Link
                         onClick={this.CLoseMenuTrigger}
-                        to="/social-wifi-fi"
+                        to="/diseno-grafico-panama"
                       >
-                        Wifi Social
+                       Diseño Gráfico Económico
                       </Link>
                     </li>
                   </ul>

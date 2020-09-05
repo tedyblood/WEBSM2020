@@ -31,7 +31,7 @@ class ServiceDetails_sf extends Component {
     return (
       <React.Fragment>
         {/* Start Pagehelmet  */}
-        <PageHelmet pageTitle="Service Details" />
+        <PageHelmet pageTitle="Social WIFI"/>
         {/* End Pagehelmet  */}
         {/* Start Breadcrump Area */}
         <div

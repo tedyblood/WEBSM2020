@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import PageHelmet from "../component/common/Helmet";
 import Breadcrumb from "../elements/common/Breadcrumb";
 import Pagination from "../elements/common/Pagination";
-import BlogList from "../elements/post";
+import BlogList from "../elements/blog/BlogList";
 
 class Blog extends Component {
   render() {
