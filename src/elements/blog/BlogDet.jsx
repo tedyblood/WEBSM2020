@@ -10,6 +10,8 @@ import CommentComp from "../commentFacebook/ComentComp.jsx";
 
 import ContentPlaceholder from "../../component/ContentPlaceholder/ContentPlaceholder";
 
+import AdSense from "react-adsense";
+
 //import QueryAutor from "./BloqQuery";
 
 const divStyle = {
@@ -19,20 +21,14 @@ const divStyle = {
   height: "80px",
   position: "fixed",
   background: "#30b0d8",
-  padding: "8px 0 0 15px"  
-}
-
-
-
+  padding: "8px 0 0 15px",
+};
 
 export default function BlogDet() {
-
-  
-  const { postId, postSlug } = useParams();  
+  const { postId, postSlug } = useParams();
 
   const [posts, setPosts] = useState([]);
 
-  
   useEffect(() => {
     async function loadPosts() {
       const response = await fetch(
@@ -49,8 +45,6 @@ export default function BlogDet() {
     loadPosts();
   }, []);
 
-  
-  
   return (
     <React.Fragment>
       <PageHelmet
@@ -59,7 +53,7 @@ export default function BlogDet() {
           posts.id && posts.date
         }  en el blog de noticias de Social Media Panamá`}
       />
-      
+
       <div
         className="rn-page-title-area pt--120 pb--190 bg_image bg_image--7"
         data-black-overlay="7"
@@ -72,9 +66,14 @@ export default function BlogDet() {
                   {/* The Home of the Future <br /> Could Bebes */}
                   {posts.id ? posts.title.rendered : "Cargando ..."}
                 </h1>
-                <diV style={divStyle}><ContentPlaceholder/></diV>
+                <diV style={divStyle}>
+                  <ContentPlaceholder />
+                </diV>
                 <ul className="blog-meta d-flex justify-content-center align-items-center">
-                <li><img src="https://secure.gravatar.com/avatar/442b63205385b7bb21920fd995ac7450?s=48&d=mm&r=g"/>Josueth Acevedo </li>
+                  <li>
+                    <img src="https://secure.gravatar.com/avatar/442b63205385b7bb21920fd995ac7450?s=48&d=mm&r=g" />
+                    Josueth Acevedo{" "}
+                  </li>
                   <li>
                     <FiClock />
                     <Moment format="DD/MM/YYYY">
@@ -92,7 +91,15 @@ export default function BlogDet() {
       {/* Start Blog Details */}
       <div className="rn-blog-details pt--110 pb--70 bg_color--1">
         <div className="container">
-          <div className="row"></div>
+          <AdSense.Google
+            client="ca-pub-9934442708844020"
+            slot="9013987492"
+            style={{ display: "block" }}
+            format="auto"
+            responsive="true"
+          />
+          <div className="row my-5"></div>
+
           <div className="row">
             <div className="col-lg-12">
               <div className="inner-wrapper">
@@ -111,18 +118,26 @@ export default function BlogDet() {
           </div>
           <h4>Social</h4>
           <div className="row">
-            <div className="col-6"><LikeComp /></div>
-            <div className="col-6"><ShareComp/></div>
+            <div className="col-6">
+              <LikeComp />
+            </div>
+            <div className="col-6">
+              <ShareComp />
+            </div>
           </div>
-          
-          <hr/>
+
+          <hr />
           <h4>Comentarios</h4>
-          <CommentComp/>
-          
-          
+          <CommentComp />
         </div>
       </div>
-
+      <AdSense.Google
+        client="ca-pub-9934442708844020"
+        slot="2284927611"
+        style={{ width: 500, height: 300, float: "left" }}
+        format=""
+      />
+      
       {/* End Blog Details */}
     </React.Fragment>
   );
