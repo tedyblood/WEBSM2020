@@ -48,6 +48,7 @@
     "http-proxy-middleware": "^1.0.1",
     "identity-obj-proxy": "3.0.0",
     "imagesloaded": "^4.1.4",
+    "instagram-scraping": "^1.0.13",
     "is-wsl": "^1.1.0",
     "jest": "24.7.1",
     "jest-environment-jsdom-fourteen": "0.1.0",

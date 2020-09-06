@@ -13,6 +13,8 @@ import ContactTwo from "../elements/contact/ContactTwo";
 
 import Cotizasm from "../component/cotizador/cotizasm";
 
+import Scrap from "../component/InstaScrap/InstaScarp";
+
 class ServiceDetailsSM extends Component {
   componentDidMount() {
     window.scrollTo(0, 0);
@@ -765,6 +767,20 @@ class ServiceDetailsSM extends Component {
                     {/* Start Contact Page Area  */}
                     <div className="rn-contact-page ptb--120 bg_color--1">
                       <ContactTwo />
+                    </div>
+                    {/* End Contact Page Area  */}
+                    {/* End Single Area */}
+                    {/* Start Single Area */}
+                    <div className="row sercice-details-content pb--80 align-items-center">
+                      <div className="col-lg-12 col-12">
+                        <h2>El momento de ser parte de las redes sociales es hoy</h2>
+                        Hay muchas personas en internet publicando en este momento, si quieres dar el siguiente paso en redes sociales con precisión, escríbenos
+                        
+                      </div>
+                    </div>
+                    {/* Start Contact Page Area  */}
+                    <div className="rn-contact-page ptb--120 bg_color--1">
+                      <Scrap/>
                     </div>
                     {/* End Contact Page Area  */}
                     {/* End Single Area */}
