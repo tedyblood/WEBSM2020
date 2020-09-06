@@ -1,0 +1,10 @@
+.Contenedor_Items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.Contenedor_Items .card {
+    margin: 10px;
+    width: 48%; 
+}
