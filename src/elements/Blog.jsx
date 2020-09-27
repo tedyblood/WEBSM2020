@@ -21,7 +21,7 @@ class Blog extends Component {
         {/* Start Blog Area */}
         <div className="rn-blog-area ptb--120 ">
           <div className="container">
-            <BlogList item="24" claseTitulo=" text-white" />
+            <BlogList item="24" />
             <div className="row mt--20">
               <div className="col-lg-12">
                 {/* Start Pagination Area */}

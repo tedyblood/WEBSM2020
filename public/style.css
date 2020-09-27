@@ -13,14 +13,18 @@
     position: relative;
     text-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
   }
-  
-  h2 {
-    font-size: 70px;
+  body{
+    font-size: 16px;
+    color: #73707a;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  h2, h1 {
+    font-size: 16px;
     margin-bottom: 0;
   }
   
   h3 {
-    font-size: 40px;
+    font-size: 10px;
     margin-bottom: 0;
   }
   
@@ -67,7 +71,7 @@
 
   /**/
 .title {
-    color: #73707a;
+    color: #2b2a2e;
     font-family: Arial, Helvetica, sans-serif;
 }
   
