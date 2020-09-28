@@ -1,0 +1,19 @@
+.Control>div {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    align-items: end;
+    justify-content: end;
+}
+
+.Control>div>div {
+    padding: 0px 9px;
+}
+ins span.woocommerce-Price-amount.amount {
+    color: #1877f2;
+    font-size: 3em;
+    font-weight: 900;
+}
+Control>div>div {
+    width: 50%;
+}

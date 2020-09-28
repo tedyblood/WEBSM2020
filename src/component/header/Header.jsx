@@ -162,6 +162,16 @@ class Header extends Component {
                     Blog
                   </Link>
                 </li>
+                <li>
+                  <Link onClick={this.CLoseMenuTrigger} to="/empleo">
+                    Empleo
+                  </Link>
+                </li>
+                <li>
+                  <Link onClick={this.CLoseMenuTrigger} to="/cursos">
+                    Cursos de Marketing Digital
+                  </Link>
+                </li>
               </ul>
             </nav>
             <div className="header-btn">

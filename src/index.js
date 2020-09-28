@@ -40,6 +40,7 @@ import ServiceDetails_OJS from "./elements/ServiceDetails_OJS";
 import ServiceDetails_sf from "./elements/ServiceDetails_sf";
 import DisenoGrafico from "./elements/ServiceDetails_Dgraph";
 import Cursos from "./elements/Cursos";
+import Empleo from "./elements/empleo";
 
 import BlogTwo from './elements/blog/BlogList'
 import BlogD from './elements/blog/BlogDet'
@@ -98,7 +99,12 @@ class Root extends Component {
               exact
               path={`${process.env.PUBLIC_URL}/service`}
               component={Service}
-            />            
+            />
+            <Route
+              exact
+              path={`${process.env.PUBLIC_URL}/empleo`}
+              component={Empleo}
+            />              
             <Route
               exact
               path={`${process.env.PUBLIC_URL}/cursos`}

@@ -35,6 +35,8 @@ const image7 = "/assets/images/bg/paralax/959V0854.JPG";
 
 const image8 = "/assets/images/bg/paralax/bg-image-24.jpg";
 
+const image9 = "/assets/images/bg/paralax/bg-image-21.jpg";
+
 class Paralax extends Component {
   render() {
     return (
@@ -96,7 +98,7 @@ class Paralax extends Component {
         {/* Start Service Area  */}
         <Parallax
           className="rn-paralax-service"
-          bgImage={image1}
+          bgImage={image9}
           strength={1000}
         >
           <div className="service-area ptb--120">
