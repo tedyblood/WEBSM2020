@@ -108,7 +108,7 @@
     "react-video-tag": "0.0.10",
     "react-visibility-sensor": "^5.1.1",
     "resolve": "1.10.0",
-    "sanitize-html": "^1.22.0",
+    "sanitize-html": "^2.3.2",
     "sass-loader": "^7.3.1",
     "semver": "6.0.0",
     "simple-react-lightbox": "^2.2.0",
